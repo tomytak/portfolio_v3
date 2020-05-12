@@ -1,0 +1,33 @@
+// media
+
+/* #IMAGES */
+/* Responsive */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a img{
+transition: all .1s ease-out;
+overflow: hidden;
+display:block;
+}
+  
+a img:hover{
+  transform: scale(1.03);
+  }
+
+.work-image a, .swiper-slide a, .conquest-grid a, .radiolab_grid a, .book_first_draft a, .grid a, .packaging a, .brochure a, .prototype a, #artwork a{
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  img.circular {
+    border-radius: 100%;
+  }
+
+  /* VIDEO */
+video {
+    max-width: 100%;
+    height: auto; 
+}

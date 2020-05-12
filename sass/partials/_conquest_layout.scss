@@ -1,0 +1,156 @@
+.hero{
+    .conquest{
+        background-color: #e2d5bb;
+    }
+}
+
+// CONQUEST VIDEO PHOTO GRID________
+.grid, .conquest-grid{
+padding-top: 5em;
+margin: 0 auto;
+  .row{
+      justify-content: space-between;    
+  }
+}
+
+
+// BRAND STRATEGY & COPYWRITING_______________
+
+.brand_strategy, .copywriting{
+
+    .row{
+      align-items: flex-start;
+      justify-content: space-between;
+
+      ul li{
+        list-style: none;
+    }
+        .one-third{
+            ul{
+                padding-left: 0;
+
+            }
+        }
+
+        .two-thirds{
+            ul{
+                padding-left: 0;
+            }
+
+            .copywriting_space{
+                padding-bottom: 1.5em;
+            }
+            .branding_space{
+                margin-bottom: 2em;  
+            }
+                                
+            .no_bottom_margin {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.copywriting .brand_strategy{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// design system_____________________
+.orange{
+    color: $color-conquest-orange;
+}
+
+// logo__________
+.logo{
+    .row{
+        justify-content: space-between;
+    }
+    .final_logo{
+        margin-top: 2em;
+    }  
+}
+ 
+.logo_exploration{
+    padding-top: 0;
+    .row{
+        margin-top: 2em;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    
+    }
+}  
+
+// ILLUSTRATIONS_____________________
+
+.bottle_packaging, .conquest_patterns{
+    .row{
+        margin-top: .5em;
+        justify-content: space-between;
+    }
+}
+
+.space_above{
+    margin-top: 2em;
+}
+
+.illustrations{
+    .row{
+        justify-content: space-evenly;
+        margin: 0 auto;
+.one-half{
+  padding-left:5em;
+  padding-right:5em;
+  padding-top:2em;
+}
+    }
+}
+
+.conquest_patterns, .logo_exploration{
+    margin-bottom: 2em;
+}
+
+
+// style guide________________
+
+.style_guide{
+    background-color: #e2d5bb;
+    
+    .row{
+padding-left: 3em; 
+        justify-content: space-between; 
+        padding-right: 3em; 
+        
+        .column{
+            padding: 1em;
+        }
+    }
+}
+// final packaging_________
+.final_packaging{
+    .row{
+        justify-content: space-between;
+    }
+}
+
+// Media query_______________________
+@media (min-width: $breakpoint-large) {
+    // conquest grid_________________
+    .conquest-grid{
+        width: 40vw;
+    }
+}
+@media (min-width: $breakpoint-small) {
+// conquest grid_________________
+    .conquest-grid{
+        width: 50vw;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    // conquest grid_________________
+    .conquest-grid{
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+// HERO HOMEPAGE_________________________________________
+
+.home-hero{
+background-image: url("img/tomy_logo_home.svg");
+img{
+    margin-top:0;
+    padding-top: 0;
+}
+}
+
+.quote{
+    .yellow-circle{
+    border: 5px solid $color-yellow;
+    background-color: $color-white;
+    border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    }
+}
+
+// work_______________________
+
+#work_gallery{
+    margin-bottom: 5em;
+    h1{
+        font-weight: 700;
+        margin-bottom: 0;
+    } 
+    
+    h2{
+       margin-bottom: 0;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+  
+
+    .case-studies{
+        .row{
+            align-items: center;
+            a{
+                text-decoration: none; 
+            }  
+        }
+    }
+}
+
+// Media query_______________________
+
+@media (min-width: $breakpoint-small) {
+    // // index quote____________
+    .quote{ 
+    h1{
+    font-size: 3em;
+    }
+    }
+  
+      // index work__________________
+    .case-studies{
+        .row{
+        align-items: flex-start;
+    
+            .work_text_home{
+            margin-right: -13em;
+            top: 50%;
+            transform: translateY(-50%);
+            }
+            .work-image{  
+                margin-left: 16em;
+                margin-bottom: 5em;  
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    // index quote____________
+    .quote{ 
+        h1{
+        font-size: 1.7em;
+        }
+    }
+
+
+    // index work__________________
+    .case-studies{
+        .row{
+        display: block;
+
+            .work-image{     
+                margin-bottom: 4em;
+            }
+        }
+    }
+}

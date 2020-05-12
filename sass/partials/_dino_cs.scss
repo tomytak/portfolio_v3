@@ -1,0 +1,82 @@
+/* HERO */
+
+
+  .dino{
+    background-color: $color-dino-yellow;
+  }
+
+
+  /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
+  // .objective .column,
+  .wireframe .column, 
+  .illustrator .column, 
+  .sketch .column,
+  .aftereffects .column
+  {
+    margin-right: 5%;
+  }
+  
+/* WIREFRAME */
+.wireframe{ 
+  .one-third{
+    margin-right: 0;
+  }
+}
+  
+/* sketch */
+.sketches {
+  .row{
+  justify-content: space-between;
+  }
+}
+
+/* illustrator */
+
+.illustrator {
+  .two-thirds{
+   
+    margin-right: 0;
+
+    video{
+      margin-top: .5em;
+    }
+  }
+}
+  
+/* after effects */
+  
+.aftereffects {
+
+  video{
+    margin-top: .5em;
+  }
+  .one-third{
+    margin-right: 0;
+  }
+}
+
+/* ANIMATIONS */
+  
+.animation{
+  .one-third {
+  margin-right:0;
+  }
+}
+
+/* UI DESIGN */
+  
+.final_ui{
+
+img{
+  margin-top: 1em;
+}
+}
+
+// dino button_bottom______________
+.final_image_bottom{
+  .button{
+margin-left:50%;
+transform: translateX(-50%);
+
+  }
+}
