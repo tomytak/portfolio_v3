@@ -709,9 +709,6 @@ section {
   width: 7em;
   height: auto; }
 
-/* MENU BUTTON */
-/* NAV ICON */
-/* site-nav ____________________________-*/
 /*PAGE NAV ___________________________________*/
 .page-nav {
   position: fixed;
@@ -779,7 +776,8 @@ section {
     margin-right: 1em; }
     .objective .one-third ul {
       padding-top: 1em;
-      margin-top: 1em; }
+      margin-top: 1em;
+      padding-left: 0; }
       .objective .one-third ul li:before {
         content: "\26AC";
         color: #FEC412;
@@ -884,7 +882,6 @@ section {
 .site-header a {
   text-decoration: none; }
 
-/* SITE FOOTER */
 /* SITE ID (LOGO) */
 .site-id h1 {
   font-size: 1.5em;
