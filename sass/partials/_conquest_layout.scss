@@ -5,12 +5,36 @@
 }
 
 // CONQUEST VIDEO PHOTO GRID________
-.grid, .conquest-grid{
-padding-top: 5em;
-margin: 0 auto;
-  .row{
-      justify-content: space-between;    
-  }
+.conquest-grid{
+    display: grid;
+    padding-top: 5em;
+    margin: 0 auto;
+    grid-gap: 1em;
+    // place-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+      " insta insta insta insta bottle_f bottle_f bottle_f"
+      " insta insta insta insta bottle_b bottle_b bottle_b ";
+  
+    .insta{
+      grid-area: insta;
+    }
+
+    
+    .bottle_f{
+    margin-left: 1.5em;
+        grid-area: bottle_f;
+
+        // border: 1px solid red;
+  
+      }
+    
+    .bottle_b{
+        grid-area: bottle_b;
+        margin-left: 1.5em;
+        margin-bottom: 5em;
+        // border: 1px solid red;
+    }
 }
 
 
@@ -134,23 +158,23 @@ padding-left: 3em;
     }
 }
 
-// Media query_______________________
-@media (min-width: $breakpoint-large) {
-    // conquest grid_________________
-    .conquest-grid{
-        width: 40vw;
-    }
-}
-@media (min-width: $breakpoint-small) {
-// conquest grid_________________
-    .conquest-grid{
-        width: 50vw;
-    }
-}
+// // Media query_______________________
+// @media (min-width: $breakpoint-large) {
+//     // conquest grid_________________
+//     .conquest-grid{
+//         width: 40vw;
+//     }
+// }
+// @media (min-width: $breakpoint-small) {
+// // conquest grid_________________
+//     .conquest-grid{
+//         width: 50vw;
+//     }
+// }
 
-@media (max-width: $breakpoint-small) {
-    // conquest grid_________________
-    .conquest-grid{
-        width: 100%;
-    }
-}
+// @media (max-width: $breakpoint-small) {
+//     // conquest grid_________________
+//     .conquest-grid{
+//         width: 100%;
+//     }
+// }

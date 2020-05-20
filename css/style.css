@@ -1134,13 +1134,35 @@ fade-in {
 .hero .conquest {
   background-color: #e2d5bb; }
 
-.grid, .conquest-grid {
+.conquest-grid {
+  display: -ms-grid;
+  display: grid;
   padding-top: 5em;
-  margin: 0 auto; }
-  .grid .row, .conquest-grid .row {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+  margin: 0 auto;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 1em auto;
+  grid-template-areas: " insta insta insta insta bottle_f bottle_f bottle_f" " insta insta insta insta bottle_b bottle_b bottle_b "; }
+  .conquest-grid .insta {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-area: insta; }
+  .conquest-grid .bottle_f {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 5;
+    margin-left: 1.5em;
+    grid-area: bottle_f; }
+  .conquest-grid .bottle_b {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 5;
+    grid-area: bottle_b;
+    margin-left: 1.5em;
+    margin-bottom: 5em; }
 
 .brand_strategy .row, .copywriting .row {
   -webkit-box-align: start;
@@ -1225,18 +1247,6 @@ fade-in {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-
-@media (min-width: 1250px) {
-  .conquest-grid {
-    width: 40vw; } }
-
-@media (min-width: 768px) {
-  .conquest-grid {
-    width: 50vw; } }
-
-@media (max-width: 768px) {
-  .conquest-grid {
-    width: 100%; } }
 
 .home-hero {
   background-image: url("img/tomy_logo_home.svg"); }
