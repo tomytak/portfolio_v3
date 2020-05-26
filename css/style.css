@@ -108,7 +108,7 @@ p {
   margin-bottom: 1em; }
 
 #styletiles, section#brand_identity, section#sketches, #logo,
-.logo_exploration,
+.logo_exploration, #storyboard,
 #artwork,
 section#hi-fi, #first_draft,
 section#final, section#web, section#artwork, section#motion_graphic, #style_guide,
@@ -117,7 +117,7 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
   padding-bottom: 0;
   margin: 0; }
 
-.book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container {
+section.storyboard, .book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container {
   padding-top: 0; }
 
 .quote {
@@ -1488,3 +1488,6 @@ fade-in {
   .sootheze_sketch_section img {
     margin-bottom: 2em;
     margin-top: 1em; } }
+
+.flutter {
+  background-color: yellow; }
