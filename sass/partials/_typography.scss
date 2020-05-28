@@ -96,7 +96,7 @@ font-style: normal;
   margin-bottom: 1em; 
 }
 
-#styletiles, section#brand_identity,   section#sketches, #logo,
+#styletiles, section#brand_identity, .illustrations, section#sketches, #logo,
 .logo_exploration, #storyboard,
 #artwork,
 section#hi-fi, #first_draft,
@@ -105,17 +105,12 @@ section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
   padding-top: 3em;
   padding-bottom: 0;
   margin: 0; 
-  // border: 1px solid red;
 }
 
-section.storyboard, .book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain,  .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container{
+section.storyboard, .illustrations, .book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain,  .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container{
   padding-top: 0; 
-  // border: 3px solid green;
 }
 
-#first_draft h1, #copywriting h1, #logo h1, #sketches h1,#brand_identity h1, #artwork h1, #logo_exploration h1, #web h1, #hi-fi h1, #motion_graphic h1, #style_guide h1, #final h1, #final_product h1 {
-  // font-size: 3em; 
-}
 
 // Index quote___________________
 .quote{
@@ -201,8 +196,6 @@ section.storyboard, .book_first_draft, section.type_specimen, section.sketches, 
 .hero, #work{
   text-align: left; 
   margin-bottom: 3em;
-  // margin-left: 50%;
-  // transform: translateX(-50%);
 
   .hero_sub-info{
     color: $color-black;
@@ -254,8 +247,7 @@ section.storyboard, .book_first_draft, section.type_specimen, section.sketches, 
   }
 
   p{
-    margin-top:-.5em;
-    // margin-right: auto; 
+    margin-top:-.5em; 
     }
 }
 
@@ -370,10 +362,6 @@ h1, h2, h3{
   font-style: normal;
   text-transform: uppercase;
   display: block;
-  // -moz-transition: all 0.4s ease-in-out 0s;
-	// -webkit-transition: all 0.4s ease-in-out 0s;
-	// -ms-transition: all 0.4s ease-in-out 0s;
-  // transition: all 0.4s ease-in-out 0s;
   opacity: 1;
   }
 

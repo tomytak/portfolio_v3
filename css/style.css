@@ -107,7 +107,7 @@ p {
   color: #999;
   margin-bottom: 1em; }
 
-#styletiles, section#brand_identity, section#sketches, #logo,
+#styletiles, section#brand_identity, .illustrations, section#sketches, #logo,
 .logo_exploration, #storyboard,
 #artwork,
 section#hi-fi, #first_draft,
@@ -117,7 +117,7 @@ section#final, section#web, section#artwork, section#motion_graphic, #style_guid
   padding-bottom: 0;
   margin: 0; }
 
-section.storyboard, .book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container {
+section.storyboard, .illustrations, .book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain, .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container {
   padding-top: 0; }
 
 .quote {
@@ -1502,4 +1502,35 @@ fade-in {
     margin-top: 1em; } }
 
 .flutter {
-  background-color: yellow; }
+  background-color: #FCB614; }
+
+.illustrations {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 1em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 1em auto;
+  grid-template-areas: "small-title small-title . . . . ." "flower flower bird bird bird bird bird"; }
+  .illustrations .small-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: small-title; }
+  .illustrations .flower {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: flower; }
+  .illustrations .bird {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 9;
+    grid-area: bird; }
+
+@media (max-width: 768px) {
+  .illustrations {
+    display: block; } }
