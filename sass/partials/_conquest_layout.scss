@@ -10,7 +10,6 @@
   padding-top: 5em;
   margin: 0 auto;
   grid-gap: 1em;
-  // place-items: center;
   grid-template-columns: repeat(7, 1fr);
   grid-template-areas:
     " insta insta insta insta bottle_f bottle_f bottle_f"
@@ -111,16 +110,27 @@
   margin-top: 2em;
 }
 
-.illustrations {
-  .row {
-    justify-content: space-evenly;
-    margin: 0 auto;
-    .one-half {
-      padding-left: 5em;
-      padding-right: 5em;
-      padding-top: 2em;
-    }
-  }
+.illustrations_conquest{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr );
+  margin: 0 auto;
+  place-items: center;
+  grid-template-areas:
+      ". dragon dragon beer-hand beer-hand ."
+      "sword sword sword sword sword sword";
+
+      .dragon{
+        grid-area: dragon;
+      }
+
+      .beer-hand{
+        grid-area: beer-hand;
+      }
+
+      .sword{
+        grid-area: sword;
+      }
 }
 
 .conquest_patterns,

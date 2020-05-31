@@ -1321,15 +1321,30 @@ fade-in {
 .space_above {
   margin-top: 2em; }
 
-.illustrations .row {
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  margin: 0 auto; }
-  .illustrations .row .one-half {
-    padding-left: 5em;
-    padding-right: 5em;
-    padding-top: 2em; }
+.illustrations_conquest {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  place-items: center;
+  grid-template-areas: ". dragon dragon beer-hand beer-hand ." "sword sword sword sword sword sword"; }
+  .illustrations_conquest .dragon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: dragon; }
+  .illustrations_conquest .beer-hand {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: beer-hand; }
+  .illustrations_conquest .sword {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: sword; }
 
 .conquest_patterns,
 .logo_exploration {
