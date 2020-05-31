@@ -1,180 +1,151 @@
-.hero{
-    .conquest{
-        background-color: #e2d5bb;
-    }
+.hero {
+  .conquest {
+    background-color: #e2d5bb;
+  }
 }
 
 // CONQUEST VIDEO PHOTO GRID________
-.conquest-grid{
-    display: grid;
-    padding-top: 5em;
-    margin: 0 auto;
-    grid-gap: 1em;
-    // place-items: center;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas:
-      " insta insta insta insta bottle_f bottle_f bottle_f"
-      " insta insta insta insta bottle_b bottle_b bottle_b ";
-  
-    .insta{
-      grid-area: insta;
-    }
+.conquest-grid {
+  display: grid;
+  padding-top: 5em;
+  margin: 0 auto;
+  grid-gap: 1em;
+  // place-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    " insta insta insta insta bottle_f bottle_f bottle_f"
+    " insta insta insta insta bottle_b bottle_b bottle_b ";
 
-    
-    .bottle_f{
+  .insta {
+    grid-area: insta;
+  }
+
+  .bottle_f {
     margin-left: 1.5em;
-        grid-area: bottle_f;
+    grid-area: bottle_f;
+  }
 
-        // border: 1px solid red;
-  
-      }
-    
-    .bottle_b{
-        grid-area: bottle_b;
-        margin-left: 1.5em;
-        margin-bottom: 5em;
-        // border: 1px solid red;
-    }
+  .bottle_b {
+    grid-area: bottle_b;
+    margin-left: 1.5em;
+    margin-bottom: 5em;
+  }
 }
-
 
 // BRAND STRATEGY & COPYWRITING_______________
 
-.brand_strategy, .copywriting{
+.brand_strategy,
+.copywriting {
+  .row {
+    align-items: flex-start;
+    justify-content: space-between;
 
-    .row{
-      align-items: flex-start;
-      justify-content: space-between;
-
-      ul li{
-        list-style: none;
+    ul li {
+      list-style: none;
     }
-        .one-third{
-            ul{
-                padding-left: 0;
-
-            }
-        }
-
-        .two-thirds{
-            ul{
-                padding-left: 0;
-            }
-
-            .copywriting_space{
-                padding-bottom: 1.5em;
-            }
-            .branding_space{
-                margin-bottom: 2em;  
-            }
-                                
-            .no_bottom_margin {
-                margin-bottom: 0;
-            }
-        }
+    .one-third {
+      ul {
+        padding-left: 0;
+      }
     }
+
+    .two-thirds {
+      ul {
+        padding-left: 0;
+      }
+
+      .copywriting_space {
+        padding-bottom: 1.5em;
+      }
+      .branding_space {
+        margin-bottom: 2em;
+      }
+
+      .no_bottom_margin {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
-.copywriting .brand_strategy{
-    padding-top: 0;
-    padding-bottom: 0;
+.copywriting .brand_strategy {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 // design system_____________________
-.orange{
-    color: $color-conquest-orange;
+.orange {
+  color: $color-conquest-orange;
 }
 
 // logo__________
-.logo{
-    .row{
-        justify-content: space-between;
-    }
-    .final_logo{
-        margin-top: 2em;
-    }  
+.logo {
+  .row {
+    justify-content: space-between;
+  }
+  .final_logo {
+    margin-top: 2em;
+  }
 }
- 
-.logo_exploration{
-    padding-top: 0;
-    .row{
-        margin-top: 2em;
-        justify-content: space-between;
-        align-items: flex-end;
 
-    
-    }
-}  
+.logo_exploration {
+  padding-top: 0;
+  .row {
+    margin-top: 2em;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
 
 // ILLUSTRATIONS_____________________
 
-.bottle_packaging, .conquest_patterns{
-    .row{
-        margin-top: .5em;
-        justify-content: space-between;
+.bottle_packaging,
+.conquest_patterns {
+  .row {
+    margin-top: 0.5em;
+    justify-content: space-between;
+  }
+}
+
+.space_above {
+  margin-top: 2em;
+}
+
+.illustrations {
+  .row {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    .one-half {
+      padding-left: 5em;
+      padding-right: 5em;
+      padding-top: 2em;
     }
+  }
 }
 
-.space_above{
-    margin-top: 2em;
+.conquest_patterns,
+.logo_exploration {
+  margin-bottom: 2em;
 }
-
-.illustrations{
-    .row{
-        justify-content: space-evenly;
-        margin: 0 auto;
-.one-half{
-  padding-left:5em;
-  padding-right:5em;
-  padding-top:2em;
-}
-    }
-}
-
-.conquest_patterns, .logo_exploration{
-    margin-bottom: 2em;
-}
-
 
 // style guide________________
 
-.style_guide{
-    background-color: #e2d5bb;
-    
-    .row{
-padding-left: 3em; 
-        justify-content: space-between; 
-        padding-right: 3em; 
-        
-        .column{
-            padding: 1em;
-        }
+.style_guide {
+  background-color: #e2d5bb;
+
+  .row {
+    padding-left: 3em;
+    justify-content: space-between;
+    padding-right: 3em;
+
+    .column {
+      padding: 1em;
     }
+  }
 }
 // final packaging_________
-.final_packaging{
-    .row{
-        justify-content: space-between;
-    }
+.final_packaging {
+  .row {
+    justify-content: space-between;
+  }
 }
-
-// // Media query_______________________
-// @media (min-width: $breakpoint-large) {
-//     // conquest grid_________________
-//     .conquest-grid{
-//         width: 40vw;
-//     }
-// }
-// @media (min-width: $breakpoint-small) {
-// // conquest grid_________________
-//     .conquest-grid{
-//         width: 50vw;
-//     }
-// }
-
-// @media (max-width: $breakpoint-small) {
-//     // conquest grid_________________
-//     .conquest-grid{
-//         width: 100%;
-//     }
-// }

@@ -7,18 +7,24 @@ body {
 }
 
 /* HEADING*/
-h1, h2, h3 { 
-  margin: .5em 0;
+h1,
+h2,
+h3 {
+  margin: 0.5em 0;
   font-weight: 100;
   line-height: 1;
-  color: $color-teal; 
-}  
-
-h1, .small-title, .caption{
-  font-family: $headingfont-family; 
+  color: $color-teal;
 }
 
-h2, h3, p{
+h1,
+.small-title,
+.caption {
+  font-family: $headingfont-family;
+}
+
+h2,
+h3,
+p {
   font-family: $bodyfont-family;
 }
 
@@ -26,101 +32,140 @@ h1 {
   font-size: 3em;
   line-height: 1;
   font-weight: 500;
-  color:$color-red;
+  color: $color-red;
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   text-transform: none;
-  margin-top: .5em;
-  margin-bottom:.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
   font-size: 2em;
   line-height: 1.4;
   font-weight: 700;
-  color: $color-teal; 
+  color: $color-teal;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 1.4;
   font-weight: 700;
-  color: $color-teal; 
+  color: $color-teal;
 }
-
-
 
 p {
   font-size: 1em;
   // max-width: 35em;
-font-weight: 100;
-font-style: normal;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.award{
+.award {
   font-family: $bodyfont-family;
-  margin-top: .5em;
-  margin-bottom:.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
   font-size: 1.5em;
   line-height: 1.4;
   font-weight: 500;
-  color: $color-red; 
+  color: $color-red;
   font-style: italic;
 }
 
-.small-title{
+.small-title {
   font-size: 1em;
   max-width: 35em;
   font-weight: 300;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   color: $color-teal;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.caption{
-  font-size: .8em;
-  margin-top: .5em;
-  margin-bottom: .5em;
+.caption {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   font-weight: 300;
 }
 // headings style_______________________________
 .mainhead {
   font-size: 6em;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .subhead {
   font-family: $headingfont-family;
   color: $color-gray;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 
-#styletiles, section#brand_identity, .illustrations, section#sketches, #logo,
-.logo_exploration, #storyboard,
+#styletiles,
+section#brand_identity,
+.illustrations,
+section#sketches,
+#logo,
+.logo_exploration,
+#storyboard,
 #artwork,
-section#hi-fi, #first_draft,
-section#final,section#web, section#artwork, section#motion_graphic,#style_guide,
-#final_product, #brand_identity, .bottle_packaging, #hi-fi, #copywriting, .conquest_patterns, #work_gallery, #ui, #print{
-  padding-top: 3em;
+section#hi-fi,
+#first_draft,
+section#final,
+section#web,
+section#artwork,
+section#motion_graphic,
+#style_guide,
+#final_product,
+#brand_identity,
+.bottle_packaging,
+#hi-fi,
+#copywriting,
+.conquest_patterns,
+#work_gallery,
+#ui,
+#print {
+  padding-top: 8em;
   padding-bottom: 0;
-  margin: 0; 
+  margin: 0;
 }
 
-section.storyboard, .illustrations, .book_first_draft, section.type_specimen, section.sketches, .sootheze_sketch_section, .brand_strategy, section#styletiles, section.final_image_bottom, section.logo, .illustrator, .aftereffects, .animation, section.wireframe, section.prototype, .final_ui, .copywriting, .logo_exploration, .illustration_explain,  .final_packaging, .final_zoo, .brand_strategy, .packaging, .brochure, .swiper-container{
-  padding-top: 0; 
+section.storyboard,
+.illustrations,
+.book_first_draft,
+section.type_specimen,
+section.sketches,
+.sootheze_sketch_section,
+.brand_strategy,
+section#styletiles,
+section.final_image_bottom,
+section.logo,
+.illustrator,
+.aftereffects,
+.animation,
+section.wireframe,
+section.prototype,
+.final_ui,
+.copywriting,
+.logo_exploration,
+.illustration_explain,
+.final_packaging,
+.final_zoo,
+.brand_strategy,
+.packaging,
+.brochure,
+.swiper-container {
+  padding-top: 0;
 }
-
 
 // Index quote___________________
-.quote{
+.quote {
   margin-top: 5em;
   margin-bottom: 10em;
 
-  h1{
+  h1 {
     font-family: $bodyfont-family;
     text-transform: none;
-    color: $color-teal; 
+    color: $color-teal;
     font-weight: 700;
     line-height: 1.3em;
     width: 50vw;
@@ -129,7 +174,7 @@ section.storyboard, .illustrations, .book_first_draft, section.type_specimen, se
     transform: translateX(-50%);
   }
 
-  .underline{
+  .underline {
     text-decoration-style: dashed;
     text-decoration-line: underline;
     text-decoration-color: $color-red;
@@ -137,8 +182,8 @@ section.storyboard, .illustrations, .book_first_draft, section.type_specimen, se
 }
 
 // index work_____________________________
-.work_text_home{
-  h2{
+.work_text_home {
+  h2 {
     font-family: $headingfont-family;
     font-weight: 500;
     text-transform: uppercase;
@@ -146,145 +191,142 @@ section.storyboard, .illustrations, .book_first_draft, section.type_specimen, se
     font-style: italic;
   }
 
-  .work_mcd{
+  .work_mcd {
     text-transform: none;
   }
 
-  .work-title{
+  .work-title {
     font-family: $headingfont-family;
     text-transform: uppercase;
     color: $color-teal;
   }
 
-  .line{  
-    h3{
+  .line {
+    h3 {
       text-align: right;
       margin-right: 2em;
       font-weight: 300;
       font-size: 1em;
-      letter-spacing: .2em;
+      letter-spacing: 0.2em;
     }
   }
 }
-
 
 // ABOUT ME__________________________
 
-.about-me{
-  
-  h1{
+.about-me {
+  h1 {
     font-weight: 700;
   }
 
-  .row{
-    .one-half{
-  margin: 0 auto;
+  .row {
+    .one-half {
+      margin: 0 auto;
     }
   }
 }
 
-.bold_body{
+.bold_body {
   font-weight: 700;
 }
 
-.body_gray{
+.body_gray {
   color: $color-gray;
 }
 
-
 // HERO_____________________________________
-.hero, #work{
-  text-align: left; 
+.hero,
+#work {
+  text-align: left;
   margin-bottom: 3em;
 
-  .hero_sub-info{
+  .hero_sub-info {
     color: $color-black;
     font-style: italic;
     display: block;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 
-  h1{
+  h1 {
     font-weight: 700;
     margin: 0;
     padding: 0;
   }
 
-  h3{
+  h3 {
     font-weight: 300;
     color: $color-black;
     text-transform: none;
     margin-top: 0;
   }
 
-  .hero_sub-info_title{
+  .hero_sub-info_title {
     color: $color-gray;
     text-transform: uppercase;
     font-family: $headingfont-family;
-    margin:0;
+    margin: 0;
     font-weight: 300;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
   }
 }
 
 // OBJECTIVE______________________
 
-.objective{
-
-  .hero_sub-info_title{
+.objective {
+  .hero_sub-info_title {
     color: $color-gray;
     text-transform: uppercase;
     font-family: $headingfont-family;
-    margin:0;
+    margin: 0;
     font-weight: 500;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
   }
-  
-  .hero_sub-info{
+
+  .hero_sub-info {
     color: $color-gray;
     font-style: italic;
     display: block;
   }
 
-  p{
-    margin-top:-.5em; 
-    }
+  p {
+    margin-top: -0.5em;
+  }
 }
 
-  /* TYPOGRAPHIC SCALE DINO______________________*/
-  
-.type_dino{
+/* TYPOGRAPHIC SCALE DINO______________________*/
 
-  h1,h2,h3{
+.type_dino {
+  h1,
+  h2,
+  h3 {
     font-family: $dinoheadingfont-family;
     text-transform: uppercase;
     color: $color-black;
-    font-weight: 700; 
-
+    font-weight: 700;
   }
 
-  h1{
-    margin-top: .2em;
+  h1 {
+    margin-top: 0.2em;
     font-size: 4em;
     margin-bottom: 0;
   }
-    
-  h2{
+
+  h2 {
     font-size: 2em;
   }
-    
-  h3{
+
+  h3 {
     font-size: 1.5em;
   }
 
-  p{
+  p {
     font-family: $dinobodyfont-family;
     font-size: 2em;
     font-weight: 300;
     line-height: 1.1;
     max-width: 17em;
   }
-  
+
   p strong {
     font-family: $dinobodyfont-family;
     text-transform: uppercase;
@@ -292,36 +334,38 @@ section.storyboard, .illustrations, .book_first_draft, section.type_specimen, se
   }
 }
 
-#styletiles .sectionhead{
+#styletiles .sectionhead {
   font-size: 3em;
 }
 //   ________________________________________
-  
+
 // CONQUEST
 
-.type_conquest{
-h1, h2, h3{
-  font-family: $conquestheaderfont-family;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: $color-black;
-}
+.type_conquest {
+  h1,
+  h2,
+  h3 {
+    font-family: $conquestheaderfont-family;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-black;
+  }
 
-  h1{
-    margin-top: .2em;
-    font-size: 4em; 
+  h1 {
+    margin-top: 0.2em;
+    font-size: 4em;
     margin-bottom: 0;
   }
-  
-  h2{
+
+  h2 {
     font-size: 2em;
   }
-    
-  h3{
+
+  h3 {
     font-size: 1.5em;
   }
 
-  p{
+  p {
     font-family: $conquestbodyfont-family;
     font-size: 1em;
     font-weight: 300;
@@ -330,61 +374,57 @@ h1, h2, h3{
   }
 }
 
-.brand_strategy, .copywriting{
-  h2, h3{
+.brand_strategy,
+.copywriting {
+  h2,
+  h3 {
     font-family: $headingfont-family;
     text-transform: uppercase;
   }
-  h3{
+  h3 {
     font-weight: 300;
   }
 
-    .row{
-      .two-thirds{
-        padding-left: 6em;   
-      }
+  .row {
+    .two-thirds {
+      padding-left: 6em;
     }
   }
-
-
-
+}
 
 // work toggle
 
-
-  .toggle_title{
-    color: $color-gray;
-    font-style: italic;
-    font-family: $bodyfont-family;
-    font-size: .9em;
+.toggle_title {
+  color: $color-gray;
+  font-style: italic;
+  font-family: $bodyfont-family;
+  font-size: 0.9em;
   font-weight: 100;
-  margin-top: .2em;
+  margin-top: 0.2em;
   font-style: normal;
   text-transform: uppercase;
   display: block;
   opacity: 1;
+}
+
+.next {
+  a:hover,
+  .toggle_title_next {
+    opacity: 0;
   }
-
-
-
-.next{
-a:hover, .toggle_title_next{
-  opacity: 0;
 }
-}
-.work_toggle a:hover{
+.work_toggle a:hover {
   font-weight: 700;
 }
 
-
-
 // Mcdonald's text______________
-.work_mcd{
+.work_mcd {
   text-transform: none;
 }
 
 // Tomy email__________
-.footer{
-  p:hover{
-    font-weight: 700;  }
+.footer {
+  p:hover {
+    font-weight: 700;
+  }
 }

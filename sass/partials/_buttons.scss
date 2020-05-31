@@ -10,16 +10,16 @@ button,
   border: 1px solid $color-teal;
   cursor: pointer;
   text-decoration: none;
-  font-family: $headingfont-family; 
+  font-family: $headingfont-family;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   margin-top: 1em;
 }
 
 button:hover,
 .button:hover {
   background-color: $color-teal;
-  color: $color-white; 
+  color: $color-white;
 }
 
 button.alt,
@@ -29,9 +29,7 @@ button.alt,
 
 button.alt:hover,
 .button.alt:hover {
-  background-color:$color-teal;
+  background-color: $color-teal;
   color: $color-white;
-  border-color:$color-teal; 
+  border-color: $color-teal;
 }
-
-
