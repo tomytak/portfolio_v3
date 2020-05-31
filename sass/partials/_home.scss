@@ -9,6 +9,9 @@
 }
 
 .quote {
+	margin-top: 10em;
+	margin-bottom: 20em;
+
 	.yellow-circle {
 		border: 5px solid $color-yellow;
 		background-color: $color-white;
@@ -18,88 +21,85 @@
 		margin-left: 50%;
 		transform: translateX(-50%);
 	}
-}
 
-// work_______________________
-.case-studies {
-	.row {
-		align-items: flex-start;
-
-		.work_text_home {
-			margin-right: -13em;
-			top: 50%;
-			transform: translateY(-50%);
+	.about_me {
+		.small-title {
+			border: 1px solid blue;
+			margin-top: 5em;
 		}
-		.work-image {
-			margin-left: 16em;
-			margin-bottom: 2em;
+
+		.button {
 		}
 	}
 }
 
-.case-studies {
-	.row {
-		align-items: center;
-		a {
-			text-decoration: none;
+// work_______________________
+#work_gallery {
+	h1 {
+		margin-bottom: 0.2em;
+	}
+}
+
+.wrapper {
+	overflow-y: scroll;
+	height: 60vh;
+	margin-bottom: 2em;
+	width: 100%;
+
+	.case-studies {
+		.row {
+			.work_text_home {
+				margin-right: -13em;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			.work-image {
+				margin-left: 16em;
+				margin-bottom: 3em;
+			}
 		}
 	}
 }
 
 // Media query_______________________
 
-@media (min-width: $breakpoint-small) {
-	// // index quote____________
-	.quote {
-		h1 {
-			font-size: 3em;
-		}
-	}
-
-	// index work__________________
-	#work_gallery {
-		h1 {
-			margin-bottom: 0.2em;
-		}
-	}
-
-	.wrapper {
-		overflow-y: scroll;
-		height: 60vh;
-		margin-bottom: 2em;
-
-		.case-studies {
-			.row {
-				.work_text_home {
-					margin-right: -13em;
-					top: 50%;
-					transform: translateY(-50%);
-				}
-
-				.work-image {
-					margin-left: 16em;
-					margin-bottom: 3em;
-				}
-			}
-		}
-	}
-}
-
 @media (max-width: $breakpoint-small) {
 	// index quote____________
 	.quote {
+		margin-bottom: 5em;
+		margin-top: 3em;
 		h1 {
 			font-size: 1.7em;
 		}
 	}
 
 	// index work__________________
-	.case-studies {
-		.row {
-			display: block;
+	.wrapper {
+		height: 50vh;
+		margin-bottom: 2em;
+		width: 100%;
 
-			.work-image {
-				margin-bottom: 4em;
+		.case-studies {
+			.row {
+				.work_text_home {
+					display: block;
+					margin-right: 0;
+					margin-top: 5em;
+
+					h2 {
+						margin-bottom: -0.2em;
+					}
+
+					h3 {
+						margin-top: -0.2em;
+					}
+				}
+				.work-image {
+					margin-left: 0;
+					margin-bottom: 1em;
+					margin-top: -2em;
+				}
 			}
 		}
 	}
