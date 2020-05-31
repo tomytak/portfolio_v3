@@ -21,28 +21,27 @@
 }
 
 // work_______________________
+.case-studies {
+	.row {
+		align-items: flex-start;
 
-#work_gallery {
-	margin-bottom: 5em;
-	h1 {
-		font-weight: 700;
-		margin-bottom: 0;
+		.work_text_home {
+			margin-right: -13em;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.work-image {
+			margin-left: 16em;
+			margin-bottom: 2em;
+		}
 	}
+}
 
-	h2 {
-		margin-bottom: 0;
-	}
-
-	h3 {
-		margin-top: 0;
-	}
-
-	.case-studies {
-		.row {
-			align-items: center;
-			a {
-				text-decoration: none;
-			}
+.case-studies {
+	.row {
+		align-items: center;
+		a {
+			text-decoration: none;
 		}
 	}
 }
@@ -58,18 +57,29 @@
 	}
 
 	// index work__________________
-	.case-studies {
-		.row {
-			align-items: flex-start;
+	#work_gallery {
+		h1 {
+			margin-bottom: 0.2em;
+		}
+	}
 
-			.work_text_home {
-				margin-right: -13em;
-				top: 50%;
-				transform: translateY(-50%);
-			}
-			.work-image {
-				margin-left: 16em;
-				margin-bottom: 5em;
+	.wrapper {
+		overflow-y: scroll;
+		height: 60vh;
+		margin-bottom: 2em;
+
+		.case-studies {
+			.row {
+				.work_text_home {
+					margin-right: -13em;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+
+				.work-image {
+					margin-left: 16em;
+					margin-bottom: 3em;
+				}
 			}
 		}
 	}
