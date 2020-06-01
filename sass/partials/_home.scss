@@ -10,7 +10,7 @@
 
 .quote {
 	margin-top: 10em;
-	margin-bottom: 20em;
+	margin-bottom: 5em;
 
 	.yellow-circle {
 		border: 5px solid $color-yellow;
@@ -21,15 +21,30 @@
 		margin-left: 50%;
 		transform: translateX(-50%);
 	}
+}
 
-	.about_me {
-		.small-title {
-			border: 1px solid blue;
-			margin-top: 5em;
-		}
+.about_me {
+	display: grid;
+	margin-top: 0;
+	place-items: center;
+	grid-gap: 1em;
+	margin-bottom: 20em;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+". small-title small-title ."
+". button button .";
 
-		.button {
-		}
+grid-gap: 0;
+
+	.small-title {
+	border-top: 2px dashed $color-red;
+	padding-top: 2em;
+grid-area: small-title;
+text-align: center;
+	}
+
+	.button{
+		grid-area: button;
 	}
 }
 
@@ -40,6 +55,22 @@
 	}
 }
 
+.sort-selection {
+	display: grid;
+	place-items: center;
+	grid-template-areas: ". graphics graphics brand brand .";
+	grid-template-columns: repeat (6, 1fr);
+	margin-bottom: 2em;
+	
+		.graphics{
+			grid-area: graphics;
+		}
+
+		.brand{
+			grid-area: brand;
+		}
+}
+
 .wrapper {
 	overflow-y: scroll;
 	height: 60vh;
@@ -47,6 +78,10 @@
 	width: 100%;
 
 	.case-studies {
+
+		h1{
+			opacity: .5;
+		}
 		.row {
 			.work_text_home {
 				margin-right: -13em;
@@ -58,6 +93,9 @@
 				margin-left: 16em;
 				margin-bottom: 3em;
 			}
+		}
+		#brand{
+			margin-top: 5em;
 		}
 	}
 }
@@ -75,6 +113,12 @@
 	}
 
 	// index work__________________
+
+	.sort-selection {
+	display: flex;
+	justify-content: space-between;	
+	}
+
 	.wrapper {
 		height: 50vh;
 		margin-bottom: 2em;

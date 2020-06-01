@@ -1294,6 +1294,50 @@ fade-in {
     margin-left: 1.5em;
     margin-bottom: 5em; }
 
+@media (max-width: 768px) {
+  .conquest-grid {
+    margin-top: 4em;
+    display: block;
+    -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: auto 1em auto 1em auto;
+    grid-template-areas: " insta insta insta insta insta insta insta" " bottle_f bottle_f bottle_f bottle_f bottle_f bottle_f bottle_f" " bottle_b bottle_b bottle_b bottle_b bottle_b bottle_b bottle_b"; }
+    .conquest-grid .bottle_f {
+      -ms-grid-row: 1;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 5;
+      grid-area: bottle_f; }
+    .conquest-grid .bottle_b {
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 5;
+      grid-area: bottle_b; }
+    .conquest-grid .bottle_f, .conquest-grid .bottle_b {
+      margin-left: 0; }
+  .conquest-grid .insta {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; }
+  .conquest-grid .bottle_f {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; }
+  .conquest-grid .bottle_b {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; } }
+
+@media (max-width: 768px) {
+  .conquest-grid .bottle_f {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; }
+  .conquest-grid .bottle_b {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; } }
+
 .brand_strategy .row,
 .copywriting .row {
   -webkit-box-align: start;
@@ -1408,7 +1452,7 @@ fade-in {
 
 .quote {
   margin-top: 10em;
-  margin-bottom: 20em; }
+  margin-bottom: 5em; }
   .quote .yellow-circle {
     border: 5px solid #fec412;
     background-color: #fff;
@@ -1419,18 +1463,62 @@ fade-in {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-  .quote .about_me .small-title {
-    border: 1px solid blue;
-    margin-top: 5em; }
+
+.about_me {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 0;
+  place-items: center;
+  grid-gap: 1em;
+  margin-bottom: 20em;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto 0 auto;
+  grid-template-areas: ". small-title small-title ." ". button button .";
+  grid-gap: 0; }
+  .about_me .small-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    border-top: 2px dashed #cc1f3d;
+    padding-top: 2em;
+    grid-area: small-title;
+    text-align: center; }
+  .about_me .button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: button; }
 
 #work_gallery h1 {
   margin-bottom: 0.2em; }
+
+.sort-selection {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  grid-template-areas: ". graphics graphics brand brand .";
+  -ms-grid-columns: repeat 6, 1fr;
+  grid-template-columns: repeat 6, 1fr;
+  margin-bottom: 2em; }
+  .sort-selection .graphics {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: graphics; }
+  .sort-selection .brand {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: brand; }
 
 .wrapper {
   overflow-y: scroll;
   height: 60vh;
   margin-bottom: 2em;
   width: 100%; }
+  .wrapper .case-studies h1 {
+    opacity: .5; }
   .wrapper .case-studies .row .work_text_home {
     margin-right: -13em;
     top: 50%;
@@ -1440,6 +1528,8 @@ fade-in {
   .wrapper .case-studies .row .work-image {
     margin-left: 16em;
     margin-bottom: 3em; }
+  .wrapper .case-studies #brand {
+    margin-top: 5em; }
 
 @media (max-width: 768px) {
   .quote {
@@ -1447,6 +1537,13 @@ fade-in {
     margin-top: 3em; }
     .quote h1 {
       font-size: 1.7em; }
+  .sort-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .wrapper {
     height: 50vh;
     margin-bottom: 2em;

@@ -30,6 +30,28 @@
 	}
 }
 
+@media (max-width: $breakpoint-small){
+	.conquest-grid{
+		margin-top: 4em;
+		display: block;
+		grid-template-columns: repeat(7, 1fr);
+	grid-template-areas:
+		" insta insta insta insta insta insta insta"
+		" bottle_f bottle_f bottle_f bottle_f bottle_f bottle_f bottle_f"
+		" bottle_b bottle_b bottle_b bottle_b bottle_b bottle_b bottle_b";
+
+		.bottle_f{
+			grid-area: bottle_f;
+		}
+
+		.bottle_b{
+			grid-area: bottle_b;
+		}
+		.bottle_f, .bottle_b{
+			margin-left: 0;
+		}
+	}
+}
 // BRAND STRATEGY & COPYWRITING_______________
 
 .brand_strategy,
