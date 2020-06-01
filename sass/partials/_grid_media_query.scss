@@ -210,20 +210,13 @@ body {
 
 @media (max-width: $breakpoint-small) {
 	.container {
-		width: 100%;
+		width: 92%;
 	}
 
-	.column.small {
-		float: left;
-		margin-right: 8%;
-	}
 	.column.small:last-child {
 		margin-right: 0;
 	}
-	.one-third.column.small {
-		width: 28%;
-	}
-
+	
 	// hero proj. summary__________
 
 	.hero {
@@ -235,17 +228,27 @@ body {
 			padding-left: 2em;
 			padding-right: 2em;
 			padding-bottom: 2em;
+
+			h1{
+				font-size: 2em;
+			}
+			h2{
+				font-size: 1.7em;
+				line-height: 1.3em;
+			}
 		}
 	}
 
+	#styletiles .sectionhead, h1{
+		font-size: 2em;
+	}
 	// objective__________
 	.objective {
 		.row {
 			margin-top: 1em;
-.one-third{
-
-	margin-top: 2em;
-}
+			.one-third{
+				margin-top: 2em;
+			}
 
 			ul {
 				margin-bottom: 1em;

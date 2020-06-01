@@ -137,8 +137,7 @@ section#motion_graphic,
 .grid {
   padding-top: 10em;
   padding-bottom: 0;
-  margin: 0;
-  border: 3px solid red; }
+  margin: 0; }
 
 section.storyboard,
 .illustrations,
@@ -163,8 +162,7 @@ section.prototype,
 .packaging,
 .brochure,
 .swiper-container {
-  padding-top: 0;
-  border: 2px solid green; }
+  padding-top: 0; }
 
 .quote {
   margin-top: 5em;
@@ -641,14 +639,9 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    width: 100%; }
-  .column.small {
-    float: left;
-    margin-right: 8%; }
+    width: 92%; }
   .column.small:last-child {
     margin-right: 0; }
-  .one-third.column.small {
-    width: 28%; }
   .hero {
     margin-bottom: 0; }
     .hero .proj_summary {
@@ -657,6 +650,13 @@ body {
       padding-left: 2em;
       padding-right: 2em;
       padding-bottom: 2em; }
+      .hero .proj_summary h1 {
+        font-size: 2em; }
+      .hero .proj_summary h2 {
+        font-size: 1.7em;
+        line-height: 1.3em; }
+  #styletiles .sectionhead, h1 {
+    font-size: 2em; }
   .objective .row {
     margin-top: 1em; }
     .objective .row .one-third {
@@ -753,7 +753,6 @@ section {
   display: -ms-grid;
   display: grid; }
 
-/* place-items: center; } */
 /* LINKS _________________________________*/
 /* Horizontal Rules */
 .hr_ {
