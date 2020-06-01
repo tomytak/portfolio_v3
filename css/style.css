@@ -658,7 +658,9 @@ body {
       padding-right: 2em;
       padding-bottom: 2em; }
   .objective .row {
-    margin-top: 2em; }
+    margin-top: 1em; }
+    .objective .row .one-third {
+      margin-top: 2em; }
     .objective .row ul {
       margin-bottom: 1em; }
   .page-nav .yellow-circle {
@@ -918,7 +920,7 @@ section {
 
 .logo .final_logo {
   margin-top: 2em;
-  padding-right: 16em;
+  padding-right: 15em;
   padding-bottom: 0; }
 
 .logo_exploration {
@@ -1470,7 +1472,7 @@ fade-in {
   margin-top: 0;
   place-items: center;
   grid-gap: 1em;
-  margin-bottom: 20em;
+  margin-bottom: 12em;
   -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
   grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: auto 0 auto;
@@ -1551,7 +1553,7 @@ fade-in {
     .wrapper .case-studies .row .work_text_home {
       display: block;
       margin-right: 0;
-      margin-top: 5em; }
+      margin-top: 3em; }
       .wrapper .case-studies .row .work_text_home h2 {
         margin-bottom: -0.2em; }
       .wrapper .case-studies .row .work_text_home h3 {
