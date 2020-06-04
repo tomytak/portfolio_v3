@@ -1514,12 +1514,15 @@ fade-in {
     grid-area: brand; }
 
 .wrapper {
-  overflow-y: scroll;
-  height: 60vh;
   margin-bottom: 2em;
   width: 100%; }
   .wrapper .case-studies h1 {
-    opacity: .5; }
+    margin: 5em 0 3em 0;
+    opacity: .7;
+    text-align: center;
+    font-size: 1.2em;
+    color: #cc1f3d;
+    letter-spacing: 0.2em; }
   .wrapper .case-studies .row .work_text_home {
     margin-right: -13em;
     top: 50%;
@@ -1539,16 +1542,11 @@ fade-in {
     .quote h1 {
       font-size: 1.7em; }
   .sort-selection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+    display: block; }
   .wrapper {
-    height: 50vh;
-    margin-bottom: 2em;
-    width: 100%; }
+    margin-bottom: 2em; }
+    .wrapper .case-studies h1 {
+      margin: 3em 0 3em 0; }
     .wrapper .case-studies .row .work_text_home {
       display: block;
       margin-right: 0;
