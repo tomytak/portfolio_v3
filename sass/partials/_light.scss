@@ -1,0 +1,14 @@
+.light {
+  background-color: $color-light;
+}
+
+@media (max-width: $breakpoint-small) {
+  .illustration {
+    .row{
+      margin-bottom: 2em;
+      img{
+        margin-top: 2em;
+      }
+    }
+  }
+}
