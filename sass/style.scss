@@ -27,7 +27,7 @@ $color-andagi:#dac0ae;
 $color-light:#e2c179;
 $color-naha:#ffb861;
 
-// Breakpoints
+// Breakpoints 
 
 $breakpoint-small: 768px;
 $breakpoint-medium: 1050px;
@@ -54,3 +54,4 @@ $breakpoint-large: 1250px;
 @import "partials/andagi.scss";
 @import "partials/light.scss";
 @import "partials/naha.scss";
+@import "partials/solarsystem.scss";
