@@ -26,6 +26,8 @@ $color-flutter: #fcb614;
 $color-andagi:#dac0ae;
 $color-light:#e2c179;
 $color-naha:#ffb861;
+$color-space: #68A3D8;
+$color-pele: #FFAA00;
 
 // Breakpoints 
 
@@ -55,3 +57,5 @@ $breakpoint-large: 1250px;
 @import "partials/light.scss";
 @import "partials/naha.scss";
 @import "partials/solarsystem.scss";
+@import "partials/astroday.scss";
+@import "partials/pele.scss";

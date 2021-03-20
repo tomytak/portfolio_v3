@@ -31,7 +31,7 @@ p {
 
 h1 {
 	font-size: 3em;
-	line-height: 1;
+	line-height: 1.4;
 	font-weight: 500;
 	color: $color-red;
 	text-transform: uppercase;
@@ -97,6 +97,12 @@ p {
 	font-weight: 300;
 }
 
+@media (max-width: 767px) {
+	.teal_subhead{ 
+		// border: 1px solid red;
+		font-size: 1em;
+	}
+}
 // headings style_______________________________
 .mainhead {
 	font-size: 6em;

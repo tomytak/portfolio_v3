@@ -54,7 +54,7 @@ p {
 
 h1 {
   font-size: 3em;
-  line-height: 1;
+  line-height: 1.4;
   font-weight: 500;
   color: #cc1f3d;
   text-transform: uppercase; }
@@ -111,6 +111,10 @@ p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   font-weight: 300; }
+
+@media (max-width: 767px) {
+  .teal_subhead {
+    font-size: 1em; } }
 
 .mainhead {
   font-size: 6em;
@@ -1842,85 +1846,158 @@ fade-in {
 
 /* HERO */
 .hero .solar {
-  background-color: #a4dd83; }
+  background-color: #68A3D8; }
 
-.solar-grid {
-  display: -ms-grid;
-  display: grid;
-  padding-top: 4em;
-  margin: 0 auto;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto;
-  grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
-  .solar-grid .sun {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-    grid-area: sun; }
-  .solar-grid .mercury {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 3;
-    grid-area: mercury; }
-  .solar-grid .venus {
-    -ms-grid-row: 1;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: venus; }
-  .solar-grid .earth {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: earth; }
-  .solar-grid .mars {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: mars; }
-  .solar-grid .asteroid {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: asteroid; }
-  .solar-grid .jupiter {
-    -ms-grid-row: 3;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3;
-    grid-area: jupiter; }
-  .solar-grid .saturn {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: saturn; }
-  .solar-grid .uranus {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: uranus; }
-  .solar-grid .neptune {
-    -ms-grid-row: 5;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: neptune; }
-  .solar-grid .pluto {
-    -ms-grid-row: 5;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3;
-    grid-area: pluto; }
+.youtube {
+  margin-top: 7em; }
+  .youtube .solar-grid {
+    display: -ms-grid;
+    display: grid;
+    padding-top: 2em;
+    margin: 0 auto;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: auto 1em auto 1em auto;
+    grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
+    .youtube .solar-grid .sun {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      grid-area: sun; }
+    .youtube .solar-grid .mercury {
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      grid-area: mercury; }
+    .youtube .solar-grid .venus {
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      grid-area: venus; }
+    .youtube .solar-grid .earth {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: earth; }
+    .youtube .solar-grid .mars {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: mars; }
+    .youtube .solar-grid .asteroid {
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: asteroid; }
+    .youtube .solar-grid .jupiter {
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: jupiter; }
+    .youtube .solar-grid .saturn {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: saturn; }
+    .youtube .solar-grid .uranus {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: uranus; }
+    .youtube .solar-grid .neptune {
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: neptune; }
+    .youtube .solar-grid .pluto {
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: pluto; }
 
 @media (max-width: 768px) {
   .solar-grid {
     display: block;
     margin-top: 1em;
-    -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+    -ms-grid-columns: (1fr)[8];
     grid-template-columns: repeat(8, 1fr);
-    -ms-grid-rows: auto 1em auto 1em auto;
     grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
     .solar-grid .sun, .solar-grid .mercury, .solar-grid .venus, .solar-grid .earth, .solar-grid .mars, .solar-grid .asteroid, .solar-grid .jupiter, .solar-grid .saturn, .solar-grid .uranus, .solar-grid .neptune, .solar-grid .pluto {
       margin-top: .5em; }
     .solar-grid .sun {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
       -ms-grid-row: 1;
       -ms-grid-column: 3;
       -ms-grid-column-span: 3;
@@ -1929,8 +2006,20 @@ fade-in {
       -ms-grid-row: 1;
       -ms-grid-column: 7;
       -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
       grid-area: mercury; }
     .solar-grid .venus {
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
       -ms-grid-row: 1;
       -ms-grid-column: 11;
       -ms-grid-column-span: 3;
@@ -1939,8 +2028,20 @@ fade-in {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
       -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       grid-area: earth; }
     .solar-grid .mars {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
       -ms-grid-row: 3;
       -ms-grid-column: 5;
       -ms-grid-column-span: 3;
@@ -1949,8 +2050,20 @@ fade-in {
       -ms-grid-row: 3;
       -ms-grid-column: 9;
       -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
       grid-area: asteroid; }
     .solar-grid .jupiter {
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
       -ms-grid-row: 3;
       -ms-grid-column: 13;
       -ms-grid-column-span: 3;
@@ -1959,8 +2072,20 @@ fade-in {
       -ms-grid-row: 5;
       -ms-grid-column: 1;
       -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
       grid-area: saturn; }
     .solar-grid .uranus {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
       -ms-grid-row: 5;
       -ms-grid-column: 5;
       -ms-grid-column-span: 3;
@@ -1969,102 +2094,68 @@ fade-in {
       -ms-grid-row: 5;
       -ms-grid-column: 9;
       -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
       grid-area: neptune; }
     .solar-grid .pluto {
       -ms-grid-row: 5;
       -ms-grid-column: 13;
       -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
       grid-area: pluto; }
-  .solar-grid .sun {
+  .solar-grid > .sun {
     -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
     -ms-grid-column: 3;
-    -ms-grid-column-span: 3; }
-  .solar-grid .mercury {
-    -ms-grid-row: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
     -ms-grid-column: 7;
-    -ms-grid-column-span: 3; }
-  .solar-grid .venus {
-    -ms-grid-row: 1;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3; }
-  .solar-grid .earth {
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3; }
-  .solar-grid .mars {
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
     -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3; }
-  .solar-grid .asteroid {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3; }
-  .solar-grid .jupiter {
-    -ms-grid-row: 3;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3; }
-  .solar-grid .saturn {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3; }
-  .solar-grid .uranus {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3; }
-  .solar-grid .neptune {
-    -ms-grid-row: 5;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3; }
-  .solar-grid .pluto {
-    -ms-grid-row: 5;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3; } }
-
-@media (max-width: 768px) {
-  .solar-grid .sun {
-    -ms-grid-row: 1;
     -ms-grid-column: 3;
-    -ms-grid-column-span: 3; }
-  .solar-grid .mercury {
-    -ms-grid-row: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
     -ms-grid-column: 7;
-    -ms-grid-column-span: 3; }
-  .solar-grid .venus {
-    -ms-grid-row: 1;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3; }
-  .solar-grid .earth {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3; }
-  .solar-grid .mars {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3; }
-  .solar-grid .asteroid {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3; }
-  .solar-grid .jupiter {
-    -ms-grid-row: 3;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3; }
-  .solar-grid .saturn {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3; }
-  .solar-grid .uranus {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3; }
-  .solar-grid .neptune {
-    -ms-grid-row: 5;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3; }
-  .solar-grid .pluto {
-    -ms-grid-row: 5;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3; } }
+    -ms-grid-column-span: 2; } }
 
 .illustration {
   margin-top: 2em; }
@@ -2073,12 +2164,1335 @@ fade-in {
 .animation {
   margin-top: 10em; }
 
-/* UI DESIGN */
-.final_ui img {
-  margin-top: 1em; }
+#social_media {
+  margin-top: 2em; }
+  #social_media .insta {
+    margin-top: 1em;
+    padding-top: 0; }
+  #social_media .fb {
+    margin-top: 10em; }
 
-.final_image_bottom .button {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
+/* HERO */
+.hero .astroday {
+  background-color: #68A3D8; }
+
+.youtube {
+  margin-top: 7em; }
+  .youtube .solar-grid {
+    display: -ms-grid;
+    display: grid;
+    padding-top: 2em;
+    margin: 0 auto;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: auto 1em auto 1em auto;
+    grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
+    .youtube .solar-grid .sun {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      grid-area: sun; }
+    .youtube .solar-grid .mercury {
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      grid-area: mercury; }
+    .youtube .solar-grid .venus {
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      grid-area: venus; }
+    .youtube .solar-grid .earth {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: earth; }
+    .youtube .solar-grid .mars {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: mars; }
+    .youtube .solar-grid .asteroid {
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: asteroid; }
+    .youtube .solar-grid .jupiter {
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: jupiter; }
+    .youtube .solar-grid .saturn {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: saturn; }
+    .youtube .solar-grid .uranus {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: uranus; }
+    .youtube .solar-grid .neptune {
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: neptune; }
+    .youtube .solar-grid .pluto {
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: pluto; }
+
+@media (max-width: 768px) {
+  .solar-grid {
+    display: block;
+    margin-top: 1em;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
+    .solar-grid .sun, .solar-grid .mercury, .solar-grid .venus, .solar-grid .earth, .solar-grid .mars, .solar-grid .asteroid, .solar-grid .jupiter, .solar-grid .saturn, .solar-grid .uranus, .solar-grid .neptune, .solar-grid .pluto {
+      margin-top: .5em; }
+    .solar-grid .sun {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      grid-area: sun; }
+    .solar-grid .mercury {
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      grid-area: mercury; }
+    .solar-grid .venus {
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      grid-area: venus; }
+    .solar-grid .earth {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: earth; }
+    .solar-grid .mars {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: mars; }
+    .solar-grid .asteroid {
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: asteroid; }
+    .solar-grid .jupiter {
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: jupiter; }
+    .solar-grid .saturn {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: saturn; }
+    .solar-grid .uranus {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: uranus; }
+    .solar-grid .neptune {
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: neptune; }
+    .solar-grid .pluto {
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: pluto; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; } }
+
+.illustration {
+  margin-top: 2em; }
+
+/* ANIMATIONS */
+.animation {
+  margin-top: 10em; }
+
+#social_media {
+  margin-top: 2em; }
+  #social_media .astro_social {
+    margin-top: 1em;
+    padding-top: 0; }
+    #social_media .astro_social .column {
+      margin-left: 0; }
+  #social_media .fb {
+    margin-top: 10em; }
+
+/* HERO */
+.hero .pele {
+  background-color: #FFAA00; }
+  .hero .pele a {
+    text-decoration: none; }
+  .hero .pele a:hover {
+    text-decoration: underline;
+    color: #cc1f3d; }
+
+.youtube {
+  margin-top: 7em; }
+  .youtube .solar-grid {
+    display: -ms-grid;
+    display: grid;
+    padding-top: 2em;
+    margin: 0 auto;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: auto 1em auto 1em auto;
+    grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
+    .youtube .solar-grid .sun {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      grid-area: sun; }
+    .youtube .solar-grid .mercury {
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      grid-area: mercury; }
+    .youtube .solar-grid .venus {
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      grid-area: venus; }
+    .youtube .solar-grid .earth {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: earth; }
+    .youtube .solar-grid .mars {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: mars; }
+    .youtube .solar-grid .asteroid {
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: asteroid; }
+    .youtube .solar-grid .jupiter {
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: jupiter; }
+    .youtube .solar-grid .saturn {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: saturn; }
+    .youtube .solar-grid .uranus {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: uranus; }
+    .youtube .solar-grid .neptune {
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: neptune; }
+    .youtube .solar-grid .pluto {
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: pluto; }
+
+@media (max-width: 768px) {
+  .solar-grid {
+    display: block;
+    margin-top: 1em;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: " . sun sun mercury mercury venus venus ." "earth earth mars mars asteroid asteroid jupiter jupiter" " saturn saturn uranus uranus neptune neptune pluto pluto"; }
+    .solar-grid .sun, .solar-grid .mercury, .solar-grid .venus, .solar-grid .earth, .solar-grid .mars, .solar-grid .asteroid, .solar-grid .jupiter, .solar-grid .saturn, .solar-grid .uranus, .solar-grid .neptune, .solar-grid .pluto {
+      margin-top: .5em; }
+    .solar-grid .sun {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 3;
+      grid-area: sun; }
+    .solar-grid .mercury {
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 3;
+      grid-area: mercury; }
+    .solar-grid .venus {
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 11;
+      -ms-grid-column-span: 3;
+      grid-area: venus; }
+    .solar-grid .earth {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: earth; }
+    .solar-grid .mars {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: mars; }
+    .solar-grid .asteroid {
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: asteroid; }
+    .solar-grid .jupiter {
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: jupiter; }
+    .solar-grid .saturn {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      grid-area: saturn; }
+    .solar-grid .uranus {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 3;
+      grid-area: uranus; }
+    .solar-grid .neptune {
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: neptune; }
+    .solar-grid .pluto {
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      -ms-grid-row: 5;
+      -ms-grid-column: 13;
+      -ms-grid-column-span: 3;
+      grid-area: pluto; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; } }
+
+@media (max-width: 768px) {
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .sun {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mercury {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .venus {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .earth {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .mars {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .asteroid {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .jupiter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .saturn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .uranus {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .neptune {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; }
+  .solar-grid > .pluto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2; } }
+
+.illustration {
+  margin-top: 2em; }
+
+/* ANIMATIONS */
+.animation {
+  margin-top: 10em; }
+
+#social_media {
+  margin-top: 2em; }
+  #social_media .insta {
+    margin-top: 1em;
+    padding-top: 0; }
+  #social_media .fb {
+    margin-top: 10em; }
