@@ -5,9 +5,15 @@
     }
 }
 
+#logo{
+    .two-thirds{
+    border: 1px solid red;
+}}
+
 // SOLAR VIDEO PHOTO GRID________
 .youtube{
     margin-top: 7em;
+    margin-bottom: 4em;
     
     .solar-grid {
         display: grid;
@@ -77,93 +83,258 @@
 
     .solar-grid {
         display: block;
-        margin-top: 1em;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas:
-            " . sun sun mercury mercury venus venus ."
-            "earth earth mars mars asteroid asteroid jupiter jupiter"
-            " saturn saturn uranus uranus neptune neptune pluto pluto";
-
-        // grid-template-columns: repeat(6, 1fr);
-        // grid-template-areas:
-        //     " . sun sun mercury mercury . "
-        //     "venus venus earth earth mars mars"
-        //     "asteroid asteroid jupiter jupiter saturn saturn"
-        //     "uranus uranus neptune neptune pluto pluto";
-    
-        .sun, .mercury, .venus, .earth, .mars, .asteroid, .jupiter, .saturn, .uranus, .neptune, .pluto{
-            margin-top: .5em;
-        }
-
-        .sun {
-            grid-area: sun;
-        }
-    
-        .mercury {
-            grid-area: mercury;
-        }
-    
-        .venus {
-            grid-area: venus;
-        }
-    
-        .earth {
-            grid-area: earth;
-        }
-    
-        .mars {
-            grid-area: mars;
-        }
-    
-        .asteroid {
-            grid-area: asteroid;
-        }
-    
-        .jupiter {
-            grid-area: jupiter;
-        }
-    
-        .saturn {
-            grid-area: saturn;
-        }
-    
-        .uranus{
-            grid-area: uranus;
-        }
-    
-        .neptune {
-            grid-area: neptune;
-        }
-    
-        .pluto {
-            grid-area: pluto;
-        }
     }
 }
   
 //   ILLUSTRATION
-.illustration{
-    margin-top: 2em;
+
+.solar-illustration-grid {
+    display: grid;
+    margin-top: 4em;
+    grid-gap: 1em;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        " . sun_illust sun_illust mercury_illust mercury_illust venus_illust venus_illust ."
+        "earth_illust earth_illust mars_illust mars_illust asteroid_illust asteroid_illust jupiter_illust jupiter_illust"
+        " saturn_illust saturn_illust uranus_illust uranus_illust neptune_illust neptune_illust pluto_illust pluto_illust";
+
+    .sun_illust {
+        grid-area: sun_illust;
+    }
+
+    .mercury_illust {
+        grid-area: mercury_illust;
+    }
+
+    .venus_illust {
+        grid-area: venus_illust;
+    }
+
+    .earth_illust {
+        grid-area: earth_illust;
+    }
+
+    .mars_illust {
+        grid-area: mars_illust;
+    }
+
+    .asteroid_illust {
+        grid-area: asteroid_illust;
+    }
+
+    .jupiter_illust {
+        grid-area: jupiter_illust;
+    }
+
+    .saturn_illust {
+        grid-area: saturn_illust;
+    }
+
+    .uranus_illust {
+        grid-area: uranus_illust;
+    }
+
+    .neptune_illust {
+        grid-area: neptune_illust;
+    }
+
+    .pluto_illust {
+        grid-area: pluto_illust;
+    }
+}
+
+@media (max-width: $breakpoint-small){
+
+    .solar-illustration-grid {
+        display: block;
+    }
 }
 
   /* ANIMATIONS */
-  
-  .animation {
-      margin-top: 10em;
-  }
+
+.animation{
+    margin-top: 10em;
+}
+.solar-animation-grid {
+    display: grid;
+    margin-top: 4em;
+    grid-gap: 2em;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "solar_ani solar_ani scale_ani scale_ani magnetic_ani magnetic_ani loc_ani loc_ani"
+        "s-eclipse_ani s-eclipse_ani l-eclipse_ani l-eclipse_ani tide_ani tide_ani loc_ani loc_ani"
+        ;
+   
+
+    .solar_ani {
+        grid-area: solar_ani;
+    }
+
+    .scale_ani {
+        grid-area: scale_ani;
+    }
+
+    .magnetic_ani {
+        grid-area: magnetic_ani;
+    }
+
+    .s-eclipse_ani {
+        grid-area: s-eclipse_ani;
+    }
+
+    .l-eclipse_ani {
+        grid-area: l-eclipse_ani;
+    }
+
+    .tide_ani {
+        grid-area: tide_ani;
+    }
+
+    .loc_ani {
+        grid-area: loc_ani;
+    }
+}
+
+@media (max-width: $breakpoint-small){
+
+    .solar-animation-grid {
+        display: block; 
+    }
+}
 
 //   SOCIAL MEDIA
 #social_media{
     margin-top: 2em;
-
+    margin-bottom:2em;
         .insta{
             margin-top: 1em;
-            padding-top: 0;
-            // border: 1px solid red;
+         
+            .sun-insta-grid {
+                display: grid;
+                margin: 2em;
+                grid-gap: 2em;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-areas:
+                ". sun_gif sun_gif sun_gif . . ."
+                ". sun_gif sun_gif sun_gif sun_insta sun_insta ."
+                ". sun_gif sun_gif sun_gif insta_info insta_info ."
+                ". sun_gif sun_gif sun_gif . . .";
+
+                .sun_gif {
+                    grid-area: sun_gif;
+                }   
+
+                .sun_insta{
+                    grid-area: sun_insta;    
+                }  
+            
+                .insta_info{
+                    grid-area: insta_info;
+                } 
+            } 
+            
+            .moon-insta-grid {
+                display: grid;
+                margin: 2em;
+                grid-gap: 2em;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-areas:
+                ". moon_gif moon_gif moon_gif . . ."
+                ". moon_gif moon_gif moon_gif moon_insta moon_insta ."
+                ". moon_gif moon_gif moon_gif insta_info insta_info ."
+                ". moon_gif moon_gif moon_gif . . .";
+
+                .moon_gif{
+                    grid-area: moon_gif;
+                }   
+
+                .moon_insta{
+                    grid-area: moon_insta;    
+                }  
+            
+                .insta_info{
+                    grid-area: insta_info;
+                } 
+            } 
+
+            .asteroid-insta-grid {
+                display: grid;
+                margin: 2em;
+                grid-gap: 2em;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-areas:
+                ". asteroid_gif asteroid_gif asteroid_gif . . ."
+                ". asteroid_gif asteroid_gif asteroid_gif asteroid_insta asteroid_insta ."
+                ". asteroid_gif asteroid_gif asteroid_gif insta_info insta_info ."
+                ". asteroid_gif asteroid_gif asteroid_gif . . .";
+
+                .asteroid_gif{
+                    grid-area: asteroid_gif;
+                }   
+
+                .asteroid_insta{
+                    grid-area: asteroid_insta;    
+                }  
+            
+                .insta_info{
+                    grid-area: insta_info;
+                } 
+            } 
+
+            .solar-insta-grid {
+                display: grid;
+                margin: 2em;
+                grid-gap: 2em;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-areas:
+                ". solar_gif solar_gif solar_gif . . ."
+                ". solar_gif solar_gif solar_gif solar_insta solar_insta ."
+                ". solar_gif solar_gif solar_gif solar_info solar_info ."
+                ". solar_gif solar_gif solar_gif . . .";
+
+                .solar_gif{
+                    grid-area: solar_gif;
+                }   
+
+                .solar_insta{
+                    grid-area: solar_insta;    
+                }  
+            } 
+
+            @media (max-width: $breakpoint-small){
+                .sun-insta-grid, .moon-insta-grid, .asteroid-insta-grid, .solar-insta-grid  {
+                    display: block;
+                    
+                    .sun_gif, .sun_insta, .insta_info,
+                    .moon_gif, .moon_insta, .asteroid_gif,.asteroid_insta, .solar_gif, .solar_insta{
+                        margin-bottom: 1em;
+                    }
+                }
+            }
         }
 
-        .fb{
-            margin-top: 10em;
+    .fb{
+        margin-top: 10em;
+
+        .solar-fb-grid {
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+            "mobile_fb mobile_fb mobile_fb . . . ."
+            "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb"
+            "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb"
+            "mobile_fb mobile_fb mobile_fb . . . ."
+            ;
+
+            .mobile_fb{
+                grid-area: mobile_fb;    
+            }  
+        
+            .banner_fb{
+                grid-area: banner_fb;
+            } 
         }
-}
-  
+    }
+} 
