@@ -355,7 +355,54 @@ section.prototype,
 #styletiles .sectionhead {
 	font-size: 3em;
 }
-//   ________________________________________
+
+//  SOLAR SYSTEM WALK AND ASTRODAY
+/* TYPOGRAPHIC SCALE DINO______________________*/
+
+.type_specimen{
+
+	.type_space{
+		h1,
+		h2,
+		h3 {
+			font-family: $spaceheaderfont-family;
+			text-transform: uppercase;
+			color: $color-black;
+			font-weight: 700;
+		}
+
+		h1 {
+			font-size: 4em;
+			margin-bottom: 0;
+			line-height: 1em;
+		}
+
+		h2 {
+			font-size: 2.5em;
+			margin-top: 0;
+			font-weight: 400;
+		}
+
+		p {
+			font-family: $spacebodyfont-family;
+			font-size: 1.5em;
+			font-weight: 300;
+			line-height: 1.5;
+			max-width: 17em;
+		}
+
+		p strong {
+			font-family: $spacebodyfont-family;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+}
+
+#styletiles .sectionhead {
+	font-size: 3em;
+}
+
 
 // CONQUEST
 
