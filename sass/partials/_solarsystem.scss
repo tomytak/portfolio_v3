@@ -6,86 +6,42 @@
 }
 
 #logo{
-    .two-thirds{
-    border: 1px solid red;
-}}
 
-// SOLAR VIDEO PHOTO GRID________
-.youtube{
-    margin-top: 7em;
-    margin-bottom: 4em;
+    .logo .final_logo {
+    padding-right: 0;
+    }
+}
+  
+// SOLAR WORKS GRID_______
+.solar-works-grid {
+    display: grid;
+    margin-top: 4em;
+    grid-gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "venus_vid venus_vid venus_vid moon_insta solar_fb";
+
+    .moon_insta {
+        grid-area: moon_insta;
+    }
     
-    .solar-grid {
-        display: grid;
-        padding-top: 2em;
-        margin: 0 auto;
-        grid-gap: 1em;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas:
-            " . sun sun mercury mercury venus venus ."
-            "earth earth mars mars asteroid asteroid jupiter jupiter"
-            " saturn saturn uranus uranus neptune neptune pluto pluto";
+    .venus_vid {
+        grid-area: venus_vid;
+        align-self: center;
+    }
 
-        // grid-template-columns: repeat(6, 1fr);
-        // grid-template-areas:
-        // 	" . sun sun mercury mercury . "
-        //     "venus venus earth earth mars mars"
-        //     "asteroid asteroid jupiter jupiter saturn saturn"
-        //     "uranus uranus neptune neptune pluto pluto";
-
-        .sun {
-            grid-area: sun;
-        }
-
-        .mercury {
-            grid-area: mercury;
-        }
-
-        .venus {
-            grid-area: venus;
-        }
-
-        .earth {
-            grid-area: earth;
-        }
-
-        .mars {
-            grid-area: mars;
-        }
-
-        .asteroid {
-            grid-area: asteroid;
-        }
-
-        .jupiter {
-            grid-area: jupiter;
-        }
-
-        .saturn {
-            grid-area: saturn;
-        }
-
-        .uranus{
-            grid-area: uranus;
-        }
-
-        .neptune {
-            grid-area: neptune;
-        }
-
-        .pluto {
-            grid-area: pluto;
-        }
+    .solar_fb {
+        grid-area: solar_fb;
     }
 }
 
 @media (max-width: $breakpoint-small){
 
-    .solar-grid {
+    .solar-works-grid  {
         display: block;
     }
 }
-  
+
 //   ILLUSTRATION
 
 .solar-illustration-grid {
@@ -200,6 +156,10 @@
     .solar-animation-grid {
         display: block; 
     }
+
+    .solar_ani, .scale_ani, .magnetic_ani, .s-eclipse_ani, .l-eclipse_ani, .tide_ani, .loc_ani{
+        margin-bottom: 1em;
+    }
 }
 
 //   SOCIAL MEDIA
@@ -303,16 +263,16 @@
 
             @media (max-width: $breakpoint-small){
                 .sun-insta-grid, .moon-insta-grid, .asteroid-insta-grid, .solar-insta-grid  {
-                    display: block;
+                    display: block;}
                     
-                    .sun_gif, .sun_insta, .insta_info,
-                    .moon_gif, .moon_insta, .asteroid_gif,.asteroid_insta, .solar_gif, .solar_insta{
-                        margin-bottom: 1em;
-                    }
+                .sun_gif, .sun_insta, .insta_info,
+                .moon_gif, .moon_insta, .asteroid_gif,.asteroid_insta, .solar_gif, .solar_insta{
+                    margin-bottom: 1em;
                 }
             }
         }
 
+// FACEBOOK___________
     .fb{
         margin-top: 10em;
 
@@ -336,5 +296,156 @@
                 grid-area: banner_fb;
             } 
         }
+
+        .sun-fb-grid{
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+            "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ."
+            "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb"
+            "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb"
+            "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ."
+            ;
+
+            .mobile_sun_fb{
+                grid-area: mobile_sun_fb;    
+            }
+
+            .banner_sun_fb{
+                grid-area: banner_sun_fb;
+            }
+        }
+
+        .moon-fb-grid{
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+            "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ."
+            "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb"
+            "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb"
+            "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ."
+            ;
+
+            .mobile_moon_fb{
+                grid-area: mobile_moon_fb;    
+            }
+
+            .banner_moon_fb{
+                grid-area: banner_moon_fb;
+            }
+        }
+
+        .asteroid-fb-grid{
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas:
+            "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ."
+            "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb"
+            "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb"
+            "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ."
+            ;
+
+            .mobile_asteroid_fb{
+                grid-area: mobile_asteroid_fb;    
+            }
+
+            .banner_asteroid_fb{
+                grid-area: banner_asteroid_fb;
+            }
+        }
+
+        @media (max-width: $breakpoint-small){
+
+            .solar-fb-grid, .sun-fb-grid, .moon-fb-grid, .asteroid-fb-grid {
+                display: block; 
+            }
+
+            .mobile_fb, .banner_fb, .mobile_sun_fb,.banner_sun_fb, .mobile_moon_fb, .banner_moon_fb,.mobile_asteroid_fb, .banner_asteroid_fb {
+                margin-top: 1.5em;
+            }
+        }
+
     }
 } 
+
+// SOLAR VIDEO PHOTO GRID________
+.youtube{
+    margin-top: 7em;
+    margin-bottom: 4em;
+    
+    .solar-grid {
+        display: grid;
+        padding-top: 2em;
+        margin: 0 auto;
+        grid-gap: 1em;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+            " . sun sun mercury mercury venus venus ."
+            "earth earth mars mars asteroid asteroid jupiter jupiter"
+            " saturn saturn uranus uranus neptune neptune pluto pluto";
+
+        // grid-template-columns: repeat(6, 1fr);
+        // grid-template-areas:
+        // 	" . sun sun mercury mercury . "
+        //     "venus venus earth earth mars mars"
+        //     "asteroid asteroid jupiter jupiter saturn saturn"
+        //     "uranus uranus neptune neptune pluto pluto";
+
+        .sun {
+            grid-area: sun;
+        }
+
+        .mercury {
+            grid-area: mercury;
+        }
+
+        .venus {
+            grid-area: venus;
+        }
+
+        .earth {
+            grid-area: earth;
+        }
+
+        .mars {
+            grid-area: mars;
+        }
+
+        .asteroid {
+            grid-area: asteroid;
+        }
+
+        .jupiter {
+            grid-area: jupiter;
+        }
+
+        .saturn {
+            grid-area: saturn;
+        }
+
+        .uranus{
+            grid-area: uranus;
+        }
+
+        .neptune {
+            grid-area: neptune;
+        }
+
+        .pluto {
+            grid-area: pluto;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small){
+
+    .solar-grid {
+        display: block;
+    }
+}

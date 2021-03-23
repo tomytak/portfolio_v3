@@ -1764,8 +1764,10 @@ fade-in {
   display: inline-block; }
 
 @media (min-width: 1050px) {
-  .grid .sootheze-web {
-    width: 23%; } }
+  .grid {
+    margin-top: 4em; }
+    .grid .sootheze-web {
+      width: 23%; } }
 
 @media (min-width: 768px) {
   .grid img {
@@ -1851,8 +1853,358 @@ fade-in {
 .hero .solar {
   background-color: #68A3D8; }
 
-#logo .two-thirds {
-  border: 1px solid red; }
+#logo .logo .final_logo {
+  padding-right: 0; }
+
+.solar-works-grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4em;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "venus_vid venus_vid venus_vid moon_insta solar_fb"; }
+  .solar-works-grid .moon_insta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    grid-area: moon_insta; }
+  .solar-works-grid .venus_vid {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: venus_vid;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  .solar-works-grid .solar_fb {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    grid-area: solar_fb; }
+
+@media (max-width: 768px) {
+  .solar-works-grid {
+    display: block; } }
+
+.solar-illustration-grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4em;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: auto 1em auto 1em auto;
+  grid-template-areas: " . sun_illust sun_illust mercury_illust mercury_illust venus_illust venus_illust ." "earth_illust earth_illust mars_illust mars_illust asteroid_illust asteroid_illust jupiter_illust jupiter_illust" " saturn_illust saturn_illust uranus_illust uranus_illust neptune_illust neptune_illust pluto_illust pluto_illust"; }
+  .solar-illustration-grid .sun_illust {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: sun_illust; }
+  .solar-illustration-grid .mercury_illust {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-area: mercury_illust; }
+  .solar-illustration-grid .venus_illust {
+    -ms-grid-row: 1;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    grid-area: venus_illust; }
+  .solar-illustration-grid .earth_illust {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: earth_illust; }
+  .solar-illustration-grid .mars_illust {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: mars_illust; }
+  .solar-illustration-grid .asteroid_illust {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: asteroid_illust; }
+  .solar-illustration-grid .jupiter_illust {
+    -ms-grid-row: 3;
+    -ms-grid-column: 13;
+    -ms-grid-column-span: 3;
+    grid-area: jupiter_illust; }
+  .solar-illustration-grid .saturn_illust {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: saturn_illust; }
+  .solar-illustration-grid .uranus_illust {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: uranus_illust; }
+  .solar-illustration-grid .neptune_illust {
+    -ms-grid-row: 5;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: neptune_illust; }
+  .solar-illustration-grid .pluto_illust {
+    -ms-grid-row: 5;
+    -ms-grid-column: 13;
+    -ms-grid-column-span: 3;
+    grid-area: pluto_illust; }
+
+@media (max-width: 768px) {
+  .solar-illustration-grid {
+    display: block; } }
+
+/* ANIMATIONS */
+.animation {
+  margin-top: 10em; }
+
+.solar-animation-grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: auto 2em auto;
+  grid-template-areas: "solar_ani solar_ani scale_ani scale_ani magnetic_ani magnetic_ani loc_ani loc_ani" "s-eclipse_ani s-eclipse_ani l-eclipse_ani l-eclipse_ani tide_ani tide_ani loc_ani loc_ani"; }
+  .solar-animation-grid .solar_ani {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: solar_ani; }
+  .solar-animation-grid .scale_ani {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: scale_ani; }
+  .solar-animation-grid .magnetic_ani {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: magnetic_ani; }
+  .solar-animation-grid .s-eclipse_ani {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: s-eclipse_ani; }
+  .solar-animation-grid .l-eclipse_ani {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: l-eclipse_ani; }
+  .solar-animation-grid .tide_ani {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: tide_ani; }
+  .solar-animation-grid .loc_ani {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 13;
+    -ms-grid-column-span: 3;
+    grid-area: loc_ani; }
+
+@media (max-width: 768px) {
+  .solar-animation-grid {
+    display: block; }
+  .solar_ani, .scale_ani, .magnetic_ani, .s-eclipse_ani, .l-eclipse_ani, .tide_ani, .loc_ani {
+    margin-bottom: 1em; } }
+
+#social_media {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  #social_media .insta {
+    margin-top: 1em; }
+    #social_media .insta .sun-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". sun_gif sun_gif sun_gif . . ." ". sun_gif sun_gif sun_gif sun_insta sun_insta ." ". sun_gif sun_gif sun_gif insta_info insta_info ." ". sun_gif sun_gif sun_gif . . ."; }
+      #social_media .insta .sun-insta-grid .sun_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: sun_gif; }
+      #social_media .insta .sun-insta-grid .sun_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: sun_insta; }
+      #social_media .insta .sun-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: insta_info; }
+    #social_media .insta .moon-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". moon_gif moon_gif moon_gif . . ." ". moon_gif moon_gif moon_gif moon_insta moon_insta ." ". moon_gif moon_gif moon_gif insta_info insta_info ." ". moon_gif moon_gif moon_gif . . ."; }
+      #social_media .insta .moon-insta-grid .moon_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: moon_gif; }
+      #social_media .insta .moon-insta-grid .moon_insta {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+        grid-area: moon_insta; }
+      #social_media .insta .moon-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: insta_info; }
+    #social_media .insta .asteroid-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". asteroid_gif asteroid_gif asteroid_gif . . ." ". asteroid_gif asteroid_gif asteroid_gif asteroid_insta asteroid_insta ." ". asteroid_gif asteroid_gif asteroid_gif insta_info insta_info ." ". asteroid_gif asteroid_gif asteroid_gif . . ."; }
+      #social_media .insta .asteroid-insta-grid .asteroid_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: asteroid_gif; }
+      #social_media .insta .asteroid-insta-grid .asteroid_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: asteroid_insta; }
+      #social_media .insta .asteroid-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: insta_info; }
+    #social_media .insta .solar-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". solar_gif solar_gif solar_gif . . ." ". solar_gif solar_gif solar_gif solar_insta solar_insta ." ". solar_gif solar_gif solar_gif solar_info solar_info ." ". solar_gif solar_gif solar_gif . . ."; }
+      #social_media .insta .solar-insta-grid .solar_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: solar_gif; }
+      #social_media .insta .solar-insta-grid .solar_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: solar_insta; }
+    @media (max-width: 768px) {
+      #social_media .insta .sun-insta-grid, #social_media .insta .moon-insta-grid, #social_media .insta .asteroid-insta-grid, #social_media .insta .solar-insta-grid {
+        display: block; }
+      #social_media .insta .sun_gif, #social_media .insta .sun_insta, #social_media .insta .insta_info,
+      #social_media .insta .moon_gif, #social_media .insta .moon_insta, #social_media .insta .asteroid_gif, #social_media .insta .asteroid_insta, #social_media .insta .solar_gif, #social_media .insta .solar_insta {
+        margin-bottom: 1em; } }
+  #social_media .fb {
+    margin-top: 10em; }
+    #social_media .fb .solar-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_fb mobile_fb mobile_fb . . . ." "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb . . . ."; }
+      #social_media .fb .solar-fb-grid .mobile_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_fb; }
+      #social_media .fb .solar-fb-grid .banner_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_fb; }
+    #social_media .fb .sun-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ." "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb" "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb" "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ."; }
+      #social_media .fb .sun-fb-grid .mobile_sun_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_sun_fb; }
+      #social_media .fb .sun-fb-grid .banner_sun_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_sun_fb; }
+    #social_media .fb .moon-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ." "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb" "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb" "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ."; }
+      #social_media .fb .moon-fb-grid .mobile_moon_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_moon_fb; }
+      #social_media .fb .moon-fb-grid .banner_moon_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_moon_fb; }
+    #social_media .fb .asteroid-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ." "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb" "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb" "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ."; }
+      #social_media .fb .asteroid-fb-grid .mobile_asteroid_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_asteroid_fb; }
+      #social_media .fb .asteroid-fb-grid .banner_asteroid_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_asteroid_fb; }
+    @media (max-width: 768px) {
+      #social_media .fb .solar-fb-grid, #social_media .fb .sun-fb-grid, #social_media .fb .moon-fb-grid, #social_media .fb .asteroid-fb-grid {
+        display: block; }
+      #social_media .fb .mobile_fb, #social_media .fb .banner_fb, #social_media .fb .mobile_sun_fb, #social_media .fb .banner_sun_fb, #social_media .fb .mobile_moon_fb, #social_media .fb .banner_moon_fb, #social_media .fb .mobile_asteroid_fb, #social_media .fb .banner_asteroid_fb {
+        margin-top: 1.5em; } }
 
 .youtube {
   margin-top: 7em;
@@ -1992,262 +2344,6 @@ fade-in {
 @media (max-width: 768px) {
   .solar-grid {
     display: block; } }
-
-.solar-illustration-grid {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 4em;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto;
-  grid-template-areas: " . sun_illust sun_illust mercury_illust mercury_illust venus_illust venus_illust ." "earth_illust earth_illust mars_illust mars_illust asteroid_illust asteroid_illust jupiter_illust jupiter_illust" " saturn_illust saturn_illust uranus_illust uranus_illust neptune_illust neptune_illust pluto_illust pluto_illust"; }
-  .solar-illustration-grid .sun_illust {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-    grid-area: sun_illust; }
-  .solar-illustration-grid .mercury_illust {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 3;
-    grid-area: mercury_illust; }
-  .solar-illustration-grid .venus_illust {
-    -ms-grid-row: 1;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: venus_illust; }
-  .solar-illustration-grid .earth_illust {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: earth_illust; }
-  .solar-illustration-grid .mars_illust {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: mars_illust; }
-  .solar-illustration-grid .asteroid_illust {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: asteroid_illust; }
-  .solar-illustration-grid .jupiter_illust {
-    -ms-grid-row: 3;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3;
-    grid-area: jupiter_illust; }
-  .solar-illustration-grid .saturn_illust {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: saturn_illust; }
-  .solar-illustration-grid .uranus_illust {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: uranus_illust; }
-  .solar-illustration-grid .neptune_illust {
-    -ms-grid-row: 5;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: neptune_illust; }
-  .solar-illustration-grid .pluto_illust {
-    -ms-grid-row: 5;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3;
-    grid-area: pluto_illust; }
-
-@media (max-width: 768px) {
-  .solar-illustration-grid {
-    display: block; } }
-
-/* ANIMATIONS */
-.animation {
-  margin-top: 10em; }
-
-.solar-animation-grid {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 4em;
-  grid-gap: 2em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: auto 2em auto;
-  grid-template-areas: "solar_ani solar_ani scale_ani scale_ani magnetic_ani magnetic_ani loc_ani loc_ani" "s-eclipse_ani s-eclipse_ani l-eclipse_ani l-eclipse_ani tide_ani tide_ani loc_ani loc_ani"; }
-  .solar-animation-grid .solar_ani {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: solar_ani; }
-  .solar-animation-grid .scale_ani {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: scale_ani; }
-  .solar-animation-grid .magnetic_ani {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: magnetic_ani; }
-  .solar-animation-grid .s-eclipse_ani {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: s-eclipse_ani; }
-  .solar-animation-grid .l-eclipse_ani {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: l-eclipse_ani; }
-  .solar-animation-grid .tide_ani {
-    -ms-grid-row: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: tide_ani; }
-  .solar-animation-grid .loc_ani {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 3;
-    grid-area: loc_ani; }
-
-@media (max-width: 768px) {
-  .solar-animation-grid {
-    display: block; } }
-
-#social_media {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  #social_media .insta {
-    margin-top: 1em; }
-    #social_media .insta .sun-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". sun_gif sun_gif sun_gif . . ." ". sun_gif sun_gif sun_gif sun_insta sun_insta ." ". sun_gif sun_gif sun_gif insta_info insta_info ." ". sun_gif sun_gif sun_gif . . ."; }
-      #social_media .insta .sun-insta-grid .sun_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: sun_gif; }
-      #social_media .insta .sun-insta-grid .sun_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: sun_insta; }
-      #social_media .insta .sun-insta-grid .insta_info {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: insta_info; }
-    #social_media .insta .moon-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". moon_gif moon_gif moon_gif . . ." ". moon_gif moon_gif moon_gif moon_insta moon_insta ." ". moon_gif moon_gif moon_gif insta_info insta_info ." ". moon_gif moon_gif moon_gif . . ."; }
-      #social_media .insta .moon-insta-grid .moon_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: moon_gif; }
-      #social_media .insta .moon-insta-grid .moon_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: moon_insta; }
-      #social_media .insta .moon-insta-grid .insta_info {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: insta_info; }
-    #social_media .insta .asteroid-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". asteroid_gif asteroid_gif asteroid_gif . . ." ". asteroid_gif asteroid_gif asteroid_gif asteroid_insta asteroid_insta ." ". asteroid_gif asteroid_gif asteroid_gif insta_info insta_info ." ". asteroid_gif asteroid_gif asteroid_gif . . ."; }
-      #social_media .insta .asteroid-insta-grid .asteroid_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: asteroid_gif; }
-      #social_media .insta .asteroid-insta-grid .asteroid_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: asteroid_insta; }
-      #social_media .insta .asteroid-insta-grid .insta_info {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: insta_info; }
-    #social_media .insta .solar-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". solar_gif solar_gif solar_gif . . ." ". solar_gif solar_gif solar_gif solar_insta solar_insta ." ". solar_gif solar_gif solar_gif solar_info solar_info ." ". solar_gif solar_gif solar_gif . . ."; }
-      #social_media .insta .solar-insta-grid .solar_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: solar_gif; }
-      #social_media .insta .solar-insta-grid .solar_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: solar_insta; }
-    @media (max-width: 768px) {
-      #social_media .insta .sun-insta-grid, #social_media .insta .moon-insta-grid, #social_media .insta .asteroid-insta-grid, #social_media .insta .solar-insta-grid {
-        display: block; }
-        #social_media .insta .sun-insta-grid .sun_gif, #social_media .insta .sun-insta-grid .sun_insta, #social_media .insta .sun-insta-grid .insta_info,
-        #social_media .insta .sun-insta-grid .moon_gif, #social_media .insta .sun-insta-grid .moon_insta, #social_media .insta .sun-insta-grid .asteroid_gif, #social_media .insta .sun-insta-grid .asteroid_insta, #social_media .insta .sun-insta-grid .solar_gif, #social_media .insta .sun-insta-grid .solar_insta, #social_media .insta .moon-insta-grid .sun_gif, #social_media .insta .moon-insta-grid .sun_insta, #social_media .insta .moon-insta-grid .insta_info,
-        #social_media .insta .moon-insta-grid .moon_gif, #social_media .insta .moon-insta-grid .moon_insta, #social_media .insta .moon-insta-grid .asteroid_gif, #social_media .insta .moon-insta-grid .asteroid_insta, #social_media .insta .moon-insta-grid .solar_gif, #social_media .insta .moon-insta-grid .solar_insta, #social_media .insta .asteroid-insta-grid .sun_gif, #social_media .insta .asteroid-insta-grid .sun_insta, #social_media .insta .asteroid-insta-grid .insta_info,
-        #social_media .insta .asteroid-insta-grid .moon_gif, #social_media .insta .asteroid-insta-grid .moon_insta, #social_media .insta .asteroid-insta-grid .asteroid_gif, #social_media .insta .asteroid-insta-grid .asteroid_insta, #social_media .insta .asteroid-insta-grid .solar_gif, #social_media .insta .asteroid-insta-grid .solar_insta, #social_media .insta .solar-insta-grid .sun_gif, #social_media .insta .solar-insta-grid .sun_insta, #social_media .insta .solar-insta-grid .insta_info,
-        #social_media .insta .solar-insta-grid .moon_gif, #social_media .insta .solar-insta-grid .moon_insta, #social_media .insta .solar-insta-grid .asteroid_gif, #social_media .insta .solar-insta-grid .asteroid_insta, #social_media .insta .solar-insta-grid .solar_gif, #social_media .insta .solar-insta-grid .solar_insta {
-          margin-bottom: 1em; } }
-  #social_media .fb {
-    margin-top: 10em; }
-    #social_media .fb .solar-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "mobile_fb mobile_fb mobile_fb . . . ." "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb . . . ."; }
-      #social_media .fb .solar-fb-grid .mobile_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: mobile_fb; }
-      #social_media .fb .solar-fb-grid .banner_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: banner_fb; }
 
 /* HERO */
 .hero .astroday {
