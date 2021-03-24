@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 524.9 497.2" style="enable-background:new 0 0 524.9 497.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{enable-background:new    ;}
+	.st1{font-family:'Roboto-Bold';}
+	.st2{font-size:16.6384px;}
+	.st3{font-family:'Roboto-Regular';}
+	.st4{font-size:13.3107px;}
+	.st5{fill:#DABDA4;}
+	.st6{fill:#ADADAD;}
+	.st7{fill:#74A2B7;}
+	.st8{fill:#A46A41;}
+	.st9{fill:#444242;}
+	.st10{fill:#B39B6F;}
+	.st11{fill:#A98065;}
+	.st12{fill:#71CCCC;}
+	.st13{fill:#A6D2FE;}
+	.st14{fill:#B38058;}
+	.st15{fill:#68A3D8;}
+	.st16{fill:#03036D;}
+	.st17{fill:#FFEF7B;}
+	.st18{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 123.4705 188.7503)" class="st0"><tspan x="0" y="0" class="st1 st2">Venus</tspan><tspan x="-5.9" y="18.3" class="st3 st4">#DABDA4</tspan></text>
+	<circle class="st5" cx="147" cy="141" r="22.4"/>
+	<text transform="matrix(1 0 0 1 1.326 188.7503)" class="st0"><tspan x="0" y="0" class="st1 st2">Mercury</tspan><tspan x="0.8" y="18.3" class="st3 st4">#ADADAD</tspan></text>
+	<circle class="st6" cx="32.3" cy="141" r="22.4"/>
+	<text transform="matrix(1 0 0 1 243.1205 188.7504)" class="st0"><tspan x="0" y="0" class="st1 st2">Earth</tspan><tspan x="-9.3" y="18.3" class="st3 st4">#7C9AAA</tspan></text>
+	<circle class="st7" cx="262.8" cy="141" r="22.4"/>
+	<text transform="matrix(1 0 0 1 356.9934 188.7503)" class="st0"><tspan x="0" y="0" class="st1 st2">Mars</tspan><tspan x="-8.7" y="18.3" class="st3 st4">#A46A41</tspan></text>
+	<circle class="st8" cx="376.1" cy="141" r="22.4"/>
+	<text transform="matrix(1 0 0 1 459.4239 188.7503)" class="st0"><tspan x="0" y="0" class="st1 st2">Asteroid</tspan><tspan x="5.3" y="18.3" class="st3 st4">#444242</tspan></text>
+	<circle class="st9" cx="491.2" cy="141" r="22.4"/>
+</g>
+<text transform="matrix(1 0 0 1 191.5491 380.0618)" class="st1 st2">Background colors</text>
+<g>
+	<text transform="matrix(1 0 0 1 122.4341 305.7606)" class="st0"><tspan x="0" y="0" class="st1 st2">Saturn</tspan><tspan x="-2.5" y="18.3" class="st3 st4">#B39B6F</tspan></text>
+	<circle class="st10" cx="147.2" cy="258" r="22.4"/>
+	<text transform="matrix(1 0 0 1 6.4947 305.7606)" class="st0"><tspan x="0" y="0" class="st1 st2">Jupiter</tspan><tspan x="-0.6" y="18.3" class="st3 st4">#A98065</tspan></text>
+	<circle class="st11" cx="33" cy="258" r="22.4"/>
+	<text transform="matrix(1 0 0 1 236.3688 305.7606)" class="st0"><tspan x="0" y="0" class="st1 st2">Uranus</tspan><tspan x="-1.8" y="18.3" class="st3 st4">#69D6DD</tspan></text>
+	<circle class="st12" cx="262.9" cy="258" r="22.4"/>
+	<text transform="matrix(1 0 0 1 344.5464 305.7606)" class="st0"><tspan x="0" y="0" class="st1 st2">Neptune</tspan><tspan x="3.9" y="18.3" class="st3 st4">#A6D2FE</tspan></text>
+	<circle class="st13" cx="376.2" cy="258" r="22.4"/>
+	<text transform="matrix(1 0 0 1 471.6663 305.7606)" class="st0"><tspan x="0" y="0" class="st1 st2">Pluto</tspan><tspan x="-7.2" y="18.3" class="st3 st4">#B38058</tspan></text>
+	<circle class="st14" cx="491.4" cy="258" r="22.4"/>
+</g>
+<g>
+	<g>
+		<circle class="st15" cx="147.6" cy="438.9" r="30"/>
+		<text transform="matrix(1 0 0 1 119.8751 494.1318)" class="st3 st4">#68A3D8</text>
+	</g>
+	<g>
+		<circle class="st16" cx="262.1" cy="438.9" r="30"/>
+		<text transform="matrix(1 0 0 1 234.6904 494.1318)" class="st3 st4">#03036D</text>
+	</g>
+	<g>
+		<circle cx="376.6" cy="438.9" r="30"/>
+		<text transform="matrix(1 0 0 1 350.0907 494.1323)" class="st3 st4">#000000</text>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 247.6901 71.7402)" class="st0"><tspan x="0" y="0" class="st1 st2">Sun</tspan><tspan x="-13.2" y="18.3" class="st3 st4">#FCFD75</tspan></text>
+	<circle class="st17" cx="262.1" cy="24.4" r="22.4"/>
+</g>
+<line class="st18" x1="346.7" y1="375.2" x2="406.6" y2="375.2"/>
+<line class="st18" x1="117.3" y1="375.2" x2="177.2" y2="375.2"/>
+</svg>
