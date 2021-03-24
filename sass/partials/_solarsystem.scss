@@ -40,7 +40,26 @@
 @media (max-width: $breakpoint-small){
 
     .solar-works-grid  {
-        display: block;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "venus_vid venus_vid venus_vid venus_vid venus_vid venus_vid"
+            ". moon_insta moon_insta moon_insta moon_insta ."
+            ". solar_fb solar_fb solar_fb solar_fb .";
+    
+        .moon_insta {
+            grid-area: moon_insta;
+        }
+        
+        .venus_vid {
+            grid-area: venus_vid;
+            align-self: top;
+        }
+    
+        .solar_fb {
+            grid-area: solar_fb;
+        }
     }
 }
 
@@ -378,26 +397,17 @@
 
 // SOLAR VIDEO PHOTO GRID________
 .youtube{
-    margin-top: 7em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     
-    .solar-grid {
+    .youtube-grid_sun-earth {
         display: grid;
         padding-top: 2em;
         margin: 0 auto;
         grid-gap: 1em;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-            " . sun sun mercury mercury venus venus ."
-            "earth earth mars mars asteroid asteroid jupiter jupiter"
-            " saturn saturn uranus uranus neptune neptune pluto pluto";
-
-        // grid-template-columns: repeat(6, 1fr);
-        // grid-template-areas:
-        // 	" . sun sun mercury mercury . "
-        //     "venus venus earth earth mars mars"
-        //     "asteroid asteroid jupiter jupiter saturn saturn"
-        //     "uranus uranus neptune neptune pluto pluto";
+            "sun sun mercury mercury"
+            " venus venus earth earth";
 
         .sun {
             grid-area: sun;
@@ -414,6 +424,17 @@
         .earth {
             grid-area: earth;
         }
+    }
+
+    .youtube-grid_mars-saturn {
+        display: grid;
+        padding-top: 2em;
+        margin: 0 auto;
+        grid-gap: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "mars mars asteroid asteroid"
+            "jupiter jupiter saturn saturn";
 
         .mars {
             grid-area: mars;
@@ -430,7 +451,17 @@
         .saturn {
             grid-area: saturn;
         }
+    }
 
+    .youtube-grid_uranus-pluto {
+        display: grid;
+        padding-top: 2em;
+        margin: 0 auto;
+        grid-gap: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "uranus uranus neptune neptune"
+            ". pluto pluto .";
         .uranus{
             grid-area: uranus;
         }
@@ -443,12 +474,21 @@
             grid-area: pluto;
         }
     }
+}
 
-    @media (max-width: $breakpoint-small){
+@media (max-width: $breakpoint-small){
+    .youtube{
 
-        .solar-grid {
+        .youtube-grid_sun-earth, .youtube-grid_mars-saturn, .youtube-grid_uranus-pluto {
             display: block;
-           
+            padding-top: 1em;
+        }
+    
+
+        .sun, .mercury, .venus, .earth, .mars, .asteroid, .jupiter, .saturn, .uranus, .neptune, .pluto {
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+            margin-top: 1em;
         }
     }
 }
