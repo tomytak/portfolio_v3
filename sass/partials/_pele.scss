@@ -13,3 +13,22 @@
           }
     }
 }
+
+// THEME________
+
+.brand_strategy{
+  .pele_theme{ 
+    grid-area: pele_theme;
+    margin: 0 auto;
+
+    .theme{
+    color: $color-pele-theme;
+    text-transform: uppercase;
+    }
+
+    hr{
+      max-width: 30.5em;
+      margin-left: 0;
+    }
+  }
+}

@@ -19,7 +19,7 @@ h3{
 h1,
 .small-title,
 .teal_subhead,
-.caption {
+.caption, .theme, .list_theme {
 	font-family: $headingfont-family;
 }
 
@@ -37,7 +37,7 @@ h1 {
 	text-transform: uppercase;
 }
 
-h2 {
+h2, .theme {
 	text-transform: none;
 	margin-top: 0.5em;
 	margin-bottom: 0.2em;
@@ -96,6 +96,15 @@ p {
 	margin-bottom: 0.5em;
 	font-weight: 300;
 }
+
+.list_theme{
+	font-size: 1.5em;
+	line-height: 2em;
+	font-weight: 700;
+	color: $color-teal;
+	text-transform: uppercase;
+}
+
 
 @media (max-width: 767px) {
 	.teal_subhead{ 

@@ -44,7 +44,7 @@ h3 {
 h1,
 .small-title,
 .teal_subhead,
-.caption {
+.caption, .theme, .list_theme {
   font-family: "Nobel", "Roboto Condensed", sans-serif; }
 
 h2,
@@ -59,7 +59,7 @@ h1 {
   color: #cc1f3d;
   text-transform: uppercase; }
 
-h2 {
+h2, .theme {
   text-transform: none;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
@@ -111,6 +111,13 @@ p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   font-weight: 300; }
+
+.list_theme {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: 700;
+  color: #005563;
+  text-transform: uppercase; }
 
 @media (max-width: 767px) {
   .teal_subhead {
@@ -967,10 +974,11 @@ section {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.logo .final_logo {
-  margin-top: 2em;
-  padding-right: 15em;
-  padding-bottom: 0; }
+.logo .two-thirds {
+  padding-right: 5em; }
+  .logo .two-thirds .final_logo {
+    margin-top: 2em;
+    padding-bottom: 0; }
 
 .logo_exploration {
   margin-top: 2em; }
@@ -2405,3 +2413,13 @@ fade-in {
   .hero .pele a:hover {
     text-decoration: underline;
     color: #cc1f3d; }
+
+.brand_strategy .pele_theme {
+  grid-area: pele_theme;
+  margin: 0 auto; }
+  .brand_strategy .pele_theme .theme {
+    color: #E83E03;
+    text-transform: uppercase; }
+  .brand_strategy .pele_theme hr {
+    max-width: 30.5em;
+    margin-left: 0; }
