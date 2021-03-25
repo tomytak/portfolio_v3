@@ -2112,6 +2112,10 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: sun_gif; }
       #social_media .insta .sun-insta-grid .sun_insta {
         -ms-grid-row: 3;
@@ -2120,8 +2124,14 @@ fade-in {
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         grid-area: sun_insta; }
       #social_media .insta .sun-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 5;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -2139,6 +2149,10 @@ fade-in {
       -ms-grid-rows: auto 2em auto 2em auto 2em auto;
       grid-template-areas: ". moon_gif moon_gif moon_gif . . ." ". moon_gif moon_gif moon_gif moon_insta moon_insta ." ". moon_gif moon_gif moon_gif insta_info insta_info ." ". moon_gif moon_gif moon_gif . . ."; }
       #social_media .insta .moon-insta-grid .moon_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         -ms-grid-row: 1;
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
@@ -2176,8 +2190,15 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: asteroid_gif; }
       #social_media .insta .asteroid-insta-grid .asteroid_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -2208,8 +2229,15 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: solar_gif; }
       #social_media .insta .solar-insta-grid .solar_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -2243,8 +2271,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_fb; }
       #social_media .fb .solar-fb-grid .banner_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2272,8 +2308,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_sun_fb; }
       #social_media .fb .sun-fb-grid .banner_sun_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2301,8 +2345,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_moon_fb; }
       #social_media .fb .moon-fb-grid .banner_moon_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2330,8 +2382,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_asteroid_fb; }
       #social_media .fb .asteroid-fb-grid .banner_asteroid_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2448,6 +2508,324 @@ fade-in {
 .hero .astroday {
   background-color: #68A3D8; }
 
+#social_media {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  #social_media .insta {
+    margin-top: 1em; }
+    #social_media .insta .sun-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". sun_gif sun_gif sun_gif . . ." ". sun_gif sun_gif sun_gif sun_insta sun_insta ." ". sun_gif sun_gif sun_gif insta_info insta_info ." ". sun_gif sun_gif sun_gif . . ."; }
+      #social_media .insta .sun-insta-grid .sun_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: sun_gif; }
+      #social_media .insta .sun-insta-grid .sun_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: sun_insta; }
+      #social_media .insta .sun-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: insta_info; }
+    #social_media .insta .moon-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". moon_gif moon_gif moon_gif . . ." ". moon_gif moon_gif moon_gif moon_insta moon_insta ." ". moon_gif moon_gif moon_gif insta_info insta_info ." ". moon_gif moon_gif moon_gif . . ."; }
+      #social_media .insta .moon-insta-grid .moon_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: moon_gif; }
+      #social_media .insta .moon-insta-grid .moon_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 3;
+        grid-area: moon_insta; }
+      #social_media .insta .moon-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: insta_info; }
+    #social_media .insta .asteroid-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". asteroid_gif asteroid_gif asteroid_gif . . ." ". asteroid_gif asteroid_gif asteroid_gif asteroid_insta asteroid_insta ." ". asteroid_gif asteroid_gif asteroid_gif insta_info insta_info ." ". asteroid_gif asteroid_gif asteroid_gif . . ."; }
+      #social_media .insta .asteroid-insta-grid .asteroid_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: asteroid_gif; }
+      #social_media .insta .asteroid-insta-grid .asteroid_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: asteroid_insta; }
+      #social_media .insta .asteroid-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: insta_info; }
+    #social_media .insta .solar-insta-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". solar_gif solar_gif solar_gif . . ." ". solar_gif solar_gif solar_gif solar_insta solar_insta ." ". solar_gif solar_gif solar_gif solar_info solar_info ." ". solar_gif solar_gif solar_gif . . ."; }
+      #social_media .insta .solar-insta-grid .solar_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: solar_gif; }
+      #social_media .insta .solar-insta-grid .solar_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: solar_insta; }
+    @media (max-width: 768px) {
+      #social_media .insta .sun-insta-grid, #social_media .insta .moon-insta-grid, #social_media .insta .asteroid-insta-grid, #social_media .insta .solar-insta-grid {
+        display: block; }
+      #social_media .insta .sun_gif, #social_media .insta .sun_insta, #social_media .insta .insta_info,
+      #social_media .insta .moon_gif, #social_media .insta .moon_insta, #social_media .insta .asteroid_gif, #social_media .insta .asteroid_insta, #social_media .insta .solar_gif, #social_media .insta .solar_insta {
+        margin-bottom: 1em; } }
+  #social_media .fb {
+    margin-top: 10em; }
+    #social_media .fb .solar-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_fb mobile_fb mobile_fb . . . ." "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb . . . ."; }
+      #social_media .fb .solar-fb-grid .mobile_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_fb; }
+      #social_media .fb .solar-fb-grid .banner_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_fb; }
+    #social_media .fb .sun-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ." "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb" "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb" "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ."; }
+      #social_media .fb .sun-fb-grid .mobile_sun_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_sun_fb; }
+      #social_media .fb .sun-fb-grid .banner_sun_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_sun_fb; }
+    #social_media .fb .moon-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ." "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb" "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb" "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ."; }
+      #social_media .fb .moon-fb-grid .mobile_moon_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_moon_fb; }
+      #social_media .fb .moon-fb-grid .banner_moon_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_moon_fb; }
+    #social_media .fb .asteroid-fb-grid {
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ." "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb" "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb" "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ."; }
+      #social_media .fb .asteroid-fb-grid .mobile_asteroid_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: mobile_asteroid_fb; }
+      #social_media .fb .asteroid-fb-grid .banner_asteroid_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: banner_asteroid_fb; }
+    @media (max-width: 768px) {
+      #social_media .fb .solar-fb-grid, #social_media .fb .sun-fb-grid, #social_media .fb .moon-fb-grid, #social_media .fb .asteroid-fb-grid {
+        display: block; }
+      #social_media .fb .mobile_fb, #social_media .fb .banner_fb, #social_media .fb .mobile_sun_fb, #social_media .fb .banner_sun_fb, #social_media .fb .mobile_moon_fb, #social_media .fb .banner_moon_fb, #social_media .fb .mobile_asteroid_fb, #social_media .fb .banner_asteroid_fb {
+        margin-top: 1.5em; } }
+
 /* HERO */
 .hero .pele {
   background-color: #FFAA00; }
@@ -2494,6 +2872,10 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: sun_gif; }
       #social_media .insta .sun-insta-grid .sun_insta {
         -ms-grid-row: 3;
@@ -2502,8 +2884,14 @@ fade-in {
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         grid-area: sun_insta; }
       #social_media .insta .sun-insta-grid .insta_info {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 5;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -2521,6 +2909,10 @@ fade-in {
       -ms-grid-rows: auto 2em auto 2em auto 2em auto;
       grid-template-areas: ". moon_gif moon_gif moon_gif . . ." ". moon_gif moon_gif moon_gif moon_insta moon_insta ." ". moon_gif moon_gif moon_gif insta_info insta_info ." ". moon_gif moon_gif moon_gif . . ."; }
       #social_media .insta .moon-insta-grid .moon_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         -ms-grid-row: 1;
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
@@ -2555,6 +2947,10 @@ fade-in {
   #social_media .insta .moon-insta-grid .moon_insta {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
+    -ms-grid-column-span: 7; }
+  #social_media .insta .moon-insta-grid .moon_insta {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
     -ms-grid-column-span: 7; } }
       #social_media .insta .moon-insta-grid .insta_info {
         -ms-grid-row: 5;
@@ -2579,8 +2975,15 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: asteroid_gif; }
       #social_media .insta .asteroid-insta-grid .asteroid_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -2611,8 +3014,15 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: solar_gif; }
       #social_media .insta .solar-insta-grid .solar_insta {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -2646,8 +3056,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_fb; }
       #social_media .fb .solar-fb-grid .banner_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2675,8 +3093,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_sun_fb; }
       #social_media .fb .sun-fb-grid .banner_sun_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2704,8 +3130,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_moon_fb; }
       #social_media .fb .moon-fb-grid .banner_moon_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -2733,8 +3167,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: mobile_asteroid_fb; }
       #social_media .fb .asteroid-fb-grid .banner_asteroid_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
