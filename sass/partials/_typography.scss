@@ -466,6 +466,46 @@ section.prototype,
 	}
 }
 
+/* TYPOGRAPHIC SCALE pele______________________*/
+
+.type_pele {
+	h1,
+	h2,
+	h3 {
+		font-family: $peleheader-bodyfont-family;
+		text-transform: uppercase;
+		color: $color-black;
+		font-weight: 700;
+	}
+
+	h1 {
+		margin-top: 0.2em;
+		font-size: 4em;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 2em;
+		margin-top: 0;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-family: $pelebodyfont-family;
+		font-size: 1.1em;
+		font-weight: 100;
+		line-height: 2em;
+		margin-right: 2em;
+	}
+}
+
+#styletiles .sectionhead {
+	font-size: 3em;
+}
+
 // work toggle
 
 .toggle_title {

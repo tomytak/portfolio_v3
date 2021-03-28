@@ -207,6 +207,8 @@ section {
 
 	.two-thirds{
 		padding-right: 5em;
+
+
 	.final_logo {
 		margin-top: 2em;
 		padding-bottom: 0;
@@ -221,6 +223,16 @@ section {
 		margin-top: 0;
 		justify-content: space-between;
 		align-items: flex-end;
+
+		.one-half{
+			margin-right: 2%;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.one-half, .one-third{
+			margin-top: 3em;
+		}
 	}
 }
 

@@ -26,7 +26,8 @@ a img:hover {
 .packaging a,
 .brochure a,
 .prototype a,
-#artwork a {
+#artwork a, 
+.pele_medals a{
   display: block;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
