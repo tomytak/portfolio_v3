@@ -44,7 +44,9 @@ h3 {
 h1,
 .small-title,
 .teal_subhead,
-.caption, .theme, .list_theme {
+.caption,
+.theme,
+.list_strat {
   font-family: "Nobel", "Roboto Condensed", sans-serif; }
 
 h2,
@@ -54,12 +56,12 @@ p {
 
 h1 {
   font-size: 3em;
-  line-height: 1.4;
   font-weight: 500;
   color: #cc1f3d;
   text-transform: uppercase; }
 
-h2, .theme {
+h2,
+.theme {
   text-transform: none;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
@@ -112,7 +114,7 @@ p {
   margin-bottom: 0.5em;
   font-weight: 300; }
 
-.list_theme {
+.list_strat {
   font-size: 1.5em;
   line-height: 2em;
   font-weight: 700;
@@ -153,8 +155,7 @@ section#motion_graphic,
 .illustrator,
 #sketches,
 .conquest-grid,
-.grid
-#print {
+.grid #print {
   padding-top: 10em;
   padding-bottom: 0;
   margin: 0; }
@@ -1025,7 +1026,8 @@ section {
     .logo_exploration .row .one-half {
       margin-right: 2%; }
   @media (max-width: 767px) {
-    .logo_exploration .one-half, .logo_exploration .one-third {
+    .logo_exploration .one-half,
+    .logo_exploration .one-third {
       margin-top: 3em; } }
 
 .final_product {
@@ -1055,7 +1057,8 @@ section {
     text-decoration: none;
     color: #005563; }
   .text-centered a:hover {
-    font-weight: 700; }
+    font-weight: 700;
+    cursor: pointer; }
 
 .footer {
   border-top: 2px dashed #cc1f3d;
@@ -2123,7 +2126,13 @@ fade-in {
 @media (max-width: 768px) {
   .solar-animation-grid {
     display: block; }
-  .solar_ani, .scale_ani, .magnetic_ani, .s-eclipse_ani, .l-eclipse_ani, .tide_ani, .loc_ani {
+  .solar_ani,
+  .scale_ani,
+  .magnetic_ani,
+  .s-eclipse_ani,
+  .l-eclipse_ani,
+  .tide_ani,
+  .loc_ani {
     margin-bottom: 1em; } }
 
 #social_media {
@@ -2255,10 +2264,20 @@ fade-in {
         -ms-grid-column-span: 3;
         grid-area: solar_insta; }
     @media (max-width: 768px) {
-      #social_media .insta .sun-insta-grid, #social_media .insta .moon-insta-grid, #social_media .insta .asteroid-insta-grid, #social_media .insta .solar-insta-grid {
+      #social_media .insta .sun-insta-grid,
+      #social_media .insta .moon-insta-grid,
+      #social_media .insta .asteroid-insta-grid,
+      #social_media .insta .solar-insta-grid {
         display: block; }
-      #social_media .insta .sun_gif, #social_media .insta .sun_insta, #social_media .insta .insta_info,
-      #social_media .insta .moon_gif, #social_media .insta .moon_insta, #social_media .insta .asteroid_gif, #social_media .insta .asteroid_insta, #social_media .insta .solar_gif, #social_media .insta .solar_insta {
+      #social_media .insta .sun_gif,
+      #social_media .insta .sun_insta,
+      #social_media .insta .insta_info,
+      #social_media .insta .moon_gif,
+      #social_media .insta .moon_insta,
+      #social_media .insta .asteroid_gif,
+      #social_media .insta .asteroid_insta,
+      #social_media .insta .solar_gif,
+      #social_media .insta .solar_insta {
         margin-bottom: 1em; } }
   #social_media .fb {
     margin-top: 10em; }
@@ -2379,9 +2398,19 @@ fade-in {
         -ms-grid-column-span: 7;
         grid-area: banner_asteroid_fb; }
     @media (max-width: 768px) {
-      #social_media .fb .solar-fb-grid, #social_media .fb .sun-fb-grid, #social_media .fb .moon-fb-grid, #social_media .fb .asteroid-fb-grid {
+      #social_media .fb .solar-fb-grid,
+      #social_media .fb .sun-fb-grid,
+      #social_media .fb .moon-fb-grid,
+      #social_media .fb .asteroid-fb-grid {
         display: block; }
-      #social_media .fb .mobile_fb, #social_media .fb .banner_fb, #social_media .fb .mobile_sun_fb, #social_media .fb .banner_sun_fb, #social_media .fb .mobile_moon_fb, #social_media .fb .banner_moon_fb, #social_media .fb .mobile_asteroid_fb, #social_media .fb .banner_asteroid_fb {
+      #social_media .fb .mobile_fb,
+      #social_media .fb .banner_fb,
+      #social_media .fb .mobile_sun_fb,
+      #social_media .fb .banner_sun_fb,
+      #social_media .fb .mobile_moon_fb,
+      #social_media .fb .banner_moon_fb,
+      #social_media .fb .mobile_asteroid_fb,
+      #social_media .fb .banner_asteroid_fb {
         margin-top: 1.5em; } }
 
 .youtube {
@@ -2473,10 +2502,22 @@ fade-in {
       grid-area: pluto; }
 
 @media (max-width: 768px) {
-  .youtube .youtube-grid_sun-earth, .youtube .youtube-grid_mars-saturn, .youtube .youtube-grid_uranus-pluto {
+  .youtube .youtube-grid_sun-earth,
+  .youtube .youtube-grid_mars-saturn,
+  .youtube .youtube-grid_uranus-pluto {
     display: block;
     padding-top: 1em; }
-  .youtube .sun, .youtube .mercury, .youtube .venus, .youtube .earth, .youtube .mars, .youtube .asteroid, .youtube .jupiter, .youtube .saturn, .youtube .uranus, .youtube .neptune, .youtube .pluto {
+  .youtube .sun,
+  .youtube .mercury,
+  .youtube .venus,
+  .youtube .earth,
+  .youtube .mars,
+  .youtube .asteroid,
+  .youtube .jupiter,
+  .youtube .saturn,
+  .youtube .uranus,
+  .youtube .neptune,
+  .youtube .pluto {
     margin-left: 1.5em;
     margin-right: 1.5em;
     margin-top: 1em; } }
@@ -2894,3 +2935,130 @@ fade-in {
   .pele_medals img {
     margin-top: 2em;
     margin-bottom: 4em; }
+
+/* Page Fade-ins */
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+main,
+fade-in {
+  opacity: 0;
+  -webkit-animation: fade-in ease-in-out 1;
+  animation: fade-in ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+
+@keyframes fade-and-move-in {
+  from {
+    -webkit-transform: translate(0, -20px);
+    transform: translate(0, -20px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+.fade-and-move-in {
+  opacity: 0;
+  -webkit-animation: fade-and-move-in ease-out 1;
+  animation: fade-and-move-in ease-out 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+
+.fade-and-move-in:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.fade-and-move-in:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.fade-and-move-in:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.fade-and-move-in:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+
+.fade-and-move-in:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.index-work-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 2em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". dino-home dino-home dino-home dino-home dino-home dino-home ."; }
+  .index-work-grid .dino-home {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 11;
+    grid-area: dino-home; }
+
+/* ON HOVER BLOCKS */
+.hover-block {
+  position: relative; }
+
+.hover-block:hover .hover-content {
+  display: block; }
+
+.hover-block .hover-content {
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  height: 100%; }
+
+.hover-block img {
+  display: block; }
+
+li {
+  list-style: none; }
+
+/* Custom MixItUp Styling */
+.mixcontainer {
+  text-align: center; }
+
+.mixcontrols {
+  margin-bottom: 2em; }
+
+.flex-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-grid .col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.flex-grid-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.flex-grid-thirds .col {
+  width: 50%; }
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-half {
+    display: block; }
+  .col {
+    width: 100%;
+    margin: 0 0 10px 0; } }

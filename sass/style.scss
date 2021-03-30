@@ -1,20 +1,33 @@
 // VARIABLES
-$bodyfont-family: "utopia-std", "Garamond", "Caslon", serif;
-$headingfont-family: "Nobel", "Roboto Condensed", sans-serif;
-$dinoheadingfont-family: "Roboto Condensed", sans-serif;
-$dinobodyfont-family: "Mr Eaves Mod OT", sans-serif;
-$conquestbodyfont-family: "Franklin Gothic URW", sans-serif;
-$conquestheaderfont-family: "franklin-gothic-urw-cond", "Roboto Condensed",
-  sans-serif;
-$soothezeheaderfont-family: "poynter-oldstyle-display", serif;
-$soothezebodyfont-family: "museo-sans", sans-serif;
-$spaceheaderfont-family: "bebas-neue-pro", sans-serif;
-$spacebodyfont-family: "Roboto", sans-serif;
-$peleheader-bodyfont-family: "brandon-grotesque", sans-serif;
-$pelebodyfont-family: "alda", serif;
-
-
-// VARIABLES 
+$bodyfont-family: "utopia-std",
+"Garamond",
+"Caslon",
+serif;
+$headingfont-family: "Nobel",
+"Roboto Condensed",
+sans-serif;
+$dinoheadingfont-family: "Roboto Condensed",
+sans-serif;
+$dinobodyfont-family: "Mr Eaves Mod OT",
+sans-serif;
+$conquestbodyfont-family: "Franklin Gothic URW",
+sans-serif;
+$conquestheaderfont-family: "franklin-gothic-urw-cond",
+"Roboto Condensed",
+sans-serif;
+$soothezeheaderfont-family: "poynter-oldstyle-display",
+serif;
+$soothezebodyfont-family: "museo-sans",
+sans-serif;
+$spaceheaderfont-family: "bebas-neue-pro",
+sans-serif;
+$spacebodyfont-family: "Roboto",
+sans-serif;
+$peleheader-bodyfont-family: "brandon-grotesque",
+sans-serif;
+$pelebodyfont-family: "alda",
+serif;
+// VARIABLES__________________________________
 $color-teal: #005563;
 $color-red: #cc1f3d;
 $color-yellow: #fec412;
@@ -34,14 +47,11 @@ $color-naha:#ffb861;
 $color-space: #68A3D8;
 $color-pele: #FFAA00;
 $color-pele-theme: #E83E03;
-
-// Breakpoints 
-
+// Breakpoints_______________________ 
 $breakpoint-small: 768px;
 $breakpoint-medium: 1050px;
 $breakpoint-large: 1250px;
-
-//IMPORT PARTIALS
+//IMPORT PARTIALS____________________
 @import "partials/toc";
 @import "partials/typography";
 @import "partials/buttons";
@@ -51,9 +61,9 @@ $breakpoint-large: 1250px;
 @import "partials/structure";
 @import "partials/animation";
 @import "partials/dino_cs";
-@import "partials/conquest_layout"; 
+@import "partials/conquest_layout";
 @import "partials/_home.scss";
-@import "partials/about_me.scss"; 
+@import "partials/about_me.scss";
 @import "partials/mcd.scss";
 @import "partials/zoo.scss";
 @import "partials/radiolab.scss";
@@ -65,3 +75,4 @@ $breakpoint-large: 1250px;
 @import "partials/solarsystem.scss";
 @import "partials/astroday.scss";
 @import "partials/pele.scss";
+@import "partials/mixitup.scss";
