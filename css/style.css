@@ -90,10 +90,8 @@ p {
 
 .award {
   font-family: "utopia-std", "Garamond", "Caslon", serif;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
+  margin-top: .2em;
   font-size: 1.5em;
-  line-height: 1.4;
   font-weight: 500;
   color: #cc1f3d;
   font-style: italic; }
@@ -1754,7 +1752,8 @@ fade-in {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 3em; }
+  margin-top: 3em;
+  margin-bottom: 4em; }
   #final_product .row .one-third {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -1779,27 +1778,33 @@ fade-in {
 @media (max-width: 768px) {
   .color_study_zoo {
     margin-top: 1em; }
-  .sketches, .book_first_draft {
+  .sketches,
+  .book_first_draft {
     padding-bottom: 0; }
-    .sketches .sketch_explain, .book_first_draft .sketch_explain {
+    .sketches .sketch_explain,
+    .book_first_draft .sketch_explain {
       padding-left: 0; }
-    .sketches .logo_exploration, .book_first_draft .logo_exploration {
+    .sketches .logo_exploration,
+    .book_first_draft .logo_exploration {
       margin-top: 2em; }
-      .sketches .logo_exploration img, .book_first_draft .logo_exploration img {
+      .sketches .logo_exploration img,
+      .book_first_draft .logo_exploration img {
         padding-left: 0;
         padding-right: 0;
-        margin-bottom: 2em; }
-  #final_product .row {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    #final_product .row .one-third {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      padding-right: 0; }
-    #final_product .row .two-thirds {
-      margin-left: 0;
-      width: 100%; } }
+        margin-bottom: 2em; } }
+
+.award_subhead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .award_subhead .medal_img {
+    max-width: 2em;
+    margin-right: 1em;
+    margin-bottom: 0;
+    margin-top: .2em; }
 
 .hero img {
   margin-top: 1em;
