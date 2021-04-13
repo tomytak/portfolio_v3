@@ -326,39 +326,73 @@ section.prototype,
 #styletiles .sectionhead {
   font-size: 3em; }
 
-/* TYPOGRAPHIC SCALE DINO______________________*/
-.type_specimen .type_space h1,
-.type_specimen .type_space h2,
-.type_specimen .type_space h3 {
+.type_specimen .type_solar h1,
+.type_specimen .type_solar h2,
+.type_specimen .type_solar h3 {
   font-family: "bebas-neue-pro", sans-serif;
   text-transform: uppercase;
   color: black;
   font-weight: 700; }
 
-.type_specimen .type_space h1 {
+.type_specimen .type_solar h1 {
   font-size: 4em;
   margin-bottom: 0;
   line-height: 1em; }
 
-.type_specimen .type_space h2 {
+.type_specimen .type_solar h2 {
   font-size: 2.5em;
   margin-top: 0;
   font-weight: 400; }
 
-.type_specimen .type_space p {
+.type_specimen .type_solar p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.5;
   max-width: 17em; }
 
-.type_specimen .type_space p strong {
+.type_specimen .type_solar p strong {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700; }
 
 #styletiles .sectionhead {
   font-size: 3em; }
+
+.type_specimen .type_astro h1 {
+  font-family: "bebas-neue-pro", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700; }
+
+.type_specimen .type_astro h2,
+.type_specimen .type_astro h3,
+.type_specimen .type_astro p {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 700; }
+
+.type_specimen .type_astro h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+  line-height: 1em; }
+
+.type_specimen .type_astro h2 {
+  font-size: 2.5em;
+  margin-top: 0; }
+
+.type_specimen .type_astro h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 0;
+  letter-spacing: .1em;
+  color: #F6961C; }
+
+.type_specimen .type_astro p {
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 17em; }
 
 .type_conquest h1,
 .type_conquest h2,
@@ -1844,6 +1878,10 @@ fade-in {
   #brand_identity .two-thirds .personality li p {
     margin-top: 0.5em; }
 
+.final_sootheze_logo {
+  margin-top: 2em;
+  max-width: 80%; }
+
 .prototype .two-thirds {
   margin-left: 0;
   margin-right: 1em; }
@@ -2499,6 +2537,25 @@ fade-in {
 /* HERO */
 .hero .astroday {
   background-color: #68A3D8; }
+
+.astro-works-grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4em;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". . astro_insta astro_insta astro_fb astro_fb . ."; }
+  .astro-works-grid .astro_insta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: astro_insta; }
+  .astro-works-grid .astro_fb {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: astro_fb; }
 
 .astro_sticker_grid {
   width: 90%;
