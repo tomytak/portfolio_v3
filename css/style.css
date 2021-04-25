@@ -1446,7 +1446,8 @@ fade-in {
       -ms-grid-column: 9;
       -ms-grid-column-span: 5;
       grid-area: bottle_b; }
-    .conquest-grid .bottle_f, .conquest-grid .bottle_b {
+    .conquest-grid .bottle_f,
+    .conquest-grid .bottle_b {
       margin-left: 0; }
   .conquest-grid .insta {
     -ms-grid-row: 1;
@@ -1555,12 +1556,7 @@ fade-in {
     margin-top: 2em;
     margin-bottom: 2em; }
   .illustrations_conquest {
-    display: block; }
-    .illustrations_conquest .beer-hand {
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%); } }
+    display: block; } }
 
 .style_guide {
   background-color: #e2d5bb; }
