@@ -451,10 +451,13 @@ section.prototype,
 
 .type_pele h2 {
   font-size: 2em;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .type_pele h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  margin-top: 0; }
 
 .type_pele p {
   font-family: "alda", serif;
@@ -462,6 +465,60 @@ section.prototype,
   font-weight: 100;
   line-height: 2em;
   margin-right: 2em; }
+
+#styletiles .sectionhead {
+  font-size: 3em; }
+
+/* TYPOGRAPHIC SCALE SIGHTINGS______________________*/
+.type_sightings h2,
+.type_sightings h3 {
+  margin-top: .5em;
+  margin-bottom: 0;
+  line-height: 1.4;
+  letter-spacing: .02em; }
+
+.type_sightings h1,
+.type_sightings h2,
+.type_sightings h3 {
+  font-family: "Open Sans Condensed", "Bebas Neue", "Franklin Gothic Condensed", "Arial", sans-serif;
+  text-transform: uppercase; }
+
+.type_sightings h4 {
+  font-family: "Cormorant Garamond", "Lora", serif; }
+
+.type_sightings h1 {
+  margin-top: 0.2em;
+  font-size: 4em;
+  margin-bottom: 0; }
+
+.type_sightings h2 {
+  font-size: 2.9em;
+  font-weight: 700; }
+
+.type_sightings h3 {
+  text-transform: uppercase; }
+
+.type_sightings h4 {
+  margin-top: 0;
+  font-size: 1.9rem;
+  line-height: 1.4;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 1em;
+  letter-spacing: .01em; }
+
+.type_sightings .small_text {
+  letter-spacing: .15em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.type_sightings p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 100;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif; }
 
 #styletiles .sectionhead {
   font-size: 3em; }
