@@ -1186,34 +1186,51 @@ section {
     .footer .row a {
       text-decoration: none; }
 
-.index_entry_section {
-  margin-top: 8em; }
+@media (max-width: 768px) {
+  .index_entry_section {
+    margin-top: 8em; } }
 
-.award_subhead,
+.award_subhead_desktop,
+.award_subhead_mobile,
 .award_subhead_subpage {
+  visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .award_subhead .medal_img,
+  .award_subhead_desktop .medal_img,
+  .award_subhead_mobile .medal_img,
   .award_subhead_subpage .medal_img {
     max-width: 2em;
     margin-right: 1em;
     margin-bottom: 0;
     margin-top: .2em; }
 
-@media (max-width: 768px) {
-  .award_subhead {
-    margin-bottom: 0; }
-  .award_subhead_subpage {
-    margin-top: .2em;
-    margin-bottom: 0; } }
+.award_title_index {
+  margin-top: 0; }
+
+.award_subhead_mobile {
+  visibility: hidden;
+  position: absolute; }
 
 @media (max-width: 768px) {
-  .award_title_index {
-    margin-top: 0; } }
+  .award_subhead_desktop {
+    visibility: hidden;
+    margin-bottom: 0;
+    position: absolute; }
+  .award_subhead_subpage {
+    margin-top: .2em;
+    margin-bottom: 0; }
+  .award_subhead_mobile {
+    visibility: visible;
+    position: relative; }
+    .award_subhead_mobile .medal_img {
+      max-width: 2em;
+      margin-right: 1em;
+      margin-bottom: 0;
+      margin-top: .2em; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1583,9 +1600,6 @@ fade-in {
   .brand_strategy .row .two-thirds .copywriting_space,
   .copywriting .row .two-thirds .copywriting_space {
     padding-bottom: 1.5em; }
-  .brand_strategy .row .two-thirds .branding_space,
-  .copywriting .row .two-thirds .branding_space {
-    margin-bottom: 2em; }
   .brand_strategy .row .two-thirds .no_bottom_margin,
   .copywriting .row .two-thirds .no_bottom_margin {
     margin-bottom: 0; }
@@ -2029,7 +2043,7 @@ fade-in {
       margin-top: 2em; } }
 
 .naha {
-  background-color: #ffb861; }
+  background-color: #f4e1ba; }
 
 #final_product .naha_art {
   margin-bottom: 4em; }

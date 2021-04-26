@@ -296,13 +296,17 @@ section {
 }
 
 // INDEX ENTRY MARGIN TOP______________________________
-.index_entry_section {
-    margin-top: 8em;
+@media (max-width: $breakpoint-small) {
+    .index_entry_section {
+        margin-top: 8em;
+    }
 }
 
 // MEDAL INDEX AND SUB-PAGE——————————————————————————
-.award_subhead,
+.award_subhead_desktop,
+.award_subhead_mobile,
 .award_subhead_subpage {
+    visibility: visible;
     display: flex;
     align-items: center;
     .medal_img {
@@ -313,19 +317,34 @@ section {
     }
 }
 
+.award_title_index {
+    margin-top: 0;
+}
+
+.award_subhead_mobile {
+    visibility: hidden;
+    position: absolute;
+}
+
 @media (max-width: $breakpoint-small) {
-    .award_subhead {
+    .award_subhead_desktop {
+        visibility: hidden;
         margin-bottom: 0;
+        position: absolute;
     }
     .award_subhead_subpage {
         margin-top: .2em;
         margin-bottom: 0;
     }
-}
-
-@media (max-width: $breakpoint-small) {
-    .award_title_index {
-        margin-top: 0;
+    .award_subhead_mobile {
+        visibility: visible;
+        position: relative;
+        .medal_img {
+            max-width: 2em;
+            margin-right: 1em;
+            margin-bottom: 0;
+            margin-top: .2em;
+        }
     }
 }
 
