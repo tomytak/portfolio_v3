@@ -48,20 +48,19 @@
     }
 }
 
-.sort-selection {
-    display: grid;
-    place-items: center;
-    grid-template-areas: ". graphics graphics brand brand .";
-    grid-template-columns: repeat (6, 1fr);
-    margin-bottom: 2em;
-    .graphics {
-        grid-area: graphics;
-    }
-    .brand {
-        grid-area: brand;
-    }
-}
-
+// .sort-selection {
+//     display: grid;
+//     place-items: center;
+//     grid-template-areas: ". graphics graphics brand brand .";
+//     grid-template-columns: repeat (6, 1fr);
+//     margin-bottom: 2em;
+//     .graphics {
+//         grid-area: graphics;
+//     }
+//     .brand {
+//         grid-area: brand;
+//     }
+// }
 .wrapper {
     margin-bottom: 2em;
     width: 100%;
@@ -127,108 +126,106 @@
 }
 
 // INDEX WORK GRID_______________
-.index_desktop_grid {
-    margin-bottom: 5em;
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: ". graphics graphics . . brand brand ." "solar_index_text solar_index_text solar_index_text solar_index_text pele_index_text pele_index_text pele_index_text pele_index_text" "solar_index_img solar_index_img solar_index_img solar_index_img pele_index_img pele_index_img pele_index_img pele_index_img" "dino_index_text dino_index_text dino_index_text dino_index_text conquest_index_text conquest_index_text conquest_index_text conquest_index_text" "dino_index_img dino_index_img dino_index_img dino_index_img conquest_index_img conquest_index_img conquest_index_img conquest_index_img" "zoo_index_text zoo_index_text zoo_index_text zoo_index_text sootheze_index_text sootheze_index_text sootheze_index_text sootheze_index_text""zoo_index_img zoo_index_img zoo_index_img zoo_index_img sootheze_index_img sootheze_index_img sootheze_index_img sootheze_index_img" "okinawa_index_text okinawa_index_text okinawa_index_text okinawa_index_text . . . .""okinawa_index_img okinawa_index_img okinawa_index_img okinawa_index_img . . . ." "flutter_index_text flutter_index_text flutter_index_text flutter_index_text . . . .""flutter_index_img flutter_index_img flutter_index_img flutter_index_img . . . .""astro_index_text astro_index_text astro_index_text astro_index_text . . . .""astro_index_img astro_index_img astro_index_img astro_index_img . . . .""mcd_index_text mcd_index_text mcd_index_text mcd_index_text . . . .""mcd_index_img mcd_index_img mcd_index_img mcd_index_img . . . ." "andagi_index_text andagi_index_text andagi_index_text andagi_index_text . . . ." "andagi_index_img andagi_index_img andagi_index_img andagi_index_img . . . ." "light_index_text light_index_text light_index_text light_index_text . . . .""light_index_img light_index_img light_index_img light_index_img . . . .";
-    .graphics {
-        grid-area: graphics;
-    }
-    .brand {
-        grid-area: brand;
-    }
-    .solar_index_text {
-        grid-area: solar_index_text;
-        grid-gap: 0;
-    }
-    .solar_index_img {
-        grid-area: solar_index_img;
-    }
-    .pele_index_text {
-        grid-area: pele_index_text;
-        grid-gap: 0;
-    }
-    .pele_index_img {
-        grid-area: pele_index_img;
-    }
-    .dino_index_text {
-        grid-area: dino_index_text;
-    }
-    .dino_index_img {
-        grid-area: dino_index_img;
-    }
-    .conquest_index_text {
-        grid-area: conquest_index_text;
-    }
-    .conquest_index_img {
-        grid-area: conquest_index_img;
-    }
-    .zoo_index_text {
-        grid-area: zoo_index_text;
-    }
-    .zoo_index_img {
-        grid-area: zoo_index_img;
-    }
-    .sootheze_index_text {
-        grid-area: sootheze_index_text;
-    }
-    .sootheze_index_img {
-        grid-area: sootheze_index_img;
-    }
-    .okinawa_index_text {
-        grid-area: okinawa_index_text;
-    }
-    .okinawa_index_img {
-        grid-area: okinawa_index_img;
-    }
-    .flutter_index_text {
-        grid-area: flutter_index_text;
-    }
-    .flutter_index_img {
-        grid-area: flutter_index_img;
-    }
-    .astro_index_text {
-        grid-area: astro_index_text;
-    }
-    .astro_index_img {
-        grid-area: astro_index_img;
-    }
-    .mcd_index_text {
-        grid-area: mcd_index_text;
-    }
-    .mcd_index_img {
-        grid-area: mcd_index_img;
-    }
-    .andagi_index_text {
-        grid-area: andagi_index_text;
-    }
-    .andagi_index_img {
-        grid-area: andagi_index_img;
-    }
-    .light_index_text {
-        grid-area: light_index_text;
-    }
-    .light_index_img {
-        grid-area: light_index_img;
-    }
-}
-
-.dino_index_text,
-.conquest_index_text,
-.zoo_index_text,
-.okinawa_index_text,
-.flutter_index_text,
-.astro_index_text,
-.mcd_index_text,
-.andagi_index_text,
-.light_index_text,
-.sootheze_index_text {
-    align-self: end;
-    margin-top: 5em;
-}
-
+// .index_desktop_grid {
+//     margin-bottom: 5em;
+//     display: grid;
+//     grid-gap: 2em;
+//     grid-template-columns: repeat(8, 1fr);
+//     grid-template-areas: ". graphics graphics . . brand brand ." "solar_index_text solar_index_text solar_index_text solar_index_text pele_index_text pele_index_text pele_index_text pele_index_text" "solar_index_img solar_index_img solar_index_img solar_index_img pele_index_img pele_index_img pele_index_img pele_index_img" "dino_index_text dino_index_text dino_index_text dino_index_text conquest_index_text conquest_index_text conquest_index_text conquest_index_text" "dino_index_img dino_index_img dino_index_img dino_index_img conquest_index_img conquest_index_img conquest_index_img conquest_index_img" "zoo_index_text zoo_index_text zoo_index_text zoo_index_text sootheze_index_text sootheze_index_text sootheze_index_text sootheze_index_text""zoo_index_img zoo_index_img zoo_index_img zoo_index_img sootheze_index_img sootheze_index_img sootheze_index_img sootheze_index_img" "okinawa_index_text okinawa_index_text okinawa_index_text okinawa_index_text . . . .""okinawa_index_img okinawa_index_img okinawa_index_img okinawa_index_img . . . ." "flutter_index_text flutter_index_text flutter_index_text flutter_index_text . . . .""flutter_index_img flutter_index_img flutter_index_img flutter_index_img . . . .""astro_index_text astro_index_text astro_index_text astro_index_text . . . .""astro_index_img astro_index_img astro_index_img astro_index_img . . . .""mcd_index_text mcd_index_text mcd_index_text mcd_index_text . . . .""mcd_index_img mcd_index_img mcd_index_img mcd_index_img . . . ." "andagi_index_text andagi_index_text andagi_index_text andagi_index_text . . . ." "andagi_index_img andagi_index_img andagi_index_img andagi_index_img . . . ." "light_index_text light_index_text light_index_text light_index_text . . . .""light_index_img light_index_img light_index_img light_index_img . . . .";
+//     .graphics {
+//         grid-area: graphics;
+//     }
+//     .brand {
+//         grid-area: brand;
+//     }
+//     .solar_index_text {
+//         grid-area: solar_index_text;
+//         grid-gap: 0;
+//     }
+//     .solar_index_img {
+//         grid-area: solar_index_img;
+//     }
+//     .pele_index_text {
+//         grid-area: pele_index_text;
+//         grid-gap: 0;
+//     }
+//     .pele_index_img {
+//         grid-area: pele_index_img;
+//     }
+//     .dino_index_text {
+//         grid-area: dino_index_text;
+//     }
+//     .dino_index_img {
+//         grid-area: dino_index_img;
+//     }
+//     .conquest_index_text {
+//         grid-area: conquest_index_text;
+//     }
+//     .conquest_index_img {
+//         grid-area: conquest_index_img;
+//     }
+//     .zoo_index_text {
+//         grid-area: zoo_index_text;
+//     }
+//     .zoo_index_img {
+//         grid-area: zoo_index_img;
+//     }
+//     .sootheze_index_text {
+//         grid-area: sootheze_index_text;
+//     }
+//     .sootheze_index_img {
+//         grid-area: sootheze_index_img;
+//     }
+//     .okinawa_index_text {
+//         grid-area: okinawa_index_text;
+//     }
+//     .okinawa_index_img {
+//         grid-area: okinawa_index_img;
+//     }
+//     .flutter_index_text {
+//         grid-area: flutter_index_text;
+//     }
+//     .flutter_index_img {
+//         grid-area: flutter_index_img;
+//     }
+//     .astro_index_text {
+//         grid-area: astro_index_text;
+//     }
+//     .astro_index_img {
+//         grid-area: astro_index_img;
+//     }
+//     .mcd_index_text {
+//         grid-area: mcd_index_text;
+//     }
+//     .mcd_index_img {
+//         grid-area: mcd_index_img;
+//     }
+//     .andagi_index_text {
+//         grid-area: andagi_index_text;
+//     }
+//     .andagi_index_img {
+//         grid-area: andagi_index_img;
+//     }
+//     .light_index_text {
+//         grid-area: light_index_text;
+//     }
+//     .light_index_img {
+//         grid-area: light_index_img;
+//     }
+// }
+// .dino_index_text,
+// .conquest_index_text,
+// .zoo_index_text,
+// .okinawa_index_text,
+// .flutter_index_text,
+// .astro_index_text,
+// .mcd_index_text,
+// .andagi_index_text,
+// .light_index_text,
+// .sootheze_index_text {
+//     align-self: end;
+//     margin-top: 5em;
+// }
 // Media query_______________________
 @media (max-width: $breakpoint-small) {
     .index_desktop_grid {

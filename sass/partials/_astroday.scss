@@ -21,6 +21,15 @@
     }
 }
 
+@media (max-width: $breakpoint-small) {
+    .astro-works-grid {
+        display: block;
+        .astro_insta {
+            margin-bottom: 1em;
+        }
+    }
+}
+
 // PRINT MATERIAL
 .astro_sticker_grid {
     width: 90%;

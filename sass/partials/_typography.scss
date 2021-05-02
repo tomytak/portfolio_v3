@@ -531,47 +531,42 @@ section.prototype,
 /* TYPOGRAPHIC SCALE SIGHTINGS______________________*/
 
 .type_sightings {
-    h2,
-    h3 {
-        margin-top: .5em;
-        margin-bottom: 0;
-        line-height: 1.4;
-        letter-spacing: .02em;
-    }
     h1,
     h2,
-    h3 {
+    h3,
+    .small_title {
+        color: $color-black;
         font-family: $sightingscondensedfont-family;
         text-transform: uppercase;
-    }
-    h4 {
-        font-family: $sightingsheaederfont-family;
+        font-weight: 700;
+        margin: 0;
     }
     h1 {
-        margin-top: 0.2em;
         font-size: 4em;
-        margin-bottom: 0;
     }
     h2 {
         font-size: 2.9em;
-        font-weight: 700;
+    }
+    h2,
+    h3 {
+        letter-spacing: .02em;
     }
     h3 {
-        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 100;
     }
     h4 {
-        margin-top: 0;
         font-size: 1.9rem;
-        line-height: 1.4;
         font-weight: 500;
         font-style: italic;
-        margin-bottom: 1em;
         letter-spacing: .01em;
+        margin: 0;
+        font-family: $sightingsheaederfont-family;
     }
-    .small_text {
+    .small_title {
         letter-spacing: .15em;
         font-size: 1.3rem;
-        font-weight: 700;
+        margin-top: 1.5em;
         margin-bottom: 0;
     }
     p {
@@ -580,6 +575,8 @@ section.prototype,
         font-weight: 100;
         font-style: normal;
         font-family: $sightingsbodyfont-family;
+        margin-top: .5em;
+        ;
     }
 }
 

@@ -1,20 +1,23 @@
 // media
 
 /* #IMAGES */
+
+
 /* Responsive */
+
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a img {
-  transition: all 0.1s ease-out;
-  overflow: hidden;
-  display: block;
+    transition: all 0.1s ease-out;
+    overflow: hidden;
+    display: block;
 }
 
 a img:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .work-image a,
@@ -26,18 +29,21 @@ a img:hover {
 .packaging a,
 .brochure a,
 .prototype a,
-#artwork a, 
-.pele_medals a{
-  display: block;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+#artwork a,
+.pele_medals a,
+.astro-works-grid a {
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 img.circular {
-  border-radius: 100%;
+    border-radius: 100%;
 }
 
+
 /* VIDEO */
+
 video {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }

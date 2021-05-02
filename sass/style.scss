@@ -58,6 +58,7 @@ $color-space: #68A3D8;
 $color-pele: #FFAA00;
 $color-pele-theme: #E83E03;
 $color-astro-accent: #F6961C;
+$color-sightings: #BFC0BE;
 // Breakpoints_______________________ 
 $breakpoint-small: 768px;
 $breakpoint-medium: 1050px;
@@ -87,3 +88,4 @@ $breakpoint-large: 1250px;
 @import "partials/astroday.scss";
 @import "partials/pele.scss";
 @import "partials/mixitup.scss";
+@import "partials/_sightings.scss";
