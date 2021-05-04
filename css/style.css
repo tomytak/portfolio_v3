@@ -609,7 +609,8 @@ a img:hover {
 .prototype a,
 #artwork a,
 .pele_medals a,
-.astro-works-grid a {
+.astro-works-grid a,
+.sightings-bg-grid a {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -3048,23 +3049,23 @@ fade-in {
   display: grid;
   grid-gap: 2em;
   margin-top: 4em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-areas: "sit_fairy sit_fairy sit_fairy sit_fairy leaf_fairy leaf_fairy leaf_fairy leaf_fairy petal_fairy petal_fairy petal_fairy petal_fairy"; }
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "sit_fairy sit_fairy leaf_fairy leaf_fairy petal_fairy petal_fairy"; }
   .sightings-sky-grid .petal_fairy {
     -ms-grid-row: 1;
-    -ms-grid-column: 17;
-    -ms-grid-column-span: 7;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     grid-area: petal_fairy; }
   .sightings-sky-grid .leaf_fairy {
     -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 7;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: leaf_fairy; }
   .sightings-sky-grid .sit_fairy {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
+    -ms-grid-column-span: 3;
     grid-area: sit_fairy; }
 
 .sightings-forest-grid {
@@ -3072,23 +3073,23 @@ fade-in {
   display: grid;
   grid-gap: 2em;
   margin-top: 4em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-areas: "rock_monster rock_monster rock_monster rock_monster skull_mermaid skull_mermaid skull_mermaid skull_mermaid nessy nessy nessy nessy"; }
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "rock_monster rock_monster skull_mermaid skull_mermaid nessy nessy"; }
   .sightings-forest-grid .rock_monster {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
+    -ms-grid-column-span: 3;
     grid-area: rock_monster; }
   .sightings-forest-grid .skull_mermaid {
     -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 7;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: skull_mermaid; }
   .sightings-forest-grid .nessy {
     -ms-grid-row: 1;
-    -ms-grid-column: 17;
-    -ms-grid-column-span: 7;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     grid-area: nessy; }
 
 .sightings-cave-grid {
@@ -3096,44 +3097,49 @@ fade-in {
   display: grid;
   grid-gap: 2em;
   margin-top: 4em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: auto 2em auto;
-  grid-template-areas: "bird_tech bird_tech bird_tech bird_tech colorful_bird colorful_bird colorful_bird colorful_bird red_monster red_monster red_monster red_monster" "green_fuzzy green_fuzzy green_fuzzy green_squat green_squat green_squat lizard_angle lizard_angle lizard_angle lizard_front lizard_front lizard_front"; }
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto 2em auto 2em auto;
+  grid-template-areas: "bird_tech bird_tech green_fuzzy green_fuzzy lizard_angle lizard_angle" "colorful_bird colorful_bird green_squat green_squat lizard_front lizard_front" ". . red_monster red_monster . ."; }
   .sightings-cave-grid .colorful_bird {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 7;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: colorful_bird; }
   .sightings-cave-grid .bird_tech {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
+    -ms-grid-column-span: 3;
     grid-area: bird_tech; }
   .sightings-cave-grid .red_monster {
-    -ms-grid-row: 1;
-    -ms-grid-column: 17;
-    -ms-grid-column-span: 7;
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: red_monster; }
   .sightings-cave-grid .green_fuzzy {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-area: green_fuzzy; }
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: green_fuzzy;
+    margin-left: 1.3em;
+    margin-right: -2em; }
   .sightings-cave-grid .green_squat {
     -ms-grid-row: 3;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 5;
-    grid-area: green_squat; }
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: green_squat;
+    align-self: flex-start;
+    margin-right: 1.3em;
+    margin-left: -2em; }
   .sightings-cave-grid .lizard_angle {
-    -ms-grid-row: 3;
-    -ms-grid-column: 13;
-    -ms-grid-column-span: 5;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     grid-area: lizard_angle; }
   .sightings-cave-grid .lizard_front {
     -ms-grid-row: 3;
-    -ms-grid-column: 19;
-    -ms-grid-column-span: 5;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     grid-area: lizard_front; }
 
 @media (max-width: 768px) {
@@ -3163,6 +3169,86 @@ fade-in {
 /* UI DESIGN */
 .final_ui img {
   margin-top: 1em; }
+
+.sightings-desktop-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_img"; }
+  .sightings-desktop-grid .sightings_desktop_vid {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-area: sightings_desktop_vid;
+    max-width: 700px; }
+  .sightings-desktop-grid .sightings_desktop_img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    grid-area: sightings_desktop_img;
+    -ms-grid-column-align: start;
+    justify-self: start; }
+
+.sightings-tablet-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: ".  sightings_tablet_vid sightings_tablet_vid sightings_tablet_img ."; }
+  .sightings-tablet-grid .sightings_tablet_vid {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: sightings_tablet_vid;
+    max-width: 390px; }
+  .sightings-tablet-grid .sightings_tablet_img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    grid-area: sightings_tablet_img; }
+
+.sightings-cell-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: ". sightings_cell_vid sightings_cell_vid sightings_cell_img . ."; }
+  .sightings-cell-grid .sightings_cell_vid {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: sightings_cell_vid;
+    max-width: 306px;
+    -ms-grid-column-align: center;
+    justify-self: center; }
+  .sightings-cell-grid .sightings_cell_img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    grid-area: sightings_cell_img; }
+
+@media (max-width: 768px) {
+  .sightings-desktop-grid,
+  .sightings-tablet-grid,
+  .sightings-cell-grid {
+    display: block; }
+  .sightings_desktop_vid,
+  .sightings_desktop_img,
+  .sightings_tablet_vid,
+  .sightings_cell_img,
+  .sightings_cell_vid,
+  .sightings_cell_img {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em; } }
 
 .sightings-insta-grid,
 .sightings-fb-grid {
@@ -3236,3 +3322,8 @@ fade-in {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+.pink {
+  color: hotpink;
+  text-transform: uppercase;
+  font-weight: 700; }

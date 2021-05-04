@@ -50,8 +50,8 @@
     display: grid;
     grid-gap: 2em;
     margin-top: 4em;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "sit_fairy sit_fairy sit_fairy sit_fairy leaf_fairy leaf_fairy leaf_fairy leaf_fairy petal_fairy petal_fairy petal_fairy petal_fairy";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "sit_fairy sit_fairy leaf_fairy leaf_fairy petal_fairy petal_fairy";
     .petal_fairy {
         grid-area: petal_fairy;
     }
@@ -67,8 +67,8 @@
     display: grid;
     grid-gap: 2em;
     margin-top: 4em;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "rock_monster rock_monster rock_monster rock_monster skull_mermaid skull_mermaid skull_mermaid skull_mermaid nessy nessy nessy nessy";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "rock_monster rock_monster skull_mermaid skull_mermaid nessy nessy";
     .rock_monster {
         grid-area: rock_monster;
     }
@@ -84,8 +84,8 @@
     display: grid;
     grid-gap: 2em;
     margin-top: 4em;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "bird_tech bird_tech bird_tech bird_tech colorful_bird colorful_bird colorful_bird colorful_bird red_monster red_monster red_monster red_monster" "green_fuzzy green_fuzzy green_fuzzy green_squat green_squat green_squat lizard_angle lizard_angle lizard_angle lizard_front lizard_front lizard_front";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "bird_tech bird_tech green_fuzzy green_fuzzy lizard_angle lizard_angle" "colorful_bird colorful_bird green_squat green_squat lizard_front lizard_front" ". . red_monster red_monster . .";
     .colorful_bird {
         grid-area: colorful_bird;
     }
@@ -97,9 +97,14 @@
     }
     .green_fuzzy {
         grid-area: green_fuzzy;
+        margin-left: 1.3em;
+        margin-right: -2em;
     }
     .green_squat {
         grid-area: green_squat;
+        align-self: flex-start;
+        margin-right: 1.3em;
+        margin-left: -2em;
     }
     .lizard_angle {
         grid-area: lizard_angle;
@@ -142,6 +147,75 @@
 .final_ui {
     img {
         margin-top: 1em;
+    }
+}
+
+// SIGHTINGS VIDEOS_________________________
+.sightings-desktop-grid {
+    display: grid;
+    grid-gap: 2em;
+    margin-top: 4em;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_img";
+    .sightings_desktop_vid {
+        grid-area: sightings_desktop_vid;
+        max-width: 700px;
+    }
+    .sightings_desktop_img {
+        grid-area: sightings_desktop_img;
+        justify-self: start;
+    }
+}
+
+.sightings-tablet-grid {
+    display: grid;
+    grid-gap: 2em;
+    margin-top: 4em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ".  sightings_tablet_vid sightings_tablet_vid sightings_tablet_img .";
+    .sightings_tablet_vid {
+        grid-area: sightings_tablet_vid;
+        max-width: 390px;
+    }
+    .sightings_tablet_img {
+        grid-area: sightings_tablet_img;
+    }
+}
+
+.sightings-cell-grid {
+    display: grid;
+    grid-gap: 2em;
+    margin-top: 4em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ". sightings_cell_vid sightings_cell_vid sightings_cell_img . .";
+    .sightings_cell_vid {
+        grid-area: sightings_cell_vid;
+        max-width: 306px;
+        justify-self: center;
+    }
+    .sightings_cell_img {
+        grid-area: sightings_cell_img;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .sightings-desktop-grid,
+    .sightings-tablet-grid,
+    .sightings-cell-grid {
+        display: block;
+    }
+    .sightings_desktop_vid,
+    .sightings_desktop_img,
+    .sightings_tablet_vid,
+    .sightings_cell_img,
+    .sightings_cell_vid,
+    .sightings_cell_img {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+        // justify-self: end;
     }
 }
 
@@ -211,4 +285,11 @@
         margin-left: 50%;
         transform: translateX(-50%);
     }
+}
+
+// CREDITS_________
+.pink {
+    color: hotpink;
+    text-transform: uppercase;
+    font-weight: 700;
 }

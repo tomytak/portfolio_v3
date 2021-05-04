@@ -31,7 +31,8 @@ a img:hover {
 .prototype a,
 #artwork a,
 .pele_medals a,
-.astro-works-grid a {
+.astro-works-grid a,
+.sightings-bg-grid a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
