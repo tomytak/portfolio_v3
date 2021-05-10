@@ -4,6 +4,27 @@
     background-color: $color-sightings;
 }
 
+// SIGHTINGS THEME_________
+.theme_info {
+    padding: 7em 0;
+    .theme_name {
+        .sightings_theme {
+            text-transform: uppercase;
+        }
+    }
+    .sightings_theme_img {
+        padding-right: 5em;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .theme_info {
+        .sightings_theme_img {
+            padding-right: 0;
+        }
+    }
+}
+
 
 /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
 
@@ -36,7 +57,7 @@
 /* illustrator */
 
 .illustrator {
-    padding-bottom: 0;
+    margin-bottom: 4em;
     .two-thirds {
         margin-right: 0;
         video {
@@ -45,7 +66,18 @@
     }
 }
 
-// CHARACTER GRIDS_____________________
+// CHARACTER GRIDS ART DESKTOP_____________________
+.sky_characters_text {
+    margin-top: 4em;
+}
+
+.sightings-sky-grid,
+.sightings-forest-grid,
+.sightings-cave-grid,
+.sightings-bg-grid {
+    margin-bottom: 4em;
+}
+
 .sightings-sky-grid {
     display: grid;
     grid-gap: 2em;
@@ -114,10 +146,29 @@
     }
 }
 
+.sightings-bg-grid {
+    display: grid;
+    grid-gap: 2em;
+    margin-top: 4em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "cloud cloud forest_bg forest_bg cave_bg cave_bg";
+    .cloud {
+        grid-area: cloud;
+    }
+    .forest_bg {
+        grid-area: forest_bg;
+    }
+    .cave_bg {
+        grid-area: cave_bg;
+    }
+}
+
+// CHARACTER GRIDS ART MOBILE_____________________
 @media (max-width: $breakpoint-small) {
     .sightings-sky-grid,
     .sightings-forest-grid,
     .sightings-cave-grid,
+    .sightings-bg-grid,
     .sightings-bg-grid {
         display: block;
         margin-bottom: 4em;
@@ -136,7 +187,10 @@
     .green_fuzzy,
     .green_squat,
     .lizard_angle,
-    .lizard_front {
+    .lizard_front,
+    .cloud,
+    .forest_bg,
+    .cave_bg {
         margin-bottom: 2em;
     }
 }
@@ -203,7 +257,8 @@
 @media (max-width: $breakpoint-small) {
     .sightings-desktop-grid,
     .sightings-tablet-grid,
-    .sightings-cell-grid {
+    .sightings-cell-grid,
+    .sightings-bg-grid {
         display: block;
     }
     .sightings_desktop_vid,
@@ -288,8 +343,19 @@
 }
 
 // CREDITS_________
-.pink {
-    color: hotpink;
-    text-transform: uppercase;
-    font-weight: 700;
+.sightings_credits {
+    .row {
+        justify-content: space-between;
+        padding: 0;
+        .one-half {
+            margin: 0;
+            ul {
+                list-style-type: none;
+                margin-top: 0;
+                li {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
 }

@@ -94,15 +94,36 @@
     }
 }
 
-.bottle_packaging {
+.conquest_bottle_grid {
     margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    grid-template-areas: "old_conquest_lady old_conquest_lady old_conquest_knight old_conquest_knight old_conquest_dragon old_conquest_dragon" "new_conquest_study new_conquest_study  new_conquest_shake  new_conquest_shake new_conquest_speech new_conquest_speech";
+    .old_conquest_lady {
+        grid-area: old_conquest_lady;
+    }
+    .old_conquest_knight {
+        grid-area: old_conquest_knight;
+    }
+    .old_conquest_dragon {
+        grid-area: old_conquest_dragon;
+    }
+    .new_conquest_study {
+        grid-area: new_conquest_study;
+    }
+    .new_conquest_shake {
+        grid-area: new_conquest_shake;
+    }
+    .new_conquest_speech {
+        grid-area: new_conquest_speech;
+    }
 }
 
-.space_above {
-    margin-top: 2em;
-}
-
-.illustrations_conquest {
+.illustrations_conquest_grid {
     position: relative;
     display: grid;
     grid-template-columns: repeat(6, 1fr);

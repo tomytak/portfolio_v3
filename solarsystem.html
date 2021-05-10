@@ -234,7 +234,7 @@
                 </p>
             </div>
 
-            <div class="solar-illustration-grid">
+            <div class="solar-illustration-grid planets_desktop">
 
                 <div class="sun_illust">
                     <a href="img/solar/solar_sun.png" data-fancybox="gallery"><img src="img/solar/solar_sun.png" alt="sun_illustration">
@@ -290,12 +290,76 @@
                     <a href="img/solar/solar_pluto.png" data-fancybox="gallery"><img src="img/solar/solar_pluto.png" alt="pluto_illustration">
                     </a>
                 </div>
-
             </div>
 
-            <section class="animation">
+            <div class="swiper-container planets_mobile">
+                <div class="swiper-wrapper ">
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_sun.png" data-fancybox="gallery"><img src="img/solar/solar_sun.png" alt="sun_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_mercury.png" data-fancybox="gallery"><img src="img/solar/solar_mercury.png" alt="mercury_illustration">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_venus.png" data-fancybox="gallery"><img src="img/solar/solar_venus.png" alt="venus_illustration">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_earth.png" data-fancybox="gallery"><img src="img/solar/solar_earth.png" alt="earth_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_mars.png" data-fancybox="gallery"><img src="img/solar/solar_mars.png" alt="mars_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_asteroid.png" data-fancybox="gallery"><img src="img/solar/solar_asteroid.png" alt="asteroid_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_jupiter.png" data-fancybox="gallery"><img src="img/solar/solar_jupiter.png" alt="jupiter_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_saturn.png" data-fancybox="gallery"><img src="img/solar/solar_saturn.png" alt="saturn_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_uranus.png" data-fancybox="gallery"><img src="img/solar/solar_uranus.png" alt="uranus_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_neptune.png" data-fancybox="gallery"><img src="img/solar/solar_neptune.png" alt="neptune_illustration">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_pluto.png" data-fancybox="gallery"><img src="img/solar/solar_pluto.png" alt="pluto_illustration">
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination "></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev "></div>
+                <div class="swiper-button-next "></div>
+            </div>
+
+            <div class="animation">
                 <span class="small-title">Animations</span>
-                <div class="solar-animation-grid">
+
+                <div class="solar-animation-grid solar_animation_desktop">
 
                     <div class="solar_ani">
                         <a href="img/solar/solar-system.gif" data-fancybox="gallery"><img src="img/solar/solar-system.gif" alt="solar_animation">
@@ -331,7 +395,52 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <div class="swiper-container solar_animation_mobile">
+                <div class="swiper-wrapper ">
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar-system.gif" data-fancybox="gallery"><img src="img/solar/solar-system.gif" alt="solar_animation">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_scale.gif" data-fancybox="gallery"><img src="img/solar/solar_scale.gif" alt="scale_animation">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/magnetic.gif" data-fancybox="gallery"><img src="img/solar/magnetic.gif" alt="magnetic_animation"></a>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/solar_eclipse.gif" data-fancybox="gallery"><img src="img/solar/solar_eclipse.gif" alt="solar_eclipse_animation">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/lunar_eclipse.gif" data-fancybox="gallery"><img src="img/solar/lunar_eclipse.gif" alt="lunar_animation">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/earth_tide.gif" data-fancybox="gallery"><img src="img/solar/earth_tide.gif" alt="tide_animation">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="img/solar/loc_earth.gif" data-fancybox="gallery"><img src="img/solar/loc_earth.gif" alt="location_animation">
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination "></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev "></div>
+                <div class="swiper-button-next "></div>
+            </div>
 
             <div id="final_product" class="revealer">
                 <h1 class="sectionhead">final Design</h1>
@@ -635,6 +744,12 @@
         slidesPerView: 1,
         // spaceBetween: 30,
         loop: true,
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            stopOnLast: true,
+        },
 
         // If we need pagination
         pagination: {

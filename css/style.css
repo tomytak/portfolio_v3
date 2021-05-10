@@ -46,7 +46,8 @@ h1,
 .teal_subhead,
 .caption,
 .theme,
-.list_strat {
+.list_strat,
+.sightings_theme {
   font-family: "Nobel", "Roboto Condensed", sans-serif; }
 
 h2,
@@ -180,7 +181,8 @@ section.prototype,
 .brand_strategy,
 .packaging,
 .brochure,
-.swiper-container {
+.swiper-container,
+section.theme_info {
   padding-top: 0; }
 
 .quote {
@@ -1084,6 +1086,37 @@ section {
     width: 16em;
     margin-left: 0; }
 
+.theme_info {
+  padding: 0; }
+  .theme_info .theme_name {
+    margin-top: 0;
+    margin: 0 auto; }
+    .theme_info .theme_name .theme {
+      color: #E83E03;
+      text-transform: uppercase; }
+    .theme_info .theme_name hr {
+      max-width: 30.5em;
+      margin-left: 0; }
+  .theme_info .row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .theme_info .row ul {
+      list-style-type: none;
+      padding-left: 0; }
+    .theme_info .row .theme_image {
+      margin-left: 0em; }
+
+@media (max-width: 768px) {
+  .theme_info .row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .theme_info .row .one-third ul {
+      margin-top: 0; }
+    .theme_info .row .two-thirds {
+      margin-left: 0; } }
+
 /* DESIGN SYSTEM___________________________*/
 .type_specimen .row {
   -webkit-box-align: start;
@@ -1119,10 +1152,103 @@ section {
     align-items: flex-end; }
     .logo_exploration .row .one-half {
       margin-right: 2%; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .logo_exploration .one-half,
     .logo_exploration .one-third {
       margin-top: 3em; } }
+
+.sky_desktop,
+.forest_desktop,
+.cave_desktop,
+.bg_desktop,
+.planets_desktop,
+.solar_animation_desktop,
+.conquest_patterns_desktop {
+  visibility: visible;
+  display: none; }
+
+.sky_mobile,
+.forest_mobile,
+.cave_mobile,
+.bg_mobile,
+.planets_mobile,
+.solar_animation_mobile,
+.dino_ani_mobile,
+.dino_sketch_mobile,
+.conquest_art_mobile,
+.conquest_patterns_mobile {
+  display: none; }
+
+.dino_ani_desktop {
+  visibility: visible; }
+
+@media (max-width: 768px) {
+  .sky_desktop,
+  .forest_desktop,
+  .cave_desktop,
+  .bg_desktop,
+  .planets_desktop,
+  .solar_animation_desktop,
+  .dino_ani_desktop,
+  .dino_sketch_desktop,
+  .conquest_art_desktop,
+  .conquest_patterns_desktop {
+    visibility: hidden;
+    position: absolute; }
+  .sky_mobile,
+  .forest_mobile,
+  .cave_mobile,
+  .bg_mobile,
+  .planets_mobile,
+  .solar_animation_mobile,
+  .dino_sketch_mobile,
+  .conquest_art_mobile,
+  .conquest_patterns_mobile {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    visibility: visible;
+    display: block; }
+    .sky_mobile .swiper-slide,
+    .forest_mobile .swiper-slide,
+    .cave_mobile .swiper-slide,
+    .bg_mobile .swiper-slide,
+    .planets_mobile .swiper-slide,
+    .solar_animation_mobile .swiper-slide,
+    .dino_sketch_mobile .swiper-slide,
+    .conquest_art_mobile .swiper-slide,
+    .conquest_patterns_mobile .swiper-slide {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .sky_mobile .swiper-slide a img,
+      .forest_mobile .swiper-slide a img,
+      .cave_mobile .swiper-slide a img,
+      .bg_mobile .swiper-slide a img,
+      .planets_mobile .swiper-slide a img,
+      .solar_animation_mobile .swiper-slide a img,
+      .dino_sketch_mobile .swiper-slide a img,
+      .conquest_art_mobile .swiper-slide a img,
+      .conquest_patterns_mobile .swiper-slide a img {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-bottom: 1em; }
+      .sky_mobile .swiper-slide .conquest_sword,
+      .forest_mobile .swiper-slide .conquest_sword,
+      .cave_mobile .swiper-slide .conquest_sword,
+      .bg_mobile .swiper-slide .conquest_sword,
+      .planets_mobile .swiper-slide .conquest_sword,
+      .solar_animation_mobile .swiper-slide .conquest_sword,
+      .dino_sketch_mobile .swiper-slide .conquest_sword,
+      .conquest_art_mobile .swiper-slide .conquest_sword,
+      .conquest_patterns_mobile .swiper-slide .conquest_sword {
+        margin-bottom: 0; }
+  .dino_ani_mobile {
+    visibility: visible;
+    display: block; } }
 
 .final_product {
   margin-top: 0; }
@@ -1465,8 +1591,106 @@ fade-in {
   margin-right: 0; }
 
 /* ANIMATIONS */
-.animation .one-third {
-  margin-right: 0; }
+.animation .dino-button-main-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 2em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto 2em auto;
+  grid-template-areas: "saurischia_pop saurischia_pop ornith_pop ornith_pop" "saurichia_hover saurichia_hover ornith_hover ornith_hover"; }
+  .animation .dino-button-main-grid .saurischia_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: saurischia_pop; }
+  .animation .dino-button-main-grid .saurichia_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: saurichia_hover; }
+  .animation .dino-button-main-grid .ornith_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: ornith_pop; }
+  .animation .dino-button-main-grid .ornith_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: ornith_hover; }
+
+.animation .dino-button-sub-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 2em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: auto 2em auto;
+  grid-template-areas: "saur_pop trex_pop para_pop tri_pop steggie_pop" "saur_hover trex_hover para_hover tri_hover steggie_hover"; }
+  .animation .dino-button-sub-grid .saur_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: saur_pop; }
+  .animation .dino-button-sub-grid .saur_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: saur_hover; }
+  .animation .dino-button-sub-grid .trex_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: trex_pop; }
+  .animation .dino-button-sub-grid .trex_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: trex_hover; }
+  .animation .dino-button-sub-grid .para_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: para_pop; }
+  .animation .dino-button-sub-grid .para_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    grid-area: para_hover; }
+  .animation .dino-button-sub-grid .tri_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    grid-area: tri_pop; }
+  .animation .dino-button-sub-grid .tri_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    grid-area: tri_hover; }
+  .animation .dino-button-sub-grid .steggie_pop {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    grid-area: steggie_pop; }
+  .animation .dino-button-sub-grid .steggie_hover {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    grid-area: steggie_hover; }
+
+.animation .dino_animation_grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 2em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "cret_time steggie_xray trex_fact"; }
+  .animation .dino_animation_grid .cret_time {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cret_time; }
+  .animation .dino_animation_grid .steggie_xray {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: steggie_xray; }
+  .animation .dino_animation_grid .trex_fact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: trex_fact; }
 
 /* UI DESIGN */
 .final_ui img {
@@ -1593,13 +1817,50 @@ fade-in {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.bottle_packaging {
-  margin-top: 2em; }
+.conquest_bottle_grid {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  -ms-grid-rows: auto 1em auto;
+  grid-template-areas: "old_conquest_lady old_conquest_lady old_conquest_knight old_conquest_knight old_conquest_dragon old_conquest_dragon" "new_conquest_study new_conquest_study  new_conquest_shake  new_conquest_shake new_conquest_speech new_conquest_speech"; }
+  .conquest_bottle_grid .old_conquest_lady {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: old_conquest_lady; }
+  .conquest_bottle_grid .old_conquest_knight {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: old_conquest_knight; }
+  .conquest_bottle_grid .old_conquest_dragon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: old_conquest_dragon; }
+  .conquest_bottle_grid .new_conquest_study {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: new_conquest_study; }
+  .conquest_bottle_grid .new_conquest_shake {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: new_conquest_shake; }
+  .conquest_bottle_grid .new_conquest_speech {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: new_conquest_speech; }
 
-.space_above {
-  margin-top: 2em; }
-
-.illustrations_conquest {
+.illustrations_conquest_grid {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -1608,17 +1869,17 @@ fade-in {
   margin: 0 auto;
   place-items: center;
   grid-template-areas: ". dragon dragon beer-hand beer-hand ." "sword sword sword sword sword sword"; }
-  .illustrations_conquest .dragon {
+  .illustrations_conquest_grid .dragon {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: dragon; }
-  .illustrations_conquest .beer-hand {
+  .illustrations_conquest_grid .beer-hand {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-area: beer-hand; }
-  .illustrations_conquest .sword {
+  .illustrations_conquest_grid .sword {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -2818,15 +3079,8 @@ fade-in {
     text-decoration: underline;
     color: #cc1f3d; }
 
-.brand_strategy .pele_theme {
-  grid-area: pele_theme;
-  margin: 0 auto; }
-  .brand_strategy .pele_theme .theme {
-    color: #E83E03;
-    text-transform: uppercase; }
-  .brand_strategy .pele_theme hr {
-    max-width: 30.5em;
-    margin-left: 0; }
+.pele_theme_explain {
+  margin-left: 12em; }
 
 .pele_illustration {
   max-width: 35em;
@@ -2880,9 +3134,11 @@ fade-in {
         -ms-grid-column-span: 3;
         grid-area: person_insta_banner; }
     @media (max-width: 768px) {
-      #social_media .insta .pele-insta-grid, #social_media .insta .person-insta-grid {
+      #social_media .insta .pele-insta-grid,
+      #social_media .insta .person-insta-grid {
         display: block; }
-      #social_media .insta .banner_entry_insta, #social_media .insta .person_insta_banner {
+      #social_media .insta .banner_entry_insta,
+      #social_media .insta .person_insta_banner {
         margin-top: 1em; } }
   #social_media .fb {
     margin-top: 10em; }
@@ -2929,9 +3185,11 @@ fade-in {
         -ms-grid-column-span: 7;
         grid-area: person_fb_banner; }
     @media (max-width: 768px) {
-      #social_media .fb .pele-fb-grid, #social_media .fb .person-fb-grid {
+      #social_media .fb .pele-fb-grid,
+      #social_media .fb .person-fb-grid {
         display: block; }
-      #social_media .fb .banner_fb, #social_media .fb .person_fb_banner {
+      #social_media .fb .banner_fb,
+      #social_media .fb .person_fb_banner {
         margin-top: 1em; } }
 
 .pele_medals {
@@ -3019,6 +3277,17 @@ fade-in {
 .sightings {
   background-color: #BFC0BE; }
 
+.theme_info {
+  padding: 7em 0; }
+  .theme_info .theme_name .sightings_theme {
+    text-transform: uppercase; }
+  .theme_info .sightings_theme_img {
+    padding-right: 5em; }
+
+@media (max-width: 768px) {
+  .theme_info .sightings_theme_img {
+    padding-right: 0; } }
+
 /* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
 .wireframe .column,
 .illustrator .column,
@@ -3038,11 +3307,20 @@ fade-in {
 
 /* illustrator */
 .illustrator {
-  padding-bottom: 0; }
+  margin-bottom: 4em; }
   .illustrator .two-thirds {
     margin-right: 0; }
     .illustrator .two-thirds video {
       margin-top: 0.5em; }
+
+.sky_characters_text {
+  margin-top: 4em; }
+
+.sightings-sky-grid,
+.sightings-forest-grid,
+.sightings-cave-grid,
+.sightings-bg-grid {
+  margin-bottom: 4em; }
 
 .sightings-sky-grid {
   display: -ms-grid;
@@ -3142,10 +3420,35 @@ fade-in {
     -ms-grid-column-span: 3;
     grid-area: lizard_front; }
 
+.sightings-bg-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "cloud cloud forest_bg forest_bg cave_bg cave_bg"; }
+  .sightings-bg-grid .cloud {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: cloud; }
+  .sightings-bg-grid .forest_bg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: forest_bg; }
+  .sightings-bg-grid .cave_bg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: cave_bg; }
+
 @media (max-width: 768px) {
   .sightings-sky-grid,
   .sightings-forest-grid,
   .sightings-cave-grid,
+  .sightings-bg-grid,
   .sightings-bg-grid {
     display: block;
     margin-bottom: 4em; }
@@ -3163,7 +3466,10 @@ fade-in {
   .green_fuzzy,
   .green_squat,
   .lizard_angle,
-  .lizard_front {
+  .lizard_front,
+  .cloud,
+  .forest_bg,
+  .cave_bg {
     margin-bottom: 2em; } }
 
 /* UI DESIGN */
@@ -3238,7 +3544,8 @@ fade-in {
 @media (max-width: 768px) {
   .sightings-desktop-grid,
   .sightings-tablet-grid,
-  .sightings-cell-grid {
+  .sightings-cell-grid,
+  .sightings-bg-grid {
     display: block; }
   .sightings_desktop_vid,
   .sightings_desktop_img,
@@ -3323,7 +3630,15 @@ fade-in {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.pink {
-  color: hotpink;
-  text-transform: uppercase;
-  font-weight: 700; }
+.sightings_credits .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0; }
+  .sightings_credits .row .one-half {
+    margin: 0; }
+    .sightings_credits .row .one-half ul {
+      list-style-type: none;
+      margin-top: 0; }
+      .sightings_credits .row .one-half ul li {
+        margin-bottom: 1em; }

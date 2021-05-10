@@ -1,173 +1,119 @@
 /* HERO */
-.hero{
+
+.hero {
     .pele {
-        background-color:$color-pele;
-        
-        a{
+        background-color: $color-pele;
+        a {
             text-decoration: none;
-          }
-      
-          a:hover{
+        }
+        a:hover {
             text-decoration: underline;
             color: $color-red;
-          }
+        }
     }
 }
 
-// THEME________
-
-.brand_strategy{
-  .pele_theme{ 
-    grid-area: pele_theme;
-    margin: 0 auto;
-
-    .theme{
-    color: $color-pele-theme;
-    text-transform: uppercase;
-    }
-
-    hr{
-      max-width: 30.5em;
-      margin-left: 0;
-    }
-  }
+// Pele Theme___________
+.pele_theme_explain {
+    margin-left: 12em;
 }
 
 // ILLUSTRATION__________
-
-.pele_illustration{
-  max-width: 35em;
-  margin: 0 auto;
+.pele_illustration {
+    max-width: 35em;
+    margin: 0 auto;
 }
 
 // SOCIAL MEDIA__________
-
-#social_media{
-  margin-top: 2em;
-  margin-bottom:2em;
-    .insta{
+#social_media {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .insta {
         margin-top: 1em;
-    
         .pele-insta-grid {
             display: grid;
             margin: 2em;
             grid-gap: 2em;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-areas:
-            ". phone_insta_entry phone_insta_entry phone_insta_entry . . ."
-            ". phone_insta_entry phone_insta_entry phone_insta_entry  banner_entry_insta banner_entry_insta ."
-            ". phone_insta_entry phone_insta_entry phone_insta_entry banner_entry_insta banner_entry_insta ."
-            ". phone_insta_entry phone_insta_entry phone_insta_entry . . .";
-
-            .phone_insta_entry{
-            grid-area: phone_insta_entry;    
-            }  
-    
-            .banner_entry_insta{
+            grid-template-areas: ". phone_insta_entry phone_insta_entry phone_insta_entry . . ." ". phone_insta_entry phone_insta_entry phone_insta_entry  banner_entry_insta banner_entry_insta ." ". phone_insta_entry phone_insta_entry phone_insta_entry banner_entry_insta banner_entry_insta ." ". phone_insta_entry phone_insta_entry phone_insta_entry . . .";
+            .phone_insta_entry {
+                grid-area: phone_insta_entry;
+            }
+            .banner_entry_insta {
                 grid-area: banner_entry_insta;
-            } 
-        } 
-        
+            }
+        }
         .person-insta-grid {
             display: grid;
             margin: 2em;
             grid-gap: 2em;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-areas:
-            ". phone_insta_person phone_insta_person phone_insta_person . . ."
-            ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ."
-            ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ."
-            ". phone_insta_person phone_insta_person phone_insta_person . . .";
-
-            .phone_insta_person{
+            grid-template-areas: ". phone_insta_person phone_insta_person phone_insta_person . . ." ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ." ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ." ". phone_insta_person phone_insta_person phone_insta_person . . .";
+            .phone_insta_person {
                 grid-area: phone_insta_person;
-            }   
-
-            .person_insta_banner{
-                grid-area: person_insta_banner;    
-            }  
-        
-        }  
-
-        @media (max-width: $breakpoint-small){
-            .pele-insta-grid, .person-insta-grid {
+            }
+            .person_insta_banner {
+                grid-area: person_insta_banner;
+            }
+        }
+        @media (max-width: $breakpoint-small) {
+            .pele-insta-grid,
+            .person-insta-grid {
                 display: block;
             }
-                
-                .banner_entry_insta, .person_insta_banner {
+            .banner_entry_insta,
+            .person_insta_banner {
                 margin-top: 1em;
             }
         }
     }
-      
-
-// FACEBOOK___________
-    .fb{
-      margin-top: 10em;
-
+    // FACEBOOK___________
+    .fb {
+        margin-top: 10em;
         .pele-fb-grid {
             display: grid;
             margin: 2em;
             grid-gap: 2em;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-areas:
-            "phone_entry_fb phone_entry_fb phone_entry_fb . . . ."
-            "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb"
-            "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb"
-            "phone_entry_fb phone_entry_fb phone_entry_fb . . . ."
-            ;
-
+            grid-template-areas: "phone_entry_fb phone_entry_fb phone_entry_fb . . . ." "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb" "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb" "phone_entry_fb phone_entry_fb phone_entry_fb . . . .";
             .phone_entry_fb {
-                grid-area: phone_entry_fb;    
-            }  
-        
+                grid-area: phone_entry_fb;
+            }
             .banner_fb {
                 grid-area: banner_fb;
-            } 
+            }
         }
-
-        .person-fb-grid{
+        .person-fb-grid {
             display: grid;
             margin: 2em;
             grid-gap: 2em;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-areas:
-            "pele_person_fb pele_person_fb pele_person_fb. . . ."
-            "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner"
-            "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner"
-            "pele_person_fb pele_person_fb pele_person_fb . . . ."
-            ;
-
-            .pele_person_fb{
-                grid-area: pele_person_fb;    
+            grid-template-areas: "pele_person_fb pele_person_fb pele_person_fb. . . ." "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner" "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner" "pele_person_fb pele_person_fb pele_person_fb . . . .";
+            .pele_person_fb {
+                grid-area: pele_person_fb;
             }
-
-            .person_fb_banner{
+            .person_fb_banner {
                 grid-area: person_fb_banner;
             }
         }
-
-        @media (max-width: $breakpoint-small){
-
-            .pele-fb-grid, .person-fb-grid {
-                display: block; 
+        @media (max-width: $breakpoint-small) {
+            .pele-fb-grid,
+            .person-fb-grid {
+                display: block;
             }
-
-            .banner_fb, .person_fb_banner{
+            .banner_fb,
+            .person_fb_banner {
                 margin-top: 1em;
             }
-        } 
+        }
     }
 }
 
-
 // MEDAL AND TROPHY________
-
-.pele_medals{
-  margin-top: 10em;
-
-  img{
-    margin-top: 2em;
-    margin-bottom: 4em;
-  }
+.pele_medals {
+    margin-top: 10em;
+    img {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
 }

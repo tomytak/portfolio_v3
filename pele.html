@@ -151,9 +151,9 @@
         <div id="theme_dev" class="revealer">
 
             <h1 class="sectionhead">Theme Development</h1>
-            <section class="brand_strategy">
+            <section class="theme_info">
                 <div class="row">
-                    <div class="pele_theme">
+                    <div class="theme_name">
                         <span class="small-title">theme</span>
                         <hr>
                         <h2 class="theme"><strong>we shine brighter&nbsp;together</strong>
@@ -163,7 +163,7 @@
 
                 <div class="row">
                     <div class="one-third column">
-                        <span class="small-title branding_space">core attributes</span>
+                        <span class="small-title ">core attributes</span>
                         <hr>
                         <ul class="list_strat">
                             <li>
@@ -178,7 +178,7 @@
                         </ul>
                     </div>
 
-                    <div class="two-thirds column">
+                    <div class="two-thirds column pele_theme_explain">
                         <p>
                             Businesses and lifestyles have changed drastically since the start of COVID-&nbsp;19. We took the time to acknowledge the resiliency of the creative community this past year as a basis on which all participants can empathize. Using this point to empower
                             people, we then focused on their combined potential to work towards a brighter future. Ultimately, the committee agreed on this theme as it demonstrates how our creative community, as a unit, is stronger as we go through trying&nbsp;times.
@@ -457,6 +457,12 @@
         slidesPerView: 1,
         // spaceBetween: 30,
         loop: true,
+
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            stopOnLast: true,
+        },
 
         // If we need pagination
         pagination: {
