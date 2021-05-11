@@ -136,22 +136,48 @@
                 <div class="illustration">
                     <span class="small-title">Sketches</span>
 
-                    <div class="row">
-                        <div class="one-third column">
+                    <div class="light_grid light_desktop">
+
+                        <div class="girl_sketch">
                             <a href="img/light/look.jpg" data-fancybox="gallery"><img src="img/light/look.jpg" alt="girl looking"></a>
                             <span class="caption">Girl looking at candle</span>
                         </div>
 
-                        <div class="one-third column">
+                        <div class="smoke_sketch">
                             <a href="img/light/smoke.jpg" data-fancybox="gallery"><img src="img/light/smoke.jpg" alt="smoke"></a>
                             <span class="caption">Girl looking at smoke</span>
                         </div>
 
-                        <div class="one-third column">
+                        <div class="ghost_sketch">
                             <a href="img/light/ghost.jpg" data-fancybox="gallery"><img src="img/light/ghost.jpg" alt="ghost"></a>
                             <span class="caption">Ghost</span>
                         </div>
                     </div>
+                </div>
+
+                <div class="swiper-container light_mobile">
+                    <div class="swiper-wrapper ">
+
+                        <div class="swiper-slide">
+                            <a href="img/light/look.jpg" data-fancybox="gallery"><img src="img/light/look.jpg" alt="girl looking"></a>
+                            <span class="caption">Girl looking at candle</span>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/light/smoke.jpg" data-fancybox="gallery"><img src="img/light/smoke.jpg" alt="smoke"></a>
+                            <span class="caption">Girl looking at smoke</span>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/light/ghost.jpg" data-fancybox="gallery"><img src="img/light/ghost.jpg" alt="ghost"></a>
+                            <span class="caption">Ghost</span>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination "></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev "></div>
+                    <div class="swiper-button-next "></div>
                 </div>
 
                 <div class="row text-centered">
@@ -214,6 +240,12 @@
             slidesPerView: 1,
             // spaceBetween: 100,
             loop: true,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                stopOnLast: true,
+            },
 
             // If we need pagination
             pagination: {

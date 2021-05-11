@@ -1163,7 +1163,8 @@ section {
 .bg_desktop,
 .planets_desktop,
 .solar_animation_desktop,
-.conquest_patterns_desktop {
+.conquest_patterns_desktop,
+.light_desktop {
   visibility: visible;
   display: none; }
 
@@ -1176,7 +1177,9 @@ section {
 .dino_ani_mobile,
 .dino_sketch_mobile,
 .conquest_art_mobile,
-.conquest_patterns_mobile {
+.conquest_patterns_mobile,
+.light_mobile,
+.astro_mobile {
   display: none; }
 
 .dino_ani_desktop {
@@ -1192,7 +1195,9 @@ section {
   .dino_ani_desktop,
   .dino_sketch_desktop,
   .conquest_art_desktop,
-  .conquest_patterns_desktop {
+  .conquest_patterns_desktop,
+  .light_desktop,
+  .astro_art_desktop {
     visibility: hidden;
     position: absolute; }
   .sky_mobile,
@@ -1203,7 +1208,9 @@ section {
   .solar_animation_mobile,
   .dino_sketch_mobile,
   .conquest_art_mobile,
-  .conquest_patterns_mobile {
+  .conquest_patterns_mobile,
+  .light_mobile,
+  .astro_mobile {
     margin-top: 2em;
     margin-bottom: 2em;
     visibility: visible;
@@ -1216,7 +1223,9 @@ section {
     .solar_animation_mobile .swiper-slide,
     .dino_sketch_mobile .swiper-slide,
     .conquest_art_mobile .swiper-slide,
-    .conquest_patterns_mobile .swiper-slide {
+    .conquest_patterns_mobile .swiper-slide,
+    .light_mobile .swiper-slide,
+    .astro_mobile .swiper-slide {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -1231,7 +1240,9 @@ section {
       .solar_animation_mobile .swiper-slide a img,
       .dino_sketch_mobile .swiper-slide a img,
       .conquest_art_mobile .swiper-slide a img,
-      .conquest_patterns_mobile .swiper-slide a img {
+      .conquest_patterns_mobile .swiper-slide a img,
+      .light_mobile .swiper-slide a img,
+      .astro_mobile .swiper-slide a img {
         width: 80%;
         margin: 0 auto;
         margin-top: 2em;
@@ -1244,7 +1255,9 @@ section {
       .solar_animation_mobile .swiper-slide .conquest_sword,
       .dino_sketch_mobile .swiper-slide .conquest_sword,
       .conquest_art_mobile .swiper-slide .conquest_sword,
-      .conquest_patterns_mobile .swiper-slide .conquest_sword {
+      .conquest_patterns_mobile .swiper-slide .conquest_sword,
+      .light_mobile .swiper-slide .conquest_sword,
+      .astro_mobile .swiper-slide .conquest_sword {
         margin-bottom: 0; }
   .dino_ani_mobile {
     visibility: visible;
@@ -2115,47 +2128,50 @@ fade-in {
   margin-bottom: 5em;
   margin-top: 6em; }
 
+.final_sketch_grid {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "accolade_sketch timelessness_sketch individuality_sketch "; }
+  .final_sketch_grid .accolade_sketch {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: accolade_sketch; }
+  .final_sketch_grid .timelessness_sketch {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: timelessness_sketch; }
+  .final_sketch_grid .individuality_sketch {
+    grid-area: invididuality_sketch; }
+
 #final_product .two-thirds {
   margin-right: 3em; }
 
 @media (min-width: 1250px) {
   .sketches .mcd_sketch .two-thirds {
     margin-right: 10em;
-    margin-bottom: 3em; }
-  .sketches .final_sketch .one-third img {
-    padding-top: 0.5em; }
-  .sketches .final_sketch .space-right {
-    margin-right: 10em; } }
+    margin-bottom: 3em; } }
 
 @media (min-width: 1050px) {
   .sketches .mcd_sketch .two-thirds {
     padding-bottom: 2em;
-    padding-right: 5em; }
-  .sketches .row .space-right {
-    margin-right: 2em; } }
+    padding-right: 5em; } }
 
 @media (min-width: 768px) {
   .sketches .mcd_sketch .two-thirds {
     padding-bottom: 0;
-    padding-right: 5em; }
-  .sketches .final_sketch {
-    margin-top: 1em; }
-    .sketches .final_sketch img {
-      margin-top: 0.5em; }
-    .sketches .final_sketch .space-right {
-      margin-right: 6em; } }
+    padding-right: 5em; } }
 
 @media (max-width: 768px) {
   .sketches .mcd_sketch {
     margin-bottom: 2em; }
-  .sketches .final_sketch .one-third {
-    margin-left: 5em;
-    margin-right: 5em; }
-  .sketches .final_sketch .space-right {
-    margin-bottom: 1em; }
-  #final_product .swiper-slide .row .two-thirds {
+  .sketches #final_product .swiper-slide .row .two-thirds {
     margin-right: 0; }
-  #final_product .swiper-slide .row .one-third {
+  .sketches #final_product .swiper-slide .row .one-third {
     padding: 1.5em; } }
 
 .zoo {
@@ -2317,11 +2333,32 @@ fade-in {
 .light {
   background-color: #e2c179; }
 
-@media (max-width: 768px) {
-  .illustration .row {
-    margin-bottom: 2em; }
-    .illustration .row img {
-      margin-top: 2em; } }
+.illustration .light_grid {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "girl-sketch girl-sketch smoke_sketch smoke_sketch ghost_sketch ghost_sketch"; }
+  .illustration .light_grid .girl_sketch {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: girl-sketch; }
+  .illustration .light_grid .smoke_sketch {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: smoke_sketch; }
+  .illustration .light_grid .ghost_sketch {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: ghost_sketch; }
+  .illustration .light_grid a img:hover {
+    text-decoration: none; }
 
 .naha {
   background-color: #f4e1ba; }

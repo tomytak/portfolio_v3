@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tomy Takemura's Portfolio Site</title>
+    <meta name="description" content="Tomy Takemura's portfolio site">
+
+
+    <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--VIEWPORT FOR MOBILE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/xmu0mbk.css">
+    <!--adobe-->
+    <link rel="stylesheet" href="https://use.typekit.net/tpb8xnl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zys8ixn.css">
+</head>
+
+<body>
+
+    <body>
+
+        <header class="site-header toggle-nav">
+            <div class="site-id">
+                <h1>
+                    <a href="index.html"><img src="img/tomy_logo.svg" alt="Tomy"></a>
+                </h1>
+            </div>
+            <nav class="site-nav">
+                <div class="menu-button navicon">menu</div>
+                <ul>
+                    <a href="#work_gallery">Work</a>
+                    <a href="about.html">About</a>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main class="site-main">
+
+            <div class="container">
+
+                <div class="fade-and-move-in">
+                    <div class="case-studies">
+                        <div class="index_desktop_grid">
+
+                            <div class="graphics">
+                                <h1>Graphics</h1>
+                            </div>
+
+                            <div class="work-image">
+
+                                <div class="index_card">
+                                    <a href="solarsystem.html">
+                                        <img src="img/solar/solar_home.jpg" alt="solar system walk">
+
+
+                                        <div class="solar_index_text work_text_home">
+                                            <h2>Waimea Solar System&nbsp;Walk</h2>
+                                            <div class="line_index">
+                                                <img src="img/line.svg" alt="line">
+                                                <h3 class="work-title">Motion Graphics + Social Media Graphics + Logo&nbsp;Design</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <footer class="footer" id="contact">
+                    <div class="row">
+
+                        <div class="one-half column">
+                            <span class="small-title">C'mon, lets go on an adventure!</span>
+                            <h1>Wanna Chat?</h1>
+                            <a href="mailto:tomytakdesigns@gmail.com">
+                                <p>tomytakdesigns@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+
+
+
+            <!-- Smooth Scroll JS -->
+            <script src="js/smooth-scroll.polyfills.min.js"></script>
+            <script>
+                var scroll = new SmoothScroll('a[href*="#"]');
+            </script>
+        </main>
+
+        </script>
+
+        <!-- FANCYBOX 3 JS FILE -->
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/fancybox/dist/jquery.fancybox.min.js"></script>
+
+
+        <!--MIXIT UP-->
+        <script src="js/mixitup.min.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // MIXITUP
+                var containerEl = document.querySelector(".mixcontainer");
+                var mixer = mixitup(containerEl);
+            });
+        </script>
+
+        <!-- MAIN JS -->
+        <script src="js/script.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+
+</html>

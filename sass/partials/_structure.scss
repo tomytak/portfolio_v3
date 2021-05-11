@@ -279,7 +279,8 @@ section {
 .bg_desktop,
 .planets_desktop,
 .solar_animation_desktop,
-.conquest_patterns_desktop {
+.conquest_patterns_desktop,
+.light_desktop {
     visibility: visible;
     display: none;
 }
@@ -293,7 +294,9 @@ section {
 .dino_ani_mobile,
 .dino_sketch_mobile,
 .conquest_art_mobile,
-.conquest_patterns_mobile {
+.conquest_patterns_mobile,
+.light_mobile,
+.astro_mobile {
     display: none;
 }
 
@@ -313,7 +316,9 @@ section {
     .dino_ani_desktop,
     .dino_sketch_desktop,
     .conquest_art_desktop,
-    .conquest_patterns_desktop {
+    .conquest_patterns_desktop,
+    .light_desktop,
+    .astro_art_desktop {
         visibility: hidden;
         position: absolute;
     }
@@ -325,14 +330,22 @@ section {
     .solar_animation_mobile,
     .dino_sketch_mobile,
     .conquest_art_mobile,
-    .conquest_patterns_mobile {
+    .conquest_patterns_mobile,
+    .light_mobile,
+    .astro_mobile {
         margin-top: 2em;
         margin-bottom: 2em;
         visibility: visible;
         display: block;
         .swiper-slide {
-            align-items: center;
-            justify-content: center;
+            .container_swiper {
+                // align-items: center;
+                // justify-content: center;
+                align-self: center;
+                justify-self: center;
+                display: flex;
+                border: 10px solid red;
+            }
             a img {
                 width: 80%;
                 margin: 0 auto;

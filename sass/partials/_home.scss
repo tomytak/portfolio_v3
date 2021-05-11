@@ -305,3 +305,20 @@
         }
     }
 }
+
+.index_card {
+    background: linear-gradient(-230deg, $color 15%, rgba(255, 183, 1, 0.981) 15%);
+    box-shadow: 1px 5px 15px #CCC;
+    width: 15em;
+    height: auto;
+    border-radius: 3px;
+    padding: 2em;
+    margin: 1em;
+    overflow: hidden;
+    position: relative;
+    flex: auto;
+    border: 2px solid red;
+    .line_index {
+        width: 50%;
+    }
+}

@@ -1,116 +1,90 @@
-.mcd {
-  background-color: $color-mcd-yellow;
-}
-
-.hero {
-  img {
-    margin-bottom: 5em;
-    margin-top: 6em;
+  .mcd {
+      background-color: $color-mcd-yellow;
   }
-}
-
-
-#final_product {
-  .two-thirds {
-    margin-right: 3em;
-  }
-}
-
-// Media queries_____________________
-
-@media (min-width: $breakpoint-large) {
-  // mcd sketches__________
-  .sketches {
-    .mcd_sketch {
-      .two-thirds {
-        margin-right: 10em;
-        margin-bottom: 3em;
-      }
-    }
-
-    .final_sketch {
-      .one-third {
-        img {
-          padding-top: 0.5em;
-        }
-      }
-      .space-right {
-        margin-right: 10em;
-      }
-    }
-  }
-}
-
-@media (min-width: $breakpoint-medium) {
-  // mcd sketches__________
-  .sketches {
-    .mcd_sketch {
-      .two-thirds {
-        padding-bottom: 2em;
-        padding-right: 5em;
-      }
-    }
-
-    .row {
-      .space-right {
-        margin-right: 2em;
-      }
-    }
-  }
-}
-
-@media (min-width: $breakpoint-small) {
-  // mcd sketches__________
-  .sketches {
-    .mcd_sketch {
-      .two-thirds {
-        padding-bottom: 0;
-        padding-right: 5em;
-      }
-    }
-
-    .final_sketch {
-      margin-top: 1em;
-
+  
+  .hero {
       img {
-        margin-top: 0.5em;
+          margin-bottom: 5em;
+          margin-top: 6em;
       }
-      .space-right {
-        margin-right: 6em;
-      }
-    }
   }
-}
-
-@media (max-width: $breakpoint-small) {
-  // mcd sketches__________
-  .sketches {
-    .mcd_sketch {
+  
+  .final_sketch_grid {
       margin-bottom: 2em;
-    }
-
-    .final_sketch {
-      .one-third {
-        margin-left: 5em;
-        margin-right: 5em;
+      margin-top: 2em;
+      display: grid;
+      grid-gap: 2em;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "accolade_sketch timelessness_sketch individuality_sketch ";
+      .accolade_sketch {
+          grid-area: accolade_sketch;
       }
-      .space-right {
-        margin-bottom: 1em;
+      .timelessness_sketch {
+          grid-area: timelessness_sketch;
       }
-    }
+      .individuality_sketch {
+          grid-area: invididuality_sketch;
+      }
   }
-
-  // mcd swiper______________
+  
   #final_product {
-    .swiper-slide {
-      .row {
-        .two-thirds {
-          margin-right: 0;
-        }
-        .one-third {
-          padding: 1.5em;
-        }
+      .two-thirds {
+          margin-right: 3em;
       }
-    }
   }
-}
+  
+  // Media queries_____________________
+  @media (min-width: $breakpoint-large) {
+      // mcd sketches__________
+      .sketches {
+          .mcd_sketch {
+              .two-thirds {
+                  margin-right: 10em;
+                  margin-bottom: 3em;
+              }
+          }
+      }
+  }
+  
+  @media (min-width: $breakpoint-medium) {
+      .sketches {
+          .mcd_sketch {
+              .two-thirds {
+                  padding-bottom: 2em;
+                  padding-right: 5em;
+              }
+          }
+      }
+  }
+  
+  @media (min-width: $breakpoint-small) {
+      .sketches {
+          .mcd_sketch {
+              .two-thirds {
+                  padding-bottom: 0;
+                  padding-right: 5em;
+              }
+          }
+      }
+  }
+  
+  @media (max-width: $breakpoint-small) {
+      .sketches {
+          .mcd_sketch {
+              margin-bottom: 2em;
+          }
+          // mcd swiper______________
+          #final_product {
+              .swiper-slide {
+                  .row {
+                      .two-thirds {
+                          margin-right: 0;
+                      }
+                      .one-third {
+                          padding: 1.5em;
+                      }
+                  }
+              }
+          }
+      }
+  }
