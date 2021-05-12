@@ -1215,50 +1215,51 @@ section {
     margin-bottom: 2em;
     visibility: visible;
     display: block; }
-    .sky_mobile .swiper-slide,
-    .forest_mobile .swiper-slide,
-    .cave_mobile .swiper-slide,
-    .bg_mobile .swiper-slide,
-    .planets_mobile .swiper-slide,
-    .solar_animation_mobile .swiper-slide,
-    .dino_sketch_mobile .swiper-slide,
-    .conquest_art_mobile .swiper-slide,
-    .conquest_patterns_mobile .swiper-slide,
-    .light_mobile .swiper-slide,
-    .astro_mobile .swiper-slide {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .sky_mobile .swiper-slide a img,
-      .forest_mobile .swiper-slide a img,
-      .cave_mobile .swiper-slide a img,
-      .bg_mobile .swiper-slide a img,
-      .planets_mobile .swiper-slide a img,
-      .solar_animation_mobile .swiper-slide a img,
-      .dino_sketch_mobile .swiper-slide a img,
-      .conquest_art_mobile .swiper-slide a img,
-      .conquest_patterns_mobile .swiper-slide a img,
-      .light_mobile .swiper-slide a img,
-      .astro_mobile .swiper-slide a img {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-bottom: 1em; }
-      .sky_mobile .swiper-slide .conquest_sword,
-      .forest_mobile .swiper-slide .conquest_sword,
-      .cave_mobile .swiper-slide .conquest_sword,
-      .bg_mobile .swiper-slide .conquest_sword,
-      .planets_mobile .swiper-slide .conquest_sword,
-      .solar_animation_mobile .swiper-slide .conquest_sword,
-      .dino_sketch_mobile .swiper-slide .conquest_sword,
-      .conquest_art_mobile .swiper-slide .conquest_sword,
-      .conquest_patterns_mobile .swiper-slide .conquest_sword,
-      .light_mobile .swiper-slide .conquest_sword,
-      .astro_mobile .swiper-slide .conquest_sword {
-        margin-bottom: 0; }
+    .sky_mobile .swiper-slide .container_swiper,
+    .forest_mobile .swiper-slide .container_swiper,
+    .cave_mobile .swiper-slide .container_swiper,
+    .bg_mobile .swiper-slide .container_swiper,
+    .planets_mobile .swiper-slide .container_swiper,
+    .solar_animation_mobile .swiper-slide .container_swiper,
+    .dino_sketch_mobile .swiper-slide .container_swiper,
+    .conquest_art_mobile .swiper-slide .container_swiper,
+    .conquest_patterns_mobile .swiper-slide .container_swiper,
+    .light_mobile .swiper-slide .container_swiper,
+    .astro_mobile .swiper-slide .container_swiper {
+      -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border: 10px solid red; }
+    .sky_mobile .swiper-slide a img,
+    .forest_mobile .swiper-slide a img,
+    .cave_mobile .swiper-slide a img,
+    .bg_mobile .swiper-slide a img,
+    .planets_mobile .swiper-slide a img,
+    .solar_animation_mobile .swiper-slide a img,
+    .dino_sketch_mobile .swiper-slide a img,
+    .conquest_art_mobile .swiper-slide a img,
+    .conquest_patterns_mobile .swiper-slide a img,
+    .light_mobile .swiper-slide a img,
+    .astro_mobile .swiper-slide a img {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 2em;
+      margin-bottom: 1em; }
+    .sky_mobile .swiper-slide .conquest_sword,
+    .forest_mobile .swiper-slide .conquest_sword,
+    .cave_mobile .swiper-slide .conquest_sword,
+    .bg_mobile .swiper-slide .conquest_sword,
+    .planets_mobile .swiper-slide .conquest_sword,
+    .solar_animation_mobile .swiper-slide .conquest_sword,
+    .dino_sketch_mobile .swiper-slide .conquest_sword,
+    .conquest_art_mobile .swiper-slide .conquest_sword,
+    .conquest_patterns_mobile .swiper-slide .conquest_sword,
+    .light_mobile .swiper-slide .conquest_sword,
+    .astro_mobile .swiper-slide .conquest_sword {
+      margin-bottom: 0; }
   .dino_ani_mobile {
     visibility: visible;
     display: block; } }
@@ -1322,6 +1323,19 @@ section {
       margin: 0 auto; }
     .footer .row a {
       text-decoration: none; }
+
+.credits .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0; }
+  .credits .row .one-half {
+    margin: 0; }
+    .credits .row .one-half ul {
+      list-style-type: none;
+      margin-top: 0; }
+      .credits .row .one-half ul li {
+        margin-bottom: 1em; }
 
 @media (max-width: 768px) {
   .index_entry_section {
@@ -1986,12 +2000,6 @@ fade-in {
     font-size: 1.2em;
     color: #cc1f3d;
     letter-spacing: 0.2em; }
-  .wrapper .case-studies .row .work_text_home {
-    margin-right: -13em;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
   .wrapper .case-studies .row .work-image {
     margin-left: 16em;
     margin-bottom: 3em; }
@@ -2044,48 +2052,58 @@ fade-in {
     margin-bottom: 2em; }
     .wrapper .case-studies h1 {
       margin: 3em 0 3em 0; }
-    .wrapper .case-studies .row .work_text_home {
-      display: block;
-      margin-right: 0;
-      margin-top: 3em; }
-      .wrapper .case-studies .row .work_text_home h2 {
-        margin-bottom: -0.2em; }
-      .wrapper .case-studies .row .work_text_home h3 {
-        margin-top: -0.2em; }
-    .wrapper .case-studies .row .work-image {
+    .wrapper .case-studies .work-image {
       margin-left: 0;
       margin-bottom: 1em;
-      margin-top: -2em; }
-  .award_subhead_desktop {
-    visibility: hidden;
+      margin-top: -2em; } }
+
+.award_subhead_desktop {
+  visibility: hidden;
+  margin-bottom: 0;
+  position: absolute; }
+
+.award_subhead_mobile {
+  visibility: visible;
+  position: relative; }
+  .award_subhead_mobile .medal_img {
+    max-width: 2em;
+    margin-right: 1em;
     margin-bottom: 0;
-    position: absolute; }
-  .award_subhead_mobile {
-    visibility: visible;
-    position: relative; }
-    .award_subhead_mobile .medal_img {
-      max-width: 2em;
-      margin-right: 1em;
-      margin-bottom: 0;
-      margin-top: .2em; }
-  .index_desktop_grid {
+    margin-top: .2em; }
+
+.index_desktop_grid {
+  margin-bottom: 5em; }
+  .index_desktop_grid .solar_index_text,
+  .index_desktop_grid .pele_index_text,
+  .index_desktop_grid .dino_index_text,
+  .index_desktop_grid .conquest_index_text,
+  .index_desktop_grid .zoo_index_text,
+  .index_desktop_grid .okinawa_index_text,
+  .index_desktop_grid .flutter_index_text,
+  .index_desktop_grid .astro_index_text,
+  .index_desktop_grid .mcd_index_text,
+  .index_desktop_grid .andagi_index_text,
+  .index_desktop_grid .light_index_text,
+  .index_desktop_grid .sootheze_index_text {
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
+    align-self: end;
+    margin-bottom: 1em; }
+
+.index_card {
+  border-radius: 25px;
+  border: 2px solid #005563; }
+  .index_card .work-image {
+    padding: 7em 5em 2em 5em; }
+  .index_card .line_index {
+    margin-right: 5em; }
+  .index_card .work_text_home h2 {
+    margin-left: 2em; }
+  .index_card .work_text_home h3 {
+    font-weight: 100;
+    text-align: right;
+    margin-right: 2em;
     margin-bottom: 5em; }
-    .index_desktop_grid .solar_index_text,
-    .index_desktop_grid .pele_index_text,
-    .index_desktop_grid .dino_index_text,
-    .index_desktop_grid .conquest_index_text,
-    .index_desktop_grid .zoo_index_text,
-    .index_desktop_grid .okinawa_index_text,
-    .index_desktop_grid .flutter_index_text,
-    .index_desktop_grid .astro_index_text,
-    .index_desktop_grid .mcd_index_text,
-    .index_desktop_grid .andagi_index_text,
-    .index_desktop_grid .light_index_text,
-    .index_desktop_grid .sootheze_index_text {
-      -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-      margin-bottom: 1em; } }
 
 .about-me {
   padding-top: 0;
