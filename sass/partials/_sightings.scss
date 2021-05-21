@@ -255,9 +255,36 @@
 }
 
 @media (max-width: $breakpoint-small) {
-    .sightings-desktop-grid,
-    .sightings-tablet-grid,
-    .sightings-cell-grid,
+    .sightings-desktop-grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid" ". . sightings_desktop_img . .";
+        .sightings_desktop_vid {
+            grid-area: sightings_desktop_vid;
+        }
+        .sightings_desktop_img {
+            grid-area: sightings_desktop_img;
+        }
+    }
+    .sightings-tablet-grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "sightings_tablet_vid sightings_tablet_vid sightings_tablet_vid sightings_tablet_vid sightings_tablet_vid" ". . sightings_tablet_img . .";
+        .sightings_tablet_vid {
+            grid-area: sightings_tablet_vid;
+        }
+        .sightings_tablet_img {
+            grid-area: sightings_tablet_img;
+        }
+    }
+    .sightings-cell-grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "sightings_cell_vid sightings_cell_vid sightings_cell_vid sightings_cell_vid sightings_cell_vid" ". . sightings_cell_img . .";
+        .sightings_cell_vid {
+            grid-area: sightings_cell_vid;
+        }
+        .sightings_cell_img {
+            grid-area: sightings_cell_img;
+        }
+    }
     .sightings-bg-grid {
         display: block;
     }

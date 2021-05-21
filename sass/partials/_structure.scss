@@ -144,6 +144,39 @@ section {
     }
 }
 
+//AWARD MEDAL SUB-PAGE——————————————————————————
+// .proj_summary {
+//     position: relative;
+//     .award_top_corner {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 7em;
+//         margin-top: 0;
+//     }
+//     .award_type_subpage {
+//         margin-top: .5em;
+//     }
+// }
+.award_subhead_subpage {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    .medal_img {
+        max-width: 2em;
+        margin-right: 1em;
+        margin-bottom: 0;
+        margin-top: .2em;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .award_subhead_subpage {
+        margin-top: .2em;
+        margin-bottom: 0;
+    }
+}
+
 
 /* OBJECTIVE _______________________*/
 
@@ -451,27 +484,7 @@ section {
 // INDEX ENTRY MARGIN TOP______________________________
 @media (max-width: $breakpoint-small) {
     .index_entry_section {
-        margin-top: 8em;
-    }
-}
-
-//award MEDAL SUB-PAGE——————————————————————————
-.award_subhead_subpage {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    .medal_img {
-        max-width: 2em;
-        margin-right: 1em;
-        margin-bottom: 0;
-        margin-top: .2em;
-    }
-}
-
-@media (max-width: $breakpoint-small) {
-    .award_subhead_subpage {
-        margin-top: .2em;
-        margin-bottom: 0;
+        margin-top: 1em;
     }
 }
 

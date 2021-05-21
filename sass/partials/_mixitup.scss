@@ -1,38 +1,25 @@
 /* Custom MixItUp Styling */
 
-.mixcontainer {
-    text-align: center;
-}
-
 .mixcontrols {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 .flex-grid {
     display: flex;
+    .flex-grid-half {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+    }
 }
 
-.flex-grid .col {
-    flex: 1;
-}
-
-.flex-grid-half {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex-grid-thirds .col {
-    width: 50%;
-}
-
-@media (max-width: 400px) {
+@media (max-width: $breakpoint-small) {
     .flex-grid,
     .flex-grid-half {
         display: block;
     }
-    .col {
-        width: 100%;
-        margin: 0 0 10px 0;
+    .mixcontrols {
+        margin-bottom: 0;
     }
 }
 
@@ -43,22 +30,15 @@
 .thumbgrid a {
     box-sizing: border-box;
     display: inline-block;
-    width: 50%;
-    margin-right: -4px;
+    margin-right: -2px;
     margin-bottom: -7px;
+    margin-left: -2px;
     padding: 0;
-}
-
-@media (min-width: 768px) {
-    .thumbgrid a {
-        width: 25%;
-    }
 }
 
 .thumbgrid a img {
     display: block;
     max-width: 100%;
-    height: 175px;
 }
 
 
