@@ -93,7 +93,8 @@ p {
 .thin_subtitle {
   font-weight: 100; }
 
-.award {
+.award,
+.director {
   font-family: "utopia-std", "Garamond", "Caslon", serif;
   font-size: 1.5em;
   font-weight: 500;
@@ -287,13 +288,9 @@ section.theme_info {
   font-weight: 500;
   letter-spacing: 0.2em; }
 
-.objective .hero_sub-info {
-  color: #999;
-  font-style: italic;
-  display: block; }
-
-.objective p {
-  margin-top: -0.5em; }
+.hero_sub-info {
+  display: block;
+  margin-bottom: 0; }
 
 #artwork .illustration_explain {
   max-width: 35em; }
@@ -614,7 +611,11 @@ a img:hover {
 .pele_medals a,
 .astro-works-grid a,
 .sightings-bg-grid a,
-.index_card_img a {
+.index_card_img a,
+.post_insta_sightings a,
+.sightings_ani_fb a,
+.sightings_show_fb a,
+.light_mobile a {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -1054,24 +1055,38 @@ section {
   .page-nav a.active .yellow-circle {
     background-color: #fec412; }
 
-.award_subhead_subpage {
-  visibility: visible;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .award_subhead_subpage .medal_img {
-    max-width: 2em;
-    margin-right: 1em;
-    margin-bottom: 0;
-    margin-top: .2em; }
+.zoo a,
+.conquest a,
+.naha a {
+  text-decoration: none; }
+
+.zoo a:hover,
+.conquest a:hover,
+.naha a:hover {
+  text-decoration: underline;
+  color: #cc1f3d; }
+
+.proj_summary {
+  position: relative; }
+  .proj_summary .award_top_corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7em;
+    margin-top: 0; }
+  .proj_summary .award_type_subpage {
+    margin-top: .5em; }
 
 @media (max-width: 768px) {
-  .award_subhead_subpage {
-    margin-top: .2em;
-    margin-bottom: 0; } }
+  .proj_summary .award_top_corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6em;
+    margin-top: 0; }
+  .proj_summary .award {
+    margin-left: 2em;
+    font-size: 1.3em; } }
 
 /* OBJECTIVE _______________________*/
 .objective {
@@ -1138,6 +1153,11 @@ section {
     .theme_info .row .two-thirds {
       margin-left: 0; } }
 
+.swiper-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 /* DESIGN SYSTEM___________________________*/
 .type_specimen .row {
   -webkit-box-align: start;
@@ -1200,7 +1220,8 @@ section {
 .conquest_art_mobile,
 .conquest_patterns_mobile,
 .light_mobile,
-.astro_mobile {
+.astro_mobile,
+.sightings_mobile {
   display: none; }
 
 .dino_ani_desktop {
@@ -1218,7 +1239,8 @@ section {
   .conquest_art_desktop,
   .conquest_patterns_desktop,
   .light_desktop,
-  .astro_art_desktop {
+  .astro_art_desktop,
+  .sighitngs_desktop {
     visibility: hidden;
     position: absolute; }
   .sky_mobile,
@@ -1231,7 +1253,8 @@ section {
   .conquest_art_mobile,
   .conquest_patterns_mobile,
   .light_mobile,
-  .astro_mobile {
+  .astro_mobile,
+  .sightings_mobile {
     margin-top: 2em;
     margin-bottom: 2em;
     visibility: visible;
@@ -1246,7 +1269,8 @@ section {
     .conquest_art_mobile .swiper-slide .container_swiper,
     .conquest_patterns_mobile .swiper-slide .container_swiper,
     .light_mobile .swiper-slide .container_swiper,
-    .astro_mobile .swiper-slide .container_swiper {
+    .astro_mobile .swiper-slide .container_swiper,
+    .sightings_mobile .swiper-slide .container_swiper {
       -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
@@ -1264,7 +1288,8 @@ section {
     .conquest_art_mobile .swiper-slide a img,
     .conquest_patterns_mobile .swiper-slide a img,
     .light_mobile .swiper-slide a img,
-    .astro_mobile .swiper-slide a img {
+    .astro_mobile .swiper-slide a img,
+    .sightings_mobile .swiper-slide a img {
       width: 80%;
       margin: 0 auto;
       margin-top: 2em;
@@ -1279,7 +1304,8 @@ section {
     .conquest_art_mobile .swiper-slide .conquest_sword,
     .conquest_patterns_mobile .swiper-slide .conquest_sword,
     .light_mobile .swiper-slide .conquest_sword,
-    .astro_mobile .swiper-slide .conquest_sword {
+    .astro_mobile .swiper-slide .conquest_sword,
+    .sightings_mobile .swiper-slide .conquest_sword {
       margin-bottom: 0; }
   .dino_ani_mobile {
     visibility: visible;
@@ -1344,6 +1370,12 @@ section {
       margin: 0 auto; }
     .footer .row a {
       text-decoration: none; }
+
+.final_image_bottom .button {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 4em; }
 
 .credits .row {
   -webkit-box-pack: justify;
@@ -1725,12 +1757,6 @@ fade-in {
 .final_ui img {
   margin-top: 1em; }
 
-.final_image_bottom .button {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
-
 .hero .conquest {
   background-color: #e2d5bb; }
 
@@ -1996,13 +2022,8 @@ fade-in {
 .sort-selection {
   display: block; }
 
-.index_card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); }
-  .index_card:hover a .index_card_img {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03); }
+.case-studies {
+  margin-bottom: 5em; }
 
 .index_card {
   padding-bottom: 10px;
@@ -2030,6 +2051,7 @@ fade-in {
   .index_card .line_index {
     margin-right: 5em; }
   .index_card .work_text_home h2 {
+    text-decoration: none;
     margin-left: 2em;
     font-size: 1.5em; }
   .index_card .work_text_home .align-right-type {
@@ -2049,23 +2071,24 @@ fade-in {
       z-index: 100;
       margin-top: 0;
       text-align: right; }
-    .index_card .work_text_home .align-right-type .gold {
-      color: #efab00; }
-    .index_card .work_text_home .align-right-type .silver {
-      color: #919191; }
-    .index_card .work_text_home .align-right-type .bronze {
-      color: #c46200; }
     .index_card .work_text_home .align-right-type .no-award {
       margin-bottom: 5em; }
 
-.gold {
-  color: #efab00; }
+.index_card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); }
+  .index_card:hover a img {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03); }
 
-.silver {
-  color: #919191; }
+.work_text_home:hover h2,
+.work_text_home:hover h3 {
+  text-decoration: none; }
 
-.bronze {
-  color: #c46200; }
+.work_text_home:hover img:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
 
 @media (max-width: 768px) {
   .index_card {
@@ -2160,11 +2183,6 @@ fade-in {
 
 .zoo {
   background-color: #a4dd83; }
-  .zoo a {
-    text-decoration: none; }
-  .zoo a:hover {
-    text-decoration: underline;
-    color: #cc1f3d; }
 
 #final_product .row {
   -webkit-box-pack: justify;
@@ -3480,173 +3498,22 @@ fade-in {
 .final_ui img {
   margin-top: 1em; }
 
-.sightings-desktop-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2em;
-  margin-top: 4em;
-  justify-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_img"; }
-  .sightings-desktop-grid .sightings_desktop_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-area: sightings_desktop_vid;
-    max-width: 700px; }
-  .sightings-desktop-grid .sightings_desktop_img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    grid-area: sightings_desktop_img;
-    -ms-grid-column-align: start;
-    justify-self: start; }
-
-.sightings-tablet-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2em;
-  margin-top: 4em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: ".  sightings_tablet_vid sightings_tablet_vid sightings_tablet_img ."; }
-  .sightings-tablet-grid .sightings_tablet_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-    grid-area: sightings_tablet_vid;
-    max-width: 390px; }
-  .sightings-tablet-grid .sightings_tablet_img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-    grid-area: sightings_tablet_img; }
-
-.sightings-cell-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2em;
-  margin-top: 4em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: ". sightings_cell_vid sightings_cell_vid sightings_cell_img . ."; }
-  .sightings-cell-grid .sightings_cell_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-    grid-area: sightings_cell_vid;
-    max-width: 306px;
-    -ms-grid-column-align: center;
-    justify-self: center; }
-  .sightings-cell-grid .sightings_cell_img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-    grid-area: sightings_cell_img; }
+.sightings_scroll {
+  margin: 4em 0 4em 0; }
+  .sightings_scroll .sightings_tablet_vid {
+    margin: 0 auto; }
+  .sightings_scroll .sightings_cell_vid {
+    margin: 0 auto; }
 
 @media (max-width: 768px) {
-  .sightings-desktop-grid {
-    -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: auto 2em auto;
-    grid-template-areas: "sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid sightings_desktop_vid" ". . sightings_desktop_img . ."; }
-    .sightings-desktop-grid .sightings_desktop_vid {
-      -ms-grid-row: 1;
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 7;
-      grid-area: sightings_desktop_vid; }
-    .sightings-desktop-grid .sightings_desktop_img {
-      -ms-grid-row: 1;
-      -ms-grid-column: 9;
-      grid-area: sightings_desktop_img; }
-  .sightings-tablet-grid {
-    -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: auto 2em auto;
-    grid-template-areas: "sightings_tablet_vid sightings_tablet_vid sightings_tablet_vid sightings_tablet_vid sightings_tablet_vid" ". . sightings_tablet_img . ."; }
-    .sightings-tablet-grid .sightings_tablet_vid {
-      -ms-grid-row: 1;
-      -ms-grid-column: 3;
-      -ms-grid-column-span: 3;
-      grid-area: sightings_tablet_vid; }
-    .sightings-tablet-grid .sightings_tablet_img {
-      -ms-grid-row: 1;
-      -ms-grid-column: 7;
-      grid-area: sightings_tablet_img; }
-  .sightings-cell-grid {
-    -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: auto 2em auto;
-    grid-template-areas: "sightings_cell_vid sightings_cell_vid sightings_cell_vid sightings_cell_vid sightings_cell_vid" ". . sightings_cell_img . ."; }
-    .sightings-cell-grid .sightings_cell_vid {
-      -ms-grid-row: 1;
-      -ms-grid-column: 3;
-      -ms-grid-column-span: 3;
-      grid-area: sightings_cell_vid; }
-    .sightings-cell-grid .sightings_cell_img {
-      -ms-grid-row: 1;
-      -ms-grid-column: 7;
-      grid-area: sightings_cell_img; }
-  .sightings-bg-grid {
-    display: block; }
-  .sightings_desktop_vid,
-  .sightings_desktop_img,
-  .sightings_tablet_vid,
-  .sightings_cell_img,
-  .sightings_cell_vid,
-  .sightings_cell_img {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 1em; }
-  .sightings-desktop-grid .sightings_desktop_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9; }
-  .sightings-desktop-grid .sightings_desktop_img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5; }
-  .sightings-tablet-grid .sightings_tablet_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9; }
-  .sightings-tablet-grid .sightings_tablet_img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5; }
-  .sightings-cell-grid .sightings_cell_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9; }
-  .sightings-cell-grid .sightings_cell_img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5; } }
-
-@media (max-width: 768px) {
-  .sightings-cell-grid .sightings_cell_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9; }
-  .sightings-cell-grid .sightings_cell_img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5; } }
-
-@media (max-width: 768px) {
-  .sightings-tablet-grid .sightings_tablet_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9; }
-  .sightings-tablet-grid .sightings_tablet_img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5; } }
-
-@media (max-width: 768px) {
-  .sightings-desktop-grid .sightings_desktop_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9; }
-  .sightings-desktop-grid .sightings_desktop_img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5; } }
+  .sightings_scroll {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+    .sightings_scroll .sightings_desktop_vid {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .sightings-insta-grid,
 .sightings-fb-grid {

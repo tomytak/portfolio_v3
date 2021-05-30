@@ -77,7 +77,8 @@
                 font-weight: 100;
             }
             
-            .award {
+            .award,
+            .director {
                 font-family: $bodyfont-family;
                 font-size: 1.5em;
                 font-weight: 500;
@@ -300,14 +301,11 @@
                     font-weight: 500;
                     letter-spacing: 0.2em;
                 }
-                .hero_sub-info {
-                    color: $color-gray;
-                    font-style: italic;
-                    display: block;
-                }
-                p {
-                    margin-top: -0.5em;
-                }
+            }
+            
+            .hero_sub-info {
+                display: block;
+                margin-bottom: 0;
             }
             
             // ILLUSTRATION_EXPLAIN___________________________

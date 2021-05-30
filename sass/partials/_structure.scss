@@ -145,35 +145,45 @@ section {
 }
 
 //AWARD MEDAL SUB-PAGE——————————————————————————
-// .proj_summary {
-//     position: relative;
-//     .award_top_corner {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 7em;
-//         margin-top: 0;
-//     }
-//     .award_type_subpage {
-//         margin-top: .5em;
-//     }
-// }
-.award_subhead_subpage {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    .medal_img {
-        max-width: 2em;
-        margin-right: 1em;
-        margin-bottom: 0;
-        margin-top: .2em;
+.zoo,
+.conquest,
+.naha {
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: $color-red;
+    }
+}
+
+.proj_summary {
+    position: relative;
+    .award_top_corner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7em;
+        margin-top: 0;
+    }
+    .award_type_subpage {
+        margin-top: .5em;
     }
 }
 
 @media (max-width: $breakpoint-small) {
-    .award_subhead_subpage {
-        margin-top: .2em;
-        margin-bottom: 0;
+    .proj_summary {
+        .award_top_corner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6em;
+            margin-top: 0;
+        }
+        .award {
+            margin-left: 2em;
+            font-size: 1.3em;
+        }
     }
 }
 
@@ -259,6 +269,11 @@ section {
     }
 }
 
+// swiper—veritcal align center____
+.swiper-wrapper {
+    align-items: center;
+}
+
 
 /* DESIGN SYSTEM___________________________*/
 
@@ -305,7 +320,6 @@ section {
 }
 
 // ARTWORK DESKTOP_________________
-// sightings___________
 .sky_desktop,
 .forest_desktop,
 .cave_desktop,
@@ -329,7 +343,8 @@ section {
 .conquest_art_mobile,
 .conquest_patterns_mobile,
 .light_mobile,
-.astro_mobile {
+.astro_mobile,
+.sightings_mobile {
     display: none;
 }
 
@@ -338,7 +353,6 @@ section {
 }
 
 // ARTWORK MOBILE____________________
-// sightings___________
 @media (max-width: $breakpoint-small) {
     .sky_desktop,
     .forest_desktop,
@@ -351,7 +365,8 @@ section {
     .conquest_art_desktop,
     .conquest_patterns_desktop,
     .light_desktop,
-    .astro_art_desktop {
+    .astro_art_desktop,
+    .sighitngs_desktop {
         visibility: hidden;
         position: absolute;
     }
@@ -365,15 +380,14 @@ section {
     .conquest_art_mobile,
     .conquest_patterns_mobile,
     .light_mobile,
-    .astro_mobile {
+    .astro_mobile,
+    .sightings_mobile {
         margin-top: 2em;
         margin-bottom: 2em;
         visibility: visible;
         display: block;
         .swiper-slide {
             .container_swiper {
-                // align-items: center;
-                // justify-content: center;
                 align-self: center;
                 justify-self: center;
                 display: flex;
@@ -460,6 +474,14 @@ section {
         a {
             text-decoration: none;
         }
+    }
+}
+
+// view website button_bottom______________
+.final_image_bottom {
+    .button {
+        transform: translateX(-50%);
+        margin-bottom: 4em;
     }
 }
 
