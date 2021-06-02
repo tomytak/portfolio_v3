@@ -3253,15 +3253,14 @@ fade-in {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 1em; }
+  @media (max-width: 768px) {
+    .flex-grid .flex-grid,
+    .flex-grid .flex-grid-half {
+      display: block; }
+    .flex-grid .mixcontrols {
+      margin-bottom: 0; } }
 
-@media (max-width: 768px) {
-  .flex-grid,
-  .flex-grid-half {
-    display: block; }
-  .mixcontrols {
-    margin-bottom: 0; } }
-
-/* Thumb Image Grid */
+__________________
 .thumbgrid a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
