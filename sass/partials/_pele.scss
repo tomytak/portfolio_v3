@@ -117,3 +117,29 @@
         margin-bottom: 4em;
     }
 }
+
+// view website button_bottom______________
+.final_image_bottom {
+    .button {
+        transform: translateX(-50%);
+        margin-bottom: 4em;
+    }
+}
+
+// CREDITS_________
+.credits {
+    .row {
+        justify-content: space-between;
+        padding: 0;
+        .one-half {
+            margin: 0;
+            ul {
+                list-style-type: none;
+                margin-top: 0;
+                li {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+}

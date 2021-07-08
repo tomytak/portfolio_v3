@@ -10,6 +10,7 @@
         display: flex;
         justify-content: space-between;
         margin: 1em;
+        width: 46%;
     }
     @media (max-width: $breakpoint-small) {
         .flex-grid,
@@ -28,9 +29,9 @@ __________________
 .thumbgrid a {
     box-sizing: border-box;
     display: inline-block;
-    margin-right: -2px;
-    margin-bottom: -7px;
-    margin-left: -2px;
+    // margin-right: -2px;
+    // margin-bottom: -7px;
+    // margin-left: -2px;
     padding: 0;
 }
 
