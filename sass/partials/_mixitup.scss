@@ -7,14 +7,12 @@
 .flex-grid {
     display: flex;
     .flex-grid-half {
-        display: flex;
+        // display: flex;
         justify-content: space-between;
         margin: 1em;
-        width: 46%;
     }
     @media (max-width: $breakpoint-small) {
-        .flex-grid,
-        .flex-grid-half {
+        &.flex-grid {
             display: block;
         }
         .mixcontrols {
