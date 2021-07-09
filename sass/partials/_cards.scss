@@ -110,63 +110,44 @@
     .index_card_img {
         transform: scale(1.03);
     }
-    .line_index:hover,
+    .line_index,
     .award_b_corner {
-        border: 1ps solid green;
-        animation-play-state: none;
+        animation-play-state: paused;
     }
 }
 
 @media (max-width: $breakpoint-small) {
     .index_card {
-        margin-bottom: 0;
+        display: block;
+        margin-top: 4em;
     }
 }
 
-// // index work grid_______________
+// flex-grid____________________
+.flex-grid {
+    display: flex;
+    .flex-grid-half {
+        margin: 1em;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .flex-grid {
+        display: block;
+        .flex-grid-half {
+            margin-top: 2em;
+        }
+    }
+}
+
+// index work grid______________
 .index_work_grid {
     display: grid;
     margin: 0 auto;
     grid-gap: 2em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: ". index_andagi index_andagi .";
-    // grid-template-areas: "index_pele index_pele index_sightings index_sightings" "index_zoo index_zoo index_dino index_dino" "index_naha index_naha index_conquest index_conquest" "index_solar index_solar index_astroday index_astroday" "index_flutter index_flutter index_mcd index_mcd" "index_sootheze index_sootheze index_light index_light" ". index_andagi index_andagi .";
-    //     .index_pele {
-    //         grid-area: index_pele;
-    //     }
-    //     .index_sightings {
-    //         grid-area: index_sightings;
-    //     }
-    //     .index_zoo {
-    //         grid-area: index_zoo;
-    //     }
-    //     .index_dino {
-    //         grid-area: index_dino;
-    //     }
-    //     .index_naha {
-    //         grid-area: index_naha;
-    //     }
-    //     .index_conquest {
-    //         grid-area: index_conquest;
-    //     }
-    //     .index_solar {
-    //         grid-area: index_solar;
-    //     }
-    //     .index_astroday {
-    //         grid-area: index_astroday;
-    //     }
-    //     .index_flutter {
-    //         grid-area: index_flutter;
-    //     }
-    //     .index_mcd {
-    //         grid-area: index_mcd;
-    //     }
-    //     .index_sootheze {
-    //         grid-area: index_sootheze;
-    //     }
-    //     .index_light {
-    //         grid-area: index_light;
-    //     }
     .index_andagi {
         grid-area: index_andagi;
     }
@@ -175,28 +156,9 @@
 @media (max-width: $breakpoint-small) {
     .index_work_grid {
         display: block;
-        margin-top: 2em;
+        margin-top: 1em;
         .index_andagi {
-            margin-bottom: 2em;
+            margin: 1em;
         }
     }
-    // .index_work_grid {
-    //     display: block;
-    //     margin-top: 2em;
-    //     .index_pele,
-    //     .index_sightings,
-    //     .index_zoo,
-    //     .index_dino,
-    //     .index_naha,
-    //     .index_conquest,
-    //     .index_solar,
-    //     .index_astroday,
-    //     .index_flutter,
-    //     .index_mcd,
-    //     .index_sootheze,
-    //     .index_light,
-    //     .index_andagi {
-    //         margin-bottom: 2em;
-    //     }
-    // }
 }
