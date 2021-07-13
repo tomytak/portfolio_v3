@@ -158,7 +158,9 @@ section#motion_graphic,
 .illustrator,
 #sketches,
 .conquest-grid,
-.grid #print {
+.grid #print,
+.wireframe,
+.sighitngs_wire_final {
   padding-top: 10em;
   padding-bottom: 0;
   margin: 0; }
@@ -615,7 +617,8 @@ a img:hover {
 .post_insta_sightings a,
 .sightings_ani_fb a,
 .sightings_show_fb a,
-.light_mobile a {
+.light_mobile a,
+.wireframe a {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -1128,6 +1131,10 @@ section {
     width: 16em;
     margin-left: 0; }
 
+@media (max-width: 1050px) {
+  .objective hr {
+    width: 11.5em; } }
+
 .theme_info {
   padding: 0; }
   .theme_info .theme_name {
@@ -1138,7 +1145,8 @@ section {
       text-transform: uppercase; }
     .theme_info .theme_name hr {
       max-width: 30.5em;
-      margin-left: 0; }
+      margin-left: 0;
+      border-top: 2px dashed #cc1f3d; }
   .theme_info .row {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1282,8 +1290,7 @@ section {
       justify-self: center;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      border: 10px solid red; }
+      display: flex; }
     .sky_mobile .swiper-slide a img,
     .forest_mobile .swiper-slide a img,
     .cave_mobile .swiper-slide a img,
@@ -1626,17 +1633,12 @@ fade-in {
 /* illustrator */
 .illustrator {
   padding-bottom: 0; }
-  .illustrator .two-thirds {
-    margin-right: 0; }
-    .illustrator .two-thirds video {
-      margin-top: 0.5em; }
+  .illustrator video {
+    margin-top: 0.5em; }
 
 /* after effects */
 .aftereffects video {
   margin-top: 0.5em; }
-
-.aftereffects .one-third {
-  margin-right: 0; }
 
 /* ANIMATIONS */
 .animation .dino-button-main-grid {
@@ -3294,11 +3296,6 @@ fade-in {
 .aftereffects .column {
   margin-right: 5%; }
 
-/* WIREFRAME */
-.wireframe .one-third {
-  margin-right: 0; }
-
-/* sketch */
 .sketches .row {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;

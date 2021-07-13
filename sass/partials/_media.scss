@@ -37,7 +37,8 @@ a img:hover {
 .post_insta_sightings a,
 .sightings_ani_fb a,
 .sightings_show_fb a,
-.light_mobile a {
+.light_mobile a,
+.wireframe a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

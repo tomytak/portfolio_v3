@@ -226,6 +226,14 @@ section {
     }
 }
 
+@media (max-width: $breakpoint-medium) {
+    .objective {
+        hr {
+            width: 11.5em;
+        }
+    }
+}
+
 // THEME________
 .theme_info {
     padding: 0;
@@ -239,6 +247,7 @@ section {
         hr {
             max-width: 30.5em;
             margin-left: 0;
+            border-top: 2px dashed $color-red;
         }
     }
     .row {
@@ -391,7 +400,6 @@ section {
                 align-self: center;
                 justify-self: center;
                 display: flex;
-                border: 10px solid red;
             }
             a img {
                 width: 80%;
