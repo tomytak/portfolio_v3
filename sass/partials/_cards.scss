@@ -21,6 +21,28 @@
     }
 }
 
+// QUOTE ART INDEX___________________________
+.quote_art {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    .yellow-circle {
+        border: 5px solid $color-yellow;
+        background-color: $color-white;
+        border-radius: 50%;
+        height: 1.2em;
+        width: 1.2em;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: $breakpoint-medium) {
+    .quote_art {
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+}
+
 .about_me {
     display: grid;
     margin-top: 0;

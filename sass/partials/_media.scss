@@ -38,7 +38,11 @@ a img:hover {
 .sightings_ani_fb a,
 .sightings_show_fb a,
 .light_mobile a,
-.wireframe a {
+.wireframe a,
+.grandma_hero a,
+.hands_hero a,
+.hands_grid a,
+.hands_img a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

@@ -209,6 +209,39 @@
                 }
             }
             
+            // art index quote____________________
+            .quote_art {
+                h1 {
+                    font-family: $bodyfont-family;
+                    text-transform: none;
+                    color: $color-teal;
+                    font-weight: 700;
+                    line-height: 1.3em;
+                    text-align: center;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+                h2 {
+                    text-align: center;
+                    margin: 0 auto;
+                    max-width: 25em;
+                }
+                .underline {
+                    text-decoration-style: dashed;
+                    text-decoration-line: underline;
+                    text-decoration-color: $color-red;
+                }
+                @media (max-width: $breakpoint-small) {
+                    h1 {
+                        width: 10em;
+                    }
+                    h2 {
+                        font-size: 1.5em;
+                        max-width: 15em;
+                    }
+                }
+            }
+            
             // index work_____________________________   
             .work_text_home {
                 h2 {

@@ -215,6 +215,38 @@ section.theme_info {
     -webkit-text-decoration-color: #cc1f3d;
     text-decoration-color: #cc1f3d; }
 
+.quote_art h1 {
+  font-family: "utopia-std", "Garamond", "Caslon", serif;
+  text-transform: none;
+  color: #005563;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-align: center;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.quote_art h2 {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 25em; }
+
+.quote_art .underline {
+  -webkit-text-decoration-style: dashed;
+  text-decoration-style: dashed;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-color: #cc1f3d;
+  text-decoration-color: #cc1f3d; }
+
+@media (max-width: 768px) {
+  .quote_art h1 {
+    width: 10em; }
+  .quote_art h2 {
+    font-size: 1.5em;
+    max-width: 15em; } }
+
 .work_text_home h2 {
   font-family: "Nobel", "Roboto Condensed", sans-serif;
   font-weight: 500;
@@ -618,7 +650,11 @@ a img:hover {
 .sightings_ani_fb a,
 .sightings_show_fb a,
 .light_mobile a,
-.wireframe a {
+.wireframe a,
+.grandma_hero a,
+.hands_hero a,
+.hands_grid a,
+.hands_img a {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -1977,6 +2013,25 @@ fade-in {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
+
+.quote_art {
+  margin-top: 5em;
+  margin-bottom: 15em; }
+  .quote_art .yellow-circle {
+    border: 5px solid #fec412;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+@media (max-width: 1050px) {
+  .quote_art {
+    margin-top: 2em;
+    margin-bottom: 5em; } }
 
 .about_me {
   display: -ms-grid;
@@ -3561,3 +3616,106 @@ fade-in {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+.grandma_hero {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: .25em; }
+
+@media (max-width: 768px) {
+  .grandma_hero {
+    width: 100%; } }
+
+.grandma {
+  background-color: rgba(220, 191, 147, 0.879);
+  margin-bottom: 2em; }
+  .grandma hr {
+    max-width: 12em;
+    margin-left: 0;
+    border-top: 2px dashed #cc1f3d; }
+  .grandma ul {
+    padding-left: 0; }
+    .grandma ul li {
+      list-style: none; }
+
+.hands {
+  background-color: rgba(220, 191, 147, 0.879);
+  margin-bottom: 2em; }
+  .hands hr {
+    max-width: 12em;
+    margin-left: 0;
+    border-top: 2px dashed #cc1f3d; }
+  .hands ul {
+    padding-left: 0; }
+    .hands ul li {
+      list-style: none; }
+
+.hands_img {
+  margin-top: 5em;
+  margin-bottom: 5em; }
+  .hands_img .art_caption p {
+    font-size: 1em;
+    line-height: .5em; }
+
+.hands_img .whats_left_grid {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "whats_left1 whats_left1 whats_left2 whats_left2 whats_left2"; }
+  .hands_img .whats_left_grid .whats_left1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: whats_left1; }
+  .hands_img .whats_left_grid .whats_left2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 5;
+    grid-area: whats_left2; }
+
+@media (max-width: 768px) {
+  .hands_img .whats_left_grid {
+    display: block; }
+    .hands_img .whats_left_grid .whats_left1,
+    .hands_img .whats_left_grid .whats_left2 {
+      margin-bottom: 2em; } }
+
+.hands_concept .hands_grid {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto 2em auto;
+  grid-template-areas: "sanshin_paint sanshin_paint sanshin_paint multiple_hands multiple_hands multiple_hands" "sanshin_portrait sanshin_portrait sanshin_portrait multiple_hands multiple_hands multiple_hands"; }
+  .hands_concept .hands_grid .sanshin_paint {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: sanshin_paint;
+    align-self: flex-end; }
+  .hands_concept .hands_grid .sanshin_portrait {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: sanshin_portrait; }
+  .hands_concept .hands_grid .multiple_hands {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-area: multiple_hands; }
+
+@media (max-width: 768px) {
+  .hands_concept .hands_grid {
+    display: block; }
+    .hands_concept .hands_grid .sanshin_paint,
+    .hands_concept .hands_grid .sanshin_portrait,
+    .hands_concept .hands_grid .multiple_hands {
+      margin-bottom: 2em; } }
