@@ -353,7 +353,10 @@ section {
 .conquest_patterns_mobile,
 .light_mobile,
 .astro_mobile,
-.sightings_mobile {
+.sightings_mobile,
+.mk_logov1_mobile,
+.mk_logov2_mobile,
+.mk_logo_color_mobile {
     display: none;
 }
 
@@ -375,7 +378,10 @@ section {
     .conquest_patterns_desktop,
     .light_desktop,
     .astro_art_desktop,
-    .sighitngs_desktop {
+    .sighitngs_desktop,
+    .mk_logov1_desktop,
+    .mk_logov2_desktop,
+    .mk_logo_color_desktop {
         visibility: hidden;
         position: absolute;
     }
@@ -390,7 +396,10 @@ section {
     .conquest_patterns_mobile,
     .light_mobile,
     .astro_mobile,
-    .sightings_mobile {
+    .sightings_mobile,
+    .mk_logov1_mobile,
+    .mk_logov2_mobile,
+    .mk_logo_color_mobile {
         margin-top: 2em;
         margin-bottom: 2em;
         visibility: visible;

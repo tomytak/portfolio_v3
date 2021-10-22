@@ -507,6 +507,23 @@ section.theme_info {
 #styletiles .sectionhead {
   font-size: 3em; }
 
+.type_mk h1,
+.type_mk h2 {
+  color: black;
+  font-family: "adrianna", sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+
+.type_mk h1 {
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 2px; }
+
+.type_mk h2 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: .3em; }
+
 /* TYPOGRAPHIC SCALE SIGHTINGS______________________*/
 .type_sightings h1,
 .type_sightings h2,
@@ -1271,7 +1288,10 @@ section {
 .conquest_patterns_mobile,
 .light_mobile,
 .astro_mobile,
-.sightings_mobile {
+.sightings_mobile,
+.mk_logov1_mobile,
+.mk_logov2_mobile,
+.mk_logo_color_mobile {
   display: none; }
 
 .dino_ani_desktop {
@@ -1290,7 +1310,10 @@ section {
   .conquest_patterns_desktop,
   .light_desktop,
   .astro_art_desktop,
-  .sighitngs_desktop {
+  .sighitngs_desktop,
+  .mk_logov1_desktop,
+  .mk_logov2_desktop,
+  .mk_logo_color_desktop {
     visibility: hidden;
     position: absolute; }
   .sky_mobile,
@@ -1304,7 +1327,10 @@ section {
   .conquest_patterns_mobile,
   .light_mobile,
   .astro_mobile,
-  .sightings_mobile {
+  .sightings_mobile,
+  .mk_logov1_mobile,
+  .mk_logov2_mobile,
+  .mk_logo_color_mobile {
     margin-top: 2em;
     margin-bottom: 2em;
     visibility: visible;
@@ -1320,7 +1346,10 @@ section {
     .conquest_patterns_mobile .swiper-slide .container_swiper,
     .light_mobile .swiper-slide .container_swiper,
     .astro_mobile .swiper-slide .container_swiper,
-    .sightings_mobile .swiper-slide .container_swiper {
+    .sightings_mobile .swiper-slide .container_swiper,
+    .mk_logov1_mobile .swiper-slide .container_swiper,
+    .mk_logov2_mobile .swiper-slide .container_swiper,
+    .mk_logo_color_mobile .swiper-slide .container_swiper {
       -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
@@ -1338,7 +1367,10 @@ section {
     .conquest_patterns_mobile .swiper-slide a img,
     .light_mobile .swiper-slide a img,
     .astro_mobile .swiper-slide a img,
-    .sightings_mobile .swiper-slide a img {
+    .sightings_mobile .swiper-slide a img,
+    .mk_logov1_mobile .swiper-slide a img,
+    .mk_logov2_mobile .swiper-slide a img,
+    .mk_logo_color_mobile .swiper-slide a img {
       width: 80%;
       margin: 0 auto;
       margin-top: 2em;
@@ -1354,7 +1386,10 @@ section {
     .conquest_patterns_mobile .swiper-slide .conquest_sword,
     .light_mobile .swiper-slide .conquest_sword,
     .astro_mobile .swiper-slide .conquest_sword,
-    .sightings_mobile .swiper-slide .conquest_sword {
+    .sightings_mobile .swiper-slide .conquest_sword,
+    .mk_logov1_mobile .swiper-slide .conquest_sword,
+    .mk_logov2_mobile .swiper-slide .conquest_sword,
+    .mk_logo_color_mobile .swiper-slide .conquest_sword {
       margin-bottom: 0; }
   .dino_ani_mobile {
     visibility: visible;
@@ -3385,13 +3420,22 @@ fade-in {
     -ms-grid-row: 1;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     grid-area: petal_fairy; }
   .sightings-sky-grid .leaf_fairy {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: leaf_fairy; }
   .sightings-sky-grid .sit_fairy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -3409,13 +3453,22 @@ fade-in {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: rock_monster; }
   .sightings-forest-grid .skull_mermaid {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: skull_mermaid; }
   .sightings-forest-grid .nessy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
@@ -3434,8 +3487,14 @@ fade-in {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: colorful_bird; }
   .sightings-cave-grid .bird_tech {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -3444,8 +3503,14 @@ fade-in {
     -ms-grid-row: 5;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: red_monster; }
   .sightings-cave-grid .green_fuzzy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
@@ -3453,6 +3518,9 @@ fade-in {
     margin-left: 1.3em;
     margin-right: -2em; }
   .sightings-cave-grid .green_squat {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
@@ -3464,8 +3532,14 @@ fade-in {
     -ms-grid-row: 1;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     grid-area: lizard_angle; }
   .sightings-cave-grid .lizard_front {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
@@ -3483,13 +3557,22 @@ fade-in {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: cloud; }
   .sightings-bg-grid .forest_bg {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: forest_bg; }
   .sightings-bg-grid .cave_bg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
@@ -3562,8 +3645,16 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 3;
     -ms-grid-column-span: 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
     grid-area: phone_insta_sightings; }
   .sightings-insta-grid .post_insta_sightings {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 9;
@@ -3591,13 +3682,23 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
     grid-area: phone_sightings_fb; }
   .sightings-fb-grid .sightings_ani_fb {
     -ms-grid-row: 3;
     -ms-grid-column: 7;
     -ms-grid-column-span: 7;
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 7;
     grid-area: sightings_ani_fb; }
   .sightings-fb-grid .sightings_show_fb {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 7;
     -ms-grid-row: 5;
     -ms-grid-column: 7;
     -ms-grid-column-span: 7;
@@ -3719,3 +3820,357 @@ fade-in {
     .hands_concept .hands_grid .sanshin_portrait,
     .hands_concept .hands_grid .multiple_hands {
       margin-bottom: 2em; } }
+
+/* HERO */
+.sightings {
+  background-color: #BFC0BE; }
+
+.theme_info {
+  padding: 7em 0; }
+  .theme_info .theme_name .sightings_theme {
+    text-transform: uppercase; }
+  .theme_info .sightings_theme_img {
+    padding-right: 5em; }
+
+@media (max-width: 768px) {
+  .theme_info .sightings_theme_img {
+    padding-right: 0; } }
+
+/* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
+.wireframe .column,
+.illustrator .column,
+.sketch .column,
+.aftereffects .column {
+  margin-right: 5%; }
+
+.sketches .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* illustrator */
+.illustrator {
+  margin-bottom: 4em; }
+  .illustrator .two-thirds {
+    margin-right: 0; }
+    .illustrator .two-thirds video {
+      margin-top: 0.5em; }
+
+.sky_characters_text {
+  margin-top: 4em; }
+
+.sightings-sky-grid,
+.sightings-forest-grid,
+.sightings-cave-grid,
+.sightings-bg-grid {
+  margin-bottom: 4em; }
+
+.sightings-sky-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "sit_fairy sit_fairy leaf_fairy leaf_fairy petal_fairy petal_fairy"; }
+  .sightings-sky-grid .petal_fairy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: petal_fairy; }
+  .sightings-sky-grid .leaf_fairy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: leaf_fairy; }
+  .sightings-sky-grid .sit_fairy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: sit_fairy; }
+
+.sightings-forest-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "rock_monster rock_monster skull_mermaid skull_mermaid nessy nessy"; }
+  .sightings-forest-grid .rock_monster {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: rock_monster; }
+  .sightings-forest-grid .skull_mermaid {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: skull_mermaid; }
+  .sightings-forest-grid .nessy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: nessy; }
+
+.sightings-cave-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto 2em auto 2em auto;
+  grid-template-areas: "bird_tech bird_tech green_fuzzy green_fuzzy lizard_angle lizard_angle" "colorful_bird colorful_bird green_squat green_squat lizard_front lizard_front" ". . red_monster red_monster . ."; }
+  .sightings-cave-grid .colorful_bird {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: colorful_bird; }
+  .sightings-cave-grid .bird_tech {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: bird_tech; }
+  .sightings-cave-grid .red_monster {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: red_monster; }
+  .sightings-cave-grid .green_fuzzy {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: green_fuzzy;
+    margin-left: 1.3em;
+    margin-right: -2em; }
+  .sightings-cave-grid .green_squat {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: green_squat;
+    align-self: flex-start;
+    margin-right: 1.3em;
+    margin-left: -2em; }
+  .sightings-cave-grid .lizard_angle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: lizard_angle; }
+  .sightings-cave-grid .lizard_front {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: lizard_front; }
+
+.sightings-bg-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  margin-top: 4em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "cloud cloud forest_bg forest_bg cave_bg cave_bg"; }
+  .sightings-bg-grid .cloud {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: cloud; }
+  .sightings-bg-grid .forest_bg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: forest_bg; }
+  .sightings-bg-grid .cave_bg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: cave_bg; }
+
+@media (max-width: 768px) {
+  .sightings-sky-grid,
+  .sightings-forest-grid,
+  .sightings-cave-grid,
+  .sightings-bg-grid,
+  .sightings-bg-grid {
+    display: block;
+    margin-bottom: 4em; }
+  .petal_fairy,
+  .leaf_fairy,
+  .sit_fairy,
+  .rock_monster,
+  .skull_mermaid,
+  .nessy,
+  .colorful_bird,
+  .bird_tech,
+  .colorful_bird,
+  .bird_tech,
+  .red_monster,
+  .green_fuzzy,
+  .green_squat,
+  .lizard_angle,
+  .lizard_front,
+  .cloud,
+  .forest_bg,
+  .cave_bg {
+    margin-bottom: 2em; } }
+
+/* UI DESIGN */
+.final_ui img {
+  margin-top: 1em; }
+
+.sightings_scroll {
+  margin: 4em 0 4em 0; }
+  .sightings_scroll .sightings_tablet_vid {
+    margin: 0 auto; }
+  .sightings_scroll .sightings_cell_vid {
+    margin: 0 auto; }
+
+@media (max-width: 768px) {
+  .sightings_scroll {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+    .sightings_scroll .sightings_desktop_vid {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
+
+.sightings-insta-grid,
+.sightings-fb-grid {
+  max-width: 80%; }
+
+.sightings-insta-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 2em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+  grid-template-areas: ". phone_insta_sightings phone_insta_sightings phone_insta_sightings . . ." ". phone_insta_sightings phone_insta_sightings phone_insta_sightings post_insta_sightings post_insta_sightings ." ". phone_insta_sightings phone_insta_sightings phone_insta_sightings post_insta_sightings post_insta_sightings ." ". phone_insta_sightings phone_insta_sightings phone_insta_sightings . . ."; }
+  .sightings-insta-grid .phone_insta_sightings {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    grid-area: phone_insta_sightings; }
+  .sightings-insta-grid .post_insta_sightings {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: post_insta_sightings; }
+
+@media (max-width: 768px) {
+  .sightings-insta-grid {
+    display: block; }
+    .sightings-insta-grid .phone_insta_sightings,
+    .sightings-insta-grid .post_insta_sightings {
+      margin-bottom: 1em; } }
+
+.sightings-fb-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 2em;
+  grid-gap: 2em;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+  grid-template-areas: "phone_sightings_fb phone_sightings_fb phone_sightings_fb . . . ." "phone_sightings_fb phone_sightings_fb phone_sightings_fb sightings_ani_fb sightings_ani_fb sightings_ani_fb sightings_ani_fb" "phone_sightings_fb phone_sightings_fb phone_sightings_fb sightings_show_fb sightings_show_fb sightings_show_fb sightings_show_fb" "phone_sightings_fb phone_sightings_fb phone_sightings_fb. . . ."; }
+  .sightings-fb-grid .phone_sightings_fb {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: phone_sightings_fb; }
+  .sightings-fb-grid .sightings_ani_fb {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 7;
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 7;
+    grid-area: sightings_ani_fb; }
+  .sightings-fb-grid .sightings_show_fb {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 7;
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 7;
+    grid-area: sightings_show_fb; }
+
+@media (max-width: 768px) {
+  .sightings-fb-grid {
+    display: block; }
+    .sightings-fb-grid .phone_sightings_fb,
+    .sightings-fb-grid .sightings_ani_fb,
+    .sightings-fb-grid .sightings_show_fb {
+      margin-bottom: 1em; } }
+
+.final_image_bottom .button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }

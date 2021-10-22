@@ -554,6 +554,27 @@
             #styletiles .sectionhead {
                 font-size: 3em;
             }
+            
+            // TYPE SCALE MAUNAKEA OBSERVATORIES_________
+            .type_mk {
+                h1,
+                h2 {
+                    color: $color-black;
+                    font-family: $mkheaderfont-family;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                h1 {
+                    font-size: 4em;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+                h2 {
+                    font-size: 2em;
+                    font-weight: 400;
+                    letter-spacing: .3em;
+                }
+            }
             /* TYPOGRAPHIC SCALE SIGHTINGS______________________*/
             
             .type_sightings {

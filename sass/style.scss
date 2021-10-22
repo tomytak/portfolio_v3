@@ -37,6 +37,8 @@ $sightingscondensedfont-family: "Open Sans Condensed",
 sans-serif;
 $sightingsbodyfont-family: "Open Sans",
 sans-serif;
+$mkheaderfont-family: "adrianna",
+sans-serif;
 // VARIABLES__________________________________
 $color-teal: #005563;
 $color-red: #cc1f3d;
@@ -94,3 +96,4 @@ $breakpoint-large: 1250px;
 @import "partials/_sightings.scss";
 @import "partials/_grandma.scss";
 @import "partials/_hands.scss";
+@import "partials/_mk.scss";
